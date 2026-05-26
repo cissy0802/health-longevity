@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Longevity Day 5 — Cardiovascular Longevity</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#f0f7f4;color:#1f3a3d;line-height:1.75}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:48px 0 28px;border-bottom:2px solid #d4e8e0;margin-bottom:36px}
+header .day{display:inline-block;background:#0d6e6e;color:#fff;font-size:0.78rem;font-weight:700;padding:4px 12px;border-radius:12px;letter-spacing:2px;margin-bottom:14px}
+header h1{font-size:1.85rem;font-weight:800;color:#0d6e6e;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:10px;font-size:0.92rem;color:#5a7d7d}
+header .evidence-note{margin-top:14px;display:inline-block;font-size:0.82rem;color:#3aa17e;background:#e6f3ed;padding:6px 14px;border-radius:8px;border-left:3px solid #3aa17e}
+.card{background:#fff;border-radius:14px;padding:28px 26px;margin-bottom:24px;box-shadow:0 2px 14px rgba(13,110,110,0.08);border-top:4px solid #3aa17e}
+.card .name{font-size:1.25rem;font-weight:700;color:#0d6e6e;margin-bottom:4px}
+.card .name-zh{font-size:0.88rem;color:#5a7d7d;font-style:italic;margin-bottom:10px}
+.card .tag{display:inline-block;font-size:0.72rem;background:#e6f3ed;color:#0d6e6e;padding:3px 10px;border-radius:6px;font-weight:600;margin-bottom:16px;letter-spacing:0.5px}
+.section{margin-top:14px}
+.section .label{font-size:0.8rem;font-weight:700;color:#0d6e6e;letter-spacing:1px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.section .label::before{content:"";display:inline-block;width:3px;height:14px;background:#3aa17e;border-radius:2px}
+.section .content{font-size:0.94rem;color:#2d4d4d;padding-left:9px}
+.conclusion{background:#fff8e6;border-left:4px solid #d4a017;padding:12px 14px;border-radius:6px;font-weight:600;color:#7a5c00}
+.evidence{background:#e8f0fa;border-left:4px solid #4a7ab8;padding:10px 14px;border-radius:6px;font-size:0.88rem;color:#2d4970}
+.protocol{background:#e6f3ed;padding:12px 14px;border-radius:6px;border-left:4px solid #3aa17e}
+.female{background:#fae6ee;padding:10px 14px;border-radius:6px;border-left:4px solid #c2438a;font-size:0.92rem}
+.myth{background:#fae8e6;padding:10px 14px;border-radius:6px;border-left:4px solid #c25543;font-size:0.92rem}
+.ref{font-size:0.85rem;color:#5a7d7d;font-style:italic}
+.tryit{background:#0d6e6e;color:#fff;padding:14px 16px;border-radius:8px;font-size:0.94rem;font-weight:500}
+.tryit .label{color:#a8e0d0;font-size:0.78rem;letter-spacing:2px;margin-bottom:4px;font-weight:700}
+table{width:100%;border-collapse:collapse;margin-top:8px;font-size:0.88rem}
+table th{background:#0d6e6e;color:#fff;padding:8px;text-align:left;font-weight:600}
+table td{padding:8px;border-bottom:1px solid #e0eae5}
+table tr:nth-child(even) td{background:#f5faf8}
+.viz{background:#f5faf8;border-radius:10px;padding:14px;margin-top:10px;overflow-x:auto}
+.viz-caption{font-size:0.78rem;color:#5a7d7d;text-align:center;margin-top:8px;font-style:italic}
+.footer-section{background:#fff;border-radius:14px;padding:26px 24px;margin-bottom:20px;box-shadow:0 2px 14px rgba(13,110,110,0.08);border-left:4px solid #0d6e6e}
+.footer-section h2{font-size:1.1rem;color:#0d6e6e;margin-bottom:14px;letter-spacing:1px}
+.footer-section ul{list-style:none;padding-left:0}
+.footer-section li{padding:7px 0;font-size:0.9rem;border-bottom:1px dashed #e0eae5;color:#2d4d4d}
+.footer-section li:last-child{border-bottom:none}
+details{background:#f5faf8;border-radius:8px;padding:12px 14px;margin-bottom:10px;border-left:3px solid #3aa17e}
+details summary{cursor:pointer;font-weight:600;color:#0d6e6e;font-size:0.95rem;outline:none}
+details[open] summary{margin-bottom:10px}
+details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
+.nav{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid #d4e8e0}
+.nav a{color:#0d6e6e;text-decoration:none;font-weight:600;padding:10px 24px;background:#fff;border-radius:8px;border:1px solid #d4e8e0;display:inline-block;transition:all 0.2s}
+.nav a:hover{background:#0d6e6e;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+</style></head><body><div class="container">
+
+<header>
+<div class="day">DAY 5</div>
+<h1>Longevity: Cardiovascular Health<br><span style="font-size:1rem;color:#5a7d7d;font-weight:500">CAC, Lp(a), BP Targets, HRV</span></h1>
+<div class="meta">2026-05-26 · BigCat's Vitality Protocol</div>
+<div class="evidence-note">Evidence base: RCTs (SPRINT, JUPITER) + Mendelian randomization (Lp(a)) + large prospective cohorts (MESA, FHS) + Attia "Medicine 3.0" consensus</div>
+</header>
+
+<div class="card">
+<div class="tag">SUB · Imaging Screen / Primary Prevention</div>
+<div class="name">Coronary Artery Calcium (CAC) — Seeing Plaque Before It Speaks</div>
+<div class="name-zh">CAC 评分：让你「看见」斑块的最强一级预防工具</div>
+
+<div class="section"><div class="label">ONE-LINE TAKEAWAY</div>
+<div class="content"><div class="conclusion">A ~$50 low-dose CT scan (~1 mSv) upgrades CV risk prediction by an order of magnitude. <strong>CAC = 0 nearly rules out MI within 5 years</strong>; CAC ≥ 100 means "start statin now," regardless of how "normal" LDL-C looks.</div></div></div>
+
+<div class="section"><div class="label">EVIDENCE</div>
+<div class="content"><div class="evidence">Large prospective cohorts: MESA (Detrano 2008 <i>NEJM</i>, 6,800 subjects) established CAC's independent predictive power, with net reclassification superior to standard risk scores. Budoff 2018 (<i>JACC</i>) 15-year follow-up: all-cause mortality 5× lower in CAC=0 vs CAC>400. ACC/AHA 2018/2019 primary prevention guidelines formally incorporated CAC for "borderline/intermediate risk" decisions. CONFIRM registry (>30,000) confirmed cross-population consistency.</div></div></div>
+
+<div class="section"><div class="label">SCIENCE + MECHANISM</div>
+<div class="content">CAC directly quantifies calcified plaque volume in coronary arteries (Agatston score) — imaging evidence that <strong>atherosclerosis has already happened</strong>. Traditional risk scores (Framingham, ASCVD Pooled Cohort) estimate population probabilities; CAC measures your actual pathological burden — are you on the average curve or already off it? Calcification marks plaque maturation (lipid pool → fibrous cap → calcification), reflecting both past cumulative exposure and predicting future event rates. CAC=0 is the famous "power of zero": in low-to-intermediate-risk populations, 10-year event rates run <1%, allowing more permissive statin decisions (but not for those <45, where plaque may not yet have calcified).</div></div></div>
+
+<div class="section"><div class="label">VISUALIZATION: CAC Score and Risk Stratification</div>
+<div class="content">
+<div class="viz">
+<svg viewBox="0 0 720 220" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system,'Noto Sans SC',sans-serif">
+<defs><style>.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}.num{font-size:13px;font-weight:800;fill:#fff}</style></defs>
+<text x="60" y="20" class="lbl">CAC Score (Agatston) and 10-Year ASCVD Risk</text>
+<rect x="60" y="50" width="110" height="60" fill="#3aa17e" rx="6"/>
+<text x="92" y="78" class="num">0</text>
+<text x="74" y="100" class="num" style="font-size:10px">Very low</text>
+<text x="60" y="130" class="cap">10-yr &lt; 1%</text>
+<text x="60" y="146" class="cap">Defer statin</text>
+<text x="60" y="162" class="cap">Recheck 5y</text>
+<rect x="180" y="50" width="110" height="60" fill="#d4a017" rx="6"/>
+<text x="208" y="78" class="num">1–99</text>
+<text x="200" y="100" class="num" style="font-size:10px">Mild</text>
+<text x="180" y="130" class="cap">10-yr ~ 2–7%</text>
+<text x="180" y="146" class="cap">Lifestyle +</text>
+<text x="180" y="162" class="cap">Moderate statin</text>
+<rect x="300" y="50" width="110" height="60" fill="#e8783a" rx="6"/>
+<text x="322" y="78" class="num">100–299</text>
+<text x="320" y="100" class="num" style="font-size:10px">Moderate</text>
+<text x="300" y="130" class="cap">10-yr ~ 7–15%</text>
+<text x="300" y="146" class="cap">Statin + ApoB</text>
+<text x="300" y="162" class="cap">&lt; 60 mg/dL</text>
+<rect x="420" y="50" width="110" height="60" fill="#c25543" rx="6"/>
+<text x="445" y="78" class="num">300–999</text>
+<text x="440" y="100" class="num" style="font-size:10px">Severe</text>
+<text x="420" y="130" class="cap">10-yr &gt; 15%</text>
+<text x="420" y="146" class="cap">High-intensity</text>
+<text x="420" y="162" class="cap">+ Ezetimibe</text>
+<rect x="540" y="50" width="120" height="60" fill="#8b2c2c" rx="6"/>
+<text x="572" y="78" class="num">≥ 1000</text>
+<text x="565" y="100" class="num" style="font-size:10px">Very severe</text>
+<text x="540" y="130" class="cap">Treat as 2°</text>
+<text x="540" y="146" class="cap">ApoB &lt; 50</text>
+<text x="540" y="162" class="cap">+ PCSK9 eval</text>
+<text x="60" y="195" class="cap" style="font-style:italic">Note: in those &lt;45, CAC=0 does not exclude soft (non-calcified) plaque — combine with CCTA or ApoB</text>
+</svg>
+<div class="viz-caption">CAC is a "time microscope" — it converts statistical probability into a concrete number inside your arteries.</div>
+</div>
+</div></div>
+
+<div class="section"><div class="label">PROTOCOL</div>
+<div class="content"><div class="protocol">
+<strong>Who should get it:</strong><br>
+• Men ≥40, women ≥45 with "borderline" or "intermediate" traditional risk<br>
+• Any age with premature CV family history (1st-degree relative: M &lt;55, F &lt;65)<br>
+• Lp(a) ≥ 50 mg/dL / diabetes / autoimmune disease / HIV<br><br>
+<strong>How:</strong><br>
+• Low-dose gated chest CT, no contrast, &lt;10 sec scan, 0.7–1.0 mSv (≈ one trans-Pacific flight)<br>
+• Cost ~$50–150 in many markets; available at cardiology/imaging departments<br>
+• Result = Agatston score + age/sex percentile (where you sit among same-age, same-sex peers)<br><br>
+<strong>How to use the result:</strong><br>
+• CAC = 0, few risk factors: may defer statin, recheck in 5 years (excludes &lt;45)<br>
+• CAC 1–99: low-to-moderate statin + strict ApoB target &lt;80<br>
+• CAC ≥ 100 OR ≥ 75th percentile for age: treat as high-risk; ApoB &lt;60, statin ± ezetimibe<br>
+• <strong>Repeat interval</strong>: CAC=0 → 5 years; CAC&gt;0 → no need to chase serial scans (treatment goal is ApoB, not slowing the calcium number)
+</div></div></div>
+
+<div class="section"><div class="label">FEMALE-SPECIFIC NOTE + COMMON MYTHS</div>
+<div class="content"><div class="female">Women's CAC appears 7–10 years later than men's; CAC=0 is common premenopause, but post-menopausal ApoB drift accelerates calcification. SWAN imaging substudy: the menopausal transition is a key window of "asymptomatic coronary calcification onset." <strong>A given CAC score in women is more ominous than the same score in men</strong> (Shaw 2008 <i>JACC</i> — same score, women have higher relative MI/death risk). MESA data: women at or above the 75th percentile for age should seriously consider statins regardless of perceived symptom-free status.</div>
+<div class="myth" style="margin-top:8px">Myth 1: "High CAC means statins are too late" — opposite: statins stabilize plaque (reduce lipid core, thicken fibrous cap), cutting events 25–35% (FOURIER) even when the calcium number doesn't decrease.<br>Myth 2: "CAC=0 means I can relax about diet" — CAC reflects the past, not the future. Lp(a), ApoB, lifestyle still determine new plaque over the next 10 years.<br>Myth 3: "Young people don't need it" — &lt;45 sensitivity is low (soft plaque uncalcified); CCTA or ApoB/Lp(a) are better tools.</div></div></div>
+
+<div class="section"><div class="label">THIS WEEK + REFLECTION</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Look up local availability and pricing of "coronary calcium scan" / "cardiac CT calcium score" at major hospitals or imaging centers. If you fit the "who should get it" criteria, schedule it at your next annual checkup (no fasting, &lt;30 min).<br><br>Reflection: A traditional risk score gives a probability (e.g., 8%); CAC gives a concrete number (e.g., 47). The former is "population"; the latter is "you." Are you willing to spend 1 mSv and a small fee to see yourself more clearly?</div></div>
+</div>
+
+<div class="card">
+<div class="tag">SUB · Genetic Lipoprotein / Lifetime Risk</div>
+<div class="name">Lp(a) — The One-Time Genetic Test Most People Skip</div>
+<div class="name-zh">Lp(a)：一生只查一次的「隐形心梗基因」</div>
+
+<div class="section"><div class="label">ONE-LINE TAKEAWAY</div>
+<div class="content"><div class="conclusion">Lp(a) is a <strong>genetically determined, diet/exercise-resistant</strong> independent causal driver of ASCVD. ~20% of the global population is elevated (≥ 50 mg/dL), doubling MI, aortic stenosis, and ischemic stroke risk. Test it once in a lifetime — yet <strong>most clinicians don't order it</strong>.</div></div></div>
+
+<div class="section"><div class="label">EVIDENCE</div>
+<div class="content"><div class="evidence">Mendelian randomization (top causal evidence): Kamstrup 2009 (<i>JAMA</i>) and Burgess 2018 (<i>JAMA Cardiol</i>) used LPA gene variants to establish Lp(a) as causal for MI and valve calcification. EAS 2022 consensus (Kronenberg, <i>Eur Heart J</i>): all adults should be measured once in life. UK Biobank (460,000): top Lp(a) quintile carries ~2× MI risk independent of LDL-C. The HORIZON trial (pelacarsen, antisense oligonucleotide) is the first RCT to test directly lowering Lp(a) on hard CV outcomes (results 2025).</div></div></div>
+
+<div class="section"><div class="label">SCIENCE + MECHANISM</div>
+<div class="content">Lp(a) = an LDL particle plus a covalently attached apo(a) protein. apo(a) structurally resembles plasminogen → interferes with fibrinolysis → prothrombotic. It also carries oxidized phospholipids (OxPL) → strongly proinflammatory/atherogenic. <strong>LPA gene determines 70–90% of plasma Lp(a)</strong>; the level is roughly fixed from birth (±20%), barely moved by diet/exercise/statin (statins even slightly increase it). It is the most-missed high-risk marker in otherwise asymptomatic adults. East Asians average lower Lp(a) than Europeans, but 10–15% are still elevated — "Asians don't need it" is not a safe assumption.</div></div></div>
+
+<div class="section"><div class="label">PROTOCOL</div>
+<div class="content">
+<table>
+<tr><th>Lp(a) (mg/dL)</th><th>Risk tier</th><th>Action</th></tr>
+<tr><td>&lt; 30</td><td>Low</td><td>Standard management; no retesting required for life</td></tr>
+<tr><td>30–49</td><td>Borderline</td><td>Tighten other modifiables (ApoB &lt;80, BP &lt;120/80)</td></tr>
+<tr><td>50–99</td><td>Elevated</td><td>ApoB target &lt;60; consider baseline CAC + carotid US</td></tr>
+<tr><td>≥ 100</td><td>Markedly elevated</td><td>ApoB &lt;50; aggressive primary prevention; screen first-degree relatives</td></tr>
+<tr><td>≥ 180 (or &gt;430 nmol/L)</td><td>Extreme</td><td>Treat as secondary prevention; PCSK9i lowers ~25–30%; watch pelacarsen pipeline</td></tr>
+</table>
+<div class="protocol" style="margin-top:10px">• Units: mg/dL and nmol/L are not directly convertible (particle size variability) — prefer nmol/L when available<br>• Simple blood test, no fasting required<br>• One test for life suffices (unless reassessing after treatment); store in family health record<br>• If ≥ 50 mg/dL: alert first-degree relatives (70% heritable)<br>• Current Lp(a)-lowering options: statins 0%/slight rise; niacin 20–25% (abandoned, side effects); PCSK9i 25–30%; antisense (pelacarsen/olpasiran) 80%+ (Phase III)</div></div></div>
+
+<div class="section"><div class="label">FEMALE-SPECIFIC NOTE + COMMON MYTHS</div>
+<div class="content"><div class="female">Elevated Lp(a) in women is associated with <strong>higher rates of preeclampsia and recurrent miscarriage</strong> — preconception testing has family-planning value. Lp(a) rises slightly post-menopause (10–15%), but remains primarily genetic. SWAN and WHI data: women with high Lp(a) experience accelerated ASCVD across the menopausal transition; assess during perimenopause, not years later. MHT has neutral-to-mildly-lowering effects on Lp(a) and should not be used as Lp(a) therapy.</div>
+<div class="myth" style="margin-top:8px">Myth 1: "Lp(a) is fixed, so testing is pointless" — you can't change the gene, but you can drive every <strong>modifiable factor (ApoB, BP, smoking, body composition)</strong> harder, pushing the plaque clock back 10–20 years.<br>Myth 2: "Statins lower Lp(a)" — basically not; some studies show slight elevation. Statin's value is ApoB reduction; Lp(a) needs a dedicated plan.<br>Myth 3: "Lp(a) is rare in Asians" — average is lower but the distribution overlaps; skipping the test is rolling dice.</div></div></div>
+
+<div class="section"><div class="label">THIS WEEK + REFLECTION</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Add <strong>Lp(a) (lipoprotein-a)</strong> to your next blood draw. Most routine panels exclude it — request explicitly. <strong>One test, lifetime answer.</strong> File it alongside ApoB and CAC in your long-term health record.<br><br>Reflection: If your Lp(a) is 80 mg/dL (your parents likely too), would you tell your child to test after age 18? What's the ethical/psychological weight of "unchangeable" genetic information?</div></div>
+</div>
+
+<div class="card">
+<div class="tag">SUB · Blood Pressure / Primary Prevention</div>
+<div class="name">Blood Pressure Targets — Recalibrating "Normal 120/80" to "Optimal 110/70"</div>
+<div class="name-zh">血压目标值：把「正常 120/80」重新校准为「最优 110/70」</div>
+
+<div class="section"><div class="label">ONE-LINE TAKEAWAY</div>
+<div class="content"><div class="conclusion">Post-SPRINT, BP targets shifted from &lt;140/90 to &lt;130/80 (ACC/AHA 2017), but the longevity-optimal target is <strong>≤ 120/80 (office) or ≤ 115/75 (home/ABPM)</strong>. One-shot office readings are polluted by white-coat effect and measurement error — home BP + ABPM are more accurate and better predict hard endpoints.</div></div></div>
+
+<div class="section"><div class="label">EVIDENCE</div>
+<div class="content"><div class="evidence">Landmark RCT: SPRINT 2015 (<i>NEJM</i>, 9,361 subjects) — intensive BP control (SBP target &lt;120 vs &lt;140) cut CV events 25%, all-cause mortality 27%, terminated 1 year early. STEP 2021 (<i>NEJM</i>, 8,500 elderly Chinese) replicated. Meta-analysis Ettehad 2016 (<i>Lancet</i>, 123 RCTs, 613,000): every 10 mmHg SBP drop → 20% MACE, 13% mortality reduction. Home/ABPM superior to office: Sega 2005 PAMELA, Hansen 2007 IDACO cohorts.</div></div></div>
+
+<div class="section"><div class="label">SCIENCE + MECHANISM</div>
+<div class="content">Blood pressure is <strong>pressure × time of exposure</strong>: arterial walls bear mechanical stress → endothelial dysfunction → easier ApoB-particle entry → accelerated atherosclerosis. High pressure also raises cardiac afterload → LV hypertrophy → diastolic dysfunction → atrial fibrillation, HFpEF. <strong>Nighttime BP</strong> is the strongest mortality predictor (Hansen 2011) — normal subjects "dip" ≥10% at night; "non-dippers" independently predict CV death. Single office readings carry large error; white-coat effect can inflate by 10–20 mmHg, but "masked hypertension" goes the other way — normal office, elevated home/night, even more dangerous. Home BP and 24h ABPM are the gold standards.</div></div></div>
+
+<div class="section"><div class="label">VISUALIZATION: Office vs Home vs ABPM Thresholds</div>
+<div class="content">
+<div class="viz">
+<svg viewBox="0 0 720 230" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system,'Noto Sans SC',sans-serif">
+<defs><style>.axis{stroke:#5a7d7d;stroke-width:1}.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}.bar{opacity:0.85}</style></defs>
+<text x="280" y="20" class="lbl">SBP Thresholds (mmHg) by Measurement Setting</text>
+<line x1="160" y1="40" x2="160" y2="180" class="axis"/>
+<line x1="160" y1="180" x2="700" y2="180" class="axis"/>
+<text x="80" y="70" class="cap">Office</text>
+<text x="80" y="115" class="cap">Home (mean)</text>
+<text x="80" y="160" class="cap">24h ABPM (mean)</text>
+<rect x="160" y="55" width="160" height="22" fill="#3aa17e" class="bar"/>
+<text x="265" y="71" style="font-size:11px;fill:#fff;font-weight:700">≤ 120</text>
+<text x="325" y="71" class="cap">Longevity-optimal</text>
+<rect x="160" y="55" width="225" height="22" fill="none" stroke="#d4a017" stroke-width="2"/>
+<text x="390" y="71" class="cap" style="fill:#d4a017">130 = HTN threshold (ACC/AHA)</text>
+<rect x="160" y="100" width="140" height="22" fill="#3aa17e" class="bar"/>
+<text x="240" y="116" style="font-size:11px;fill:#fff;font-weight:700">≤ 115</text>
+<text x="305" y="116" class="cap">Longevity-optimal</text>
+<rect x="160" y="100" width="200" height="22" fill="none" stroke="#d4a017" stroke-width="2"/>
+<text x="365" y="116" class="cap" style="fill:#d4a017">125 = home HTN threshold</text>
+<rect x="160" y="145" width="135" height="22" fill="#3aa17e" class="bar"/>
+<text x="235" y="161" style="font-size:11px;fill:#fff;font-weight:700">≤ 115/120</text>
+<text x="305" y="161" class="cap">Daytime mean (excluding night)</text>
+<rect x="160" y="145" width="190" height="22" fill="none" stroke="#d4a017" stroke-width="2"/>
+<text x="355" y="161" class="cap" style="fill:#d4a017">Nighttime &lt;110; non-dipping = risk</text>
+<text x="160" y="205" class="cap" style="font-style:italic">Home/ABPM being 5–10 mmHg lower than office is normal — white-coat effect removed</text>
+</svg>
+<div class="viz-caption">"Office 130" ≠ "true 130." Most people are overestimated 5–15 mmHg in clinic; a minority are "masked" the other way — only home/ABPM separates them.</div>
+</div>
+</div></div>
+
+<div class="section"><div class="label">PROTOCOL</div>
+<div class="content"><div class="protocol">
+<strong>Measurement (the most-skipped piece):</strong><br>
+• Upper-arm electronic monitor (wrist devices unreliable), CE/FDA-validated<br>
+• Sit quietly 5 min, back supported, feet flat, cuff at heart level<br>
+• Take 2–3 readings 1 min apart; average the last two<br>
+• Morning + evening, 7 consecutive days → average of last 6 days (discard day 1)<br><br>
+<strong>Targets (longevity-optimal, not disease thresholds):</strong><br>
+• Office: ≤ 120/80<br>
+• Home mean: ≤ 115/75<br>
+• 24h ABPM mean: ≤ 115/75; nighttime mean: &lt; 110/65<br>
+• Elderly (≥75) SPRINT subgroup: intensive control still benefits but fall risk slightly up — individualize<br><br>
+<strong>Non-pharmacologic → pharmacologic ladder:</strong><br>
+• Zone 2 aerobic 150 min/wk → SBP −5–8 mmHg<br>
+• Sodium &lt; 2300 mg/d (DASH) → SBP −5–6 mmHg<br>
+• Weight loss 1 kg → SBP −1 mmHg<br>
+• Alcohol &lt; 1 drink/d → SBP −3–4 mmHg<br>
+• First-line drugs: ACEi/ARB + CCB (Asian populations respond more strongly to CCBs) + thiazide diuretic; β-blockers reserved for AFib/CAD, not first-line for HTN
+</div></div></div>
+
+<div class="section"><div class="label">FEMALE-SPECIFIC NOTE + COMMON MYTHS</div>
+<div class="content"><div class="female">Gestational hypertension and preeclampsia substantially raise future <strong>ASCVD (2–4×), HFpEF (4×), and stroke risk</strong> (Bellamy 2007 <i>BMJ</i>; Wu 2017 <i>Circulation</i>) — yet are routinely under-monitored postpartum. Establish annual BP tracking within 5 years post-delivery. The perimenopausal estrogen drop reduces vascular compliance and accelerates SBP rise; women's average SBP overtakes men's after age 50, often masked by the "I always had low BP" mental model. Oral contraceptives raise SBP ~2–4 mmHg on average (more in salt-sensitive responders) — get a baseline before starting. HFpEF skews female and older; intensive BP control is one of the few evidence-based primary preventions.</div>
+<div class="myth" style="margin-top:8px">Myth 1: "Slightly elevated BP is fine, no need to treat" — pre-SPRINT "standard" arms left huge populations at "normal but suboptimal," with 25% more CV events.<br>Myth 2: "Office readings are enough" — 15–30% are white-coat (overestimated), 10–15% are masked (underestimated). Not measuring at home = guessing.<br>Myth 3: "Young people with BP 130 needn't worry" — SPRINT subgroups + Mendelian randomization show <strong>lifetime cumulative exposure</strong> is linearly damaging. Earlier control = better.</div></div></div>
+
+<div class="section"><div class="label">THIS WEEK + REFLECTION</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Buy an upper-arm electronic BP monitor (Omron, ~$30–60). Measure morning + evening for 7 days. The average of the last 6 days is your real baseline — more useful than any office number. If home mean &gt; 125/80, discuss lifestyle + medication options with your doctor.<br><br>Reflection: Are you willing to file "home mean" rather than "office single reading" as your long-term BP record? What does shifting data ownership to yourself actually mean?</div></div>
+</div>
+
+<div class="card">
+<div class="tag">SUB · Autonomic Function / CV Resilience</div>
+<div class="name">Heart Rate Variability — The Autonomic Nervous System's Battery Gauge</div>
+<div class="name-zh">HRV：自主神经的「电池电量」与训练复原指标</div>
+
+<div class="section"><div class="label">ONE-LINE TAKEAWAY</div>
+<div class="content"><div class="conclusion">HRV reflects parasympathetic tone and autonomic flexibility. <strong>Higher HRV = more "flexible" autonomic nervous system.</strong> It is not diagnostic, but as a <strong>within-individual trend</strong>, it's the cheapest, most continuous monitor of CV health + training recovery + stress. Absolute values do not compare across people.</div></div></div>
+
+<div class="section"><div class="label">EVIDENCE</div>
+<div class="content"><div class="evidence">Large cohorts: Tsuji 1996 (<i>Circulation</i>, Framingham) and Dekker 2000 (<i>Circulation</i>, ARIC) — low HRV independently predicts all-cause + CV mortality. Thayer 2010 (<i>Int J Cardiol</i>) review: HRV correlates with BP, inflammation, glucose, cognition. Sports-science RCTs (Plews 2013, Stanley 2013 <i>Sports Med</i>): morning-HRV-guided training improves VO2max and performance vs fixed plans; flags overtraining/viral prodrome. Clinical evidence tier is below ApoB/BP — no RCT yet shows "raise HRV" → improved hard outcomes — so use it as a <strong>trend monitor</strong>, not a target.</div></div></div>
+
+<div class="section"><div class="label">SCIENCE + MECHANISM</div>
+<div class="content">Heart rate is not metronomic. Tiny beat-to-beat (R-R interval) variation reflects the autonomic "tug-of-war": vagal withdrawal on inhale (HR↑), vagal engagement on exhale (HR↓) — known as <strong>respiratory sinus arrhythmia (RSA)</strong>, the core expression of parasympathetic tone. Common metrics: <strong>RMSSD</strong> (root mean square of successive R-R differences, mostly parasympathetic) and <strong>SDNN</strong> (total variability). Low HRV = sympathetic dominance/parasympathetic suppression = the shared phenotype of chronic stress, overtraining, infection prodrome, and worse CV outcomes — your heart's ability to "soften" when your vasculature asks. <strong>HRV is highly individual</strong>: genetics + age + sex + training state set the baseline. Don't compare across people — only against your own rolling mean.</div></div></div>
+
+<div class="section"><div class="label">VISUALIZATION: What Affects HRV</div>
+<div class="content">
+<div class="viz">
+<svg viewBox="0 0 720 230" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system,'Noto Sans SC',sans-serif">
+<defs><style>.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}.up{fill:#3aa17e}.dn{fill:#c25543}</style></defs>
+<text x="60" y="20" class="lbl">↑ Raises HRV (parasympathetic / recovery)  vs  ↓ Lowers HRV (sympathetic / load)</text>
+<line x1="360" y1="35" x2="360" y2="210" stroke="#d4e8e0" stroke-width="2"/>
+<text x="80" y="55" class="lbl" style="fill:#3aa17e">↑ Raises</text>
+<text x="80" y="80" class="cap">• Zone 2 aerobic (chronic)</text>
+<text x="80" y="98" class="cap">• Adequate sleep 7–9 h</text>
+<text x="80" y="116" class="cap">• Slow breathing 5–6 br/min</text>
+<text x="80" y="134" class="cap">• Cold exposure (modest)</text>
+<text x="80" y="152" class="cap">• Reading / meditation / connection</text>
+<text x="80" y="170" class="cap">• Post-meal walking</text>
+<text x="80" y="188" class="cap">• 24–48h post-training recovery</text>
+<text x="400" y="55" class="lbl" style="fill:#c25543">↓ Lowers</text>
+<text x="400" y="80" class="cap">• Alcohol (even 1–2 drinks)</text>
+<text x="400" y="98" class="cap">• Sleep loss / late bedtime</text>
+<text x="400" y="116" class="cap">• Acute illness / prodrome</text>
+<text x="400" y="134" class="cap">• Overtraining / immediate post-workout</text>
+<text x="400" y="152" class="cap">• Psychological stress / emotional shock</text>
+<text x="400" y="170" class="cap">• Luteal phase of menstrual cycle (physiologic)</text>
+<text x="400" y="188" class="cap">• High-glycemic meals / overeating</text>
+<text x="60" y="220" class="cap" style="font-style:italic">"3–5 consecutive days HRV below personal 7-day mean" = strong signal — back off, sleep, screen for infection</text>
+</svg>
+<div class="viz-caption">HRV is the low-noise earbud for your real internal state — not a diagnosis, but a few-day head-start telling you "don't push today."</div>
+</div>
+</div></div>
+
+<div class="section"><div class="label">PROTOCOL</div>
+<div class="content"><div class="protocol">
+<strong>How to measure:</strong><br>
+• Tools: Whoop / Oura / Garmin / Polar H10 + Elite HRV / Apple Watch (nightly mean is most stable)<br>
+• Timing: <strong>morning supine, 5 min RMSSD</strong>, or wearable nighttime mean (build a 4-week personal baseline)<br>
+• What matters: <strong>7-day rolling mean + today's % deviation</strong>, not absolute number<br><br>
+<strong>How to use:</strong><br>
+• Today's HRV &gt; 7-day mean: normal or push (HIIT / heavy lifting)<br>
+• Today's HRV within ±10% of 7-day mean: train as planned<br>
+• Today's HRV &gt;10% below 7-day mean: Zone 2 only / yoga / rest<br>
+• 3–5 consecutive days suppressed: suspect prodrome, overtraining, chronic stress → de-load + investigate<br><br>
+<strong>High-evidence HRV-raising interventions:</strong><br>
+• Slow breathing 6 br/min (≈ 4s in / 6s out) × 5–10 min/day → measurable short-term gain<br>
+• No alcohol (even 1–2 drinks lowers nightly HRV 20–30%)<br>
+• Consistent sleep window (±30 min)<br>
+• Zone 2 training (&gt; 4 weeks)<br>
+• Moderate cold/sauna exposure<br><br>
+<strong>What HRV cannot do:</strong><br>
+• Diagnose arrhythmia (use ECG)<br>
+• Cross-person comparison ("my HRV is higher than hers, so I'm healthier" — meaningless)<br>
+• Replace ApoB, BP, CAC, or other hard markers
+</div></div></div>
+
+<div class="section"><div class="label">FEMALE-SPECIFIC NOTE + COMMON MYTHS</div>
+<div class="content"><div class="female">The menstrual cycle has a <strong>systematic effect on HRV</strong>: follicular phase (days 1–14) has higher HRV (parasympathetic-dominant); luteal phase (post-ovulation to next menses) drops HRV by ~10–15% with resting HR up 2–5 bpm (Tenan 2014). This is physiologic, not overtraining. <strong>Always interpret HRV trends alongside cycle phase</strong> — lower luteal HRV should not trigger de-load. During perimenopause, cycle disruption widens HRV variance; hot flashes and sleep fragmentation cause measurable nightly HRV drops — a useful objective measure of symptom burden. Pregnancy reduces HRV overall (physiologic volume/output changes); has no diagnostic value.</div>
+<div class="myth" style="margin-top:8px">Myth 1: "Higher HRV is always better" — extremely high HRV can be abnormal (hypothyroidism, severe underweight, certain arrhythmias). Trend matters more than absolute.<br>Myth 2: "HRV is the health gold standard" — it is an auxiliary monitor, not a substitute for BP, ApoB, CAC, and cannot diagnose disease.<br>Myth 3: "All devices give comparable HRV" — algorithms (frequency- vs time-domain, night mean vs morning spot) differ widely. <strong>Track yourself on one device</strong>.</div></div></div>
+
+<div class="section"><div class="label">THIS WEEK + REFLECTION</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>If you wear a device: export the past 4 weeks of HRV trends and overlay training days / alcohol nights / sleep-short nights — find your personal patterns. No device: do 5 minutes of slow breathing (4s in / 6s out) before bed for 7 days; compare your subjective daytime stress response.<br><br>Reflection: HRV turns "body feel" into numbers. Is that sharper self-awareness, or a new anxiety machine? Where do you sit on the data-driven vs body-intuition axis?</div></div>
+</div>
+
+<div class="footer-section">
+<h2>📚 Resources</h2>
+<ul>
+<li>📕 Peter Attia. <i>Outlive: The Science and Art of Longevity</i>. 2023. — Chapters 7–8 ASCVD "Medicine 3.0" integration: CAC, ApoB, Lp(a), BP</li>
+<li>🎙 The Drive (Peter Attia) #228 with Allan Sniderman — ApoB & Lp(a); #284 with Ethan Weiss — CAC clinical use; #185 with Andrew Huberman — HRV & autonomic nervous system</li>
+<li>🎙 Huberman Lab — "Tools to Improve Cardiovascular Health & Performance" — HRV with hot/cold protocols</li>
+<li>📕 Mary Claire Haver. <i>The New Menopause</i>. 2024. — Perimenopausal CV-risk acceleration windows and intervention timing</li>
+<li>📄 SPRINT Research Group. Intensive vs Standard BP Control. <i>NEJM</i>. 2015;373:2103-2116.</li>
+<li>📄 Kronenberg F, et al. EAS Lp(a) Consensus Statement. <i>Eur Heart J</i>. 2022;43:3925-3946. — Test once in life</li>
+<li>📄 Detrano R, et al. CAC for CHD Risk Prediction. <i>NEJM</i>. 2008;358:1336-1345. — MESA</li>
+<li>📄 Kamstrup PR, et al. Lp(a) & MI Mendelian Randomization. <i>JAMA</i>. 2009;301:2331-2339.</li>
+<li>📄 Thayer JF, et al. HRV and Cardiovascular Risk. <i>Int J Cardiol</i>. 2010;141:122-131.</li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h2>🧠 Reflections</h2>
+
+<details><summary>① Is CAC = 0 a clean bill of health for coronary arteries?</summary>
+<div>Not quite. CAC reflects <strong>calcified</strong> plaque. Early soft plaque (lipid pools, non-calcified fibrous plaque) can be entirely invisible, especially under 45. MESA and CONFIRM data show CAC=0 + 5-year event rate &lt;1%, but "5 years" ≠ "lifetime," and acute events often arise from <strong>non-calcified, unstable plaque</strong> rupture — which is why ApoB, Lp(a), and lifestyle still matter. CCTA (coronary CT angiography) can visualize soft plaque, costs slightly more radiation, and suits CAC=0 individuals with otherwise strong risk factors.</div></details>
+
+<details><summary>② Lp(a) has no specific drug yet — what's the point of testing?</summary>
+<div>The point isn't "treat Lp(a)" — it's <strong>recalibrating other modifiable factors</strong>. Lp(a) 100 mg/dL ≈ 2× CV risk, equivalent to lowering your ApoB ceiling from 80 to 60, your BP target from 120 to 115, and shifting smoking from "advised against" to "must quit." This is the <strong>risk-budget</strong> mentality — the same lifestyle interventions yield higher marginal benefit in high-Lp(a) individuals. Specific Lp(a)-lowering drugs (pelacarsen, olpasiran) have Phase III readouts in 2025–2026 — testing now puts you in the data pipeline for future therapy access.</div></details>
+
+<details><summary>③ Is intensive BP control (&lt;120) really good for everyone?</summary>
+<div>SPRINT excluded diabetics, prior strokes, and dementia patients and used rigorous AOBP (automated office BP, closer to home BP than standard office readings). <strong>True office "120" in real-world clinics ≈ SPRINT "130."</strong> Side effects of intensive control include hypotensive syncope, falls, transient renal function decline (mostly reversible) — elderly and comorbid populations need individualization. But for healthy middle-aged adults, "I've always been 125/80, no problem" is widely-underestimated cumulative damage — every 10 mmHg SBP reduction is a stable 20% event-rate reduction <strong>across ages and baselines</strong>.</div></details>
+
+<details><summary>④ Is HRV data a triumph of self-quantification or new-age anxiety?</summary>
+<div>Depends on framing. <strong>HRV as input</strong> (today's HRV is low → de-load, sleep, check for infection) = tool serving decision. <strong>HRV as score</strong> (HRV low = I'm unhealthy/lazy) = tool enslaving decision. Whoop/Oura UX leans toward the latter — "Recovery 30%" creates anxiety on top of fatigue you already feel. BigCat-style usage: review the trend once per week + at key decision points (pre-race, prodrome, cycle-phase comparison), <strong>don't stare daily</strong>. When body feel and HRV data disagree, trust the body — HRV is auxiliary.</div></details>
+
+<details><summary>⑤ How do these four metrics integrate into a single "CV longevity dashboard"?</summary>
+<div>Structural recommendation: (1) <strong>Genetic baseline</strong> — Lp(a) once in life + family history; (2) <strong>Cumulative pathology</strong> — CAC (once at intermediate risk ≥40, recheck ≥60) + carotid US; (3) <strong>Active load</strong> — BP (weekly home log + annual ABPM) + ApoB (annual); (4) <strong>Dynamic recovery</strong> — HRV trend + resting HR. The first three set your <strong>risk-curve slope</strong> (long-term); HRV gauges <strong>this week's recovery state</strong> (short-term). Putting them on one sheet + annual review is the essence of Attia "Medicine 3.0" — use data to extend healthspan, instead of chasing disease via symptoms.</div></details>
+</div>
+
+<div class="nav"><a href="index.en.html">← Back to Index</a></div>
+
+</div></body></html>

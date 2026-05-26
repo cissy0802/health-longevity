@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>健康长寿 Day 5 — 心血管长寿</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#f0f7f4;color:#1f3a3d;line-height:1.75}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:48px 0 28px;border-bottom:2px solid #d4e8e0;margin-bottom:36px}
+header .day{display:inline-block;background:#0d6e6e;color:#fff;font-size:0.78rem;font-weight:700;padding:4px 12px;border-radius:12px;letter-spacing:2px;margin-bottom:14px}
+header h1{font-size:1.85rem;font-weight:800;color:#0d6e6e;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:10px;font-size:0.92rem;color:#5a7d7d}
+header .evidence-note{margin-top:14px;display:inline-block;font-size:0.82rem;color:#3aa17e;background:#e6f3ed;padding:6px 14px;border-radius:8px;border-left:3px solid #3aa17e}
+.card{background:#fff;border-radius:14px;padding:28px 26px;margin-bottom:24px;box-shadow:0 2px 14px rgba(13,110,110,0.08);border-top:4px solid #3aa17e}
+.card .name{font-size:1.25rem;font-weight:700;color:#0d6e6e;margin-bottom:4px}
+.card .name-en{font-size:0.88rem;color:#5a7d7d;font-style:italic;margin-bottom:10px}
+.card .tag{display:inline-block;font-size:0.72rem;background:#e6f3ed;color:#0d6e6e;padding:3px 10px;border-radius:6px;font-weight:600;margin-bottom:16px;letter-spacing:0.5px}
+.section{margin-top:14px}
+.section .label{font-size:0.8rem;font-weight:700;color:#0d6e6e;letter-spacing:1px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.section .label::before{content:"";display:inline-block;width:3px;height:14px;background:#3aa17e;border-radius:2px}
+.section .content{font-size:0.94rem;color:#2d4d4d;padding-left:9px}
+.conclusion{background:#fff8e6;border-left:4px solid #d4a017;padding:12px 14px;border-radius:6px;font-weight:600;color:#7a5c00}
+.evidence{background:#e8f0fa;border-left:4px solid #4a7ab8;padding:10px 14px;border-radius:6px;font-size:0.88rem;color:#2d4970}
+.protocol{background:#e6f3ed;padding:12px 14px;border-radius:6px;border-left:4px solid #3aa17e}
+.female{background:#fae6ee;padding:10px 14px;border-radius:6px;border-left:4px solid #c2438a;font-size:0.92rem}
+.myth{background:#fae8e6;padding:10px 14px;border-radius:6px;border-left:4px solid #c25543;font-size:0.92rem}
+.ref{font-size:0.85rem;color:#5a7d7d;font-style:italic}
+.tryit{background:#0d6e6e;color:#fff;padding:14px 16px;border-radius:8px;font-size:0.94rem;font-weight:500}
+.tryit .label{color:#a8e0d0;font-size:0.78rem;letter-spacing:2px;margin-bottom:4px;font-weight:700}
+table{width:100%;border-collapse:collapse;margin-top:8px;font-size:0.88rem}
+table th{background:#0d6e6e;color:#fff;padding:8px;text-align:left;font-weight:600}
+table td{padding:8px;border-bottom:1px solid #e0eae5}
+table tr:nth-child(even) td{background:#f5faf8}
+.viz{background:#f5faf8;border-radius:10px;padding:14px;margin-top:10px;overflow-x:auto}
+.viz-caption{font-size:0.78rem;color:#5a7d7d;text-align:center;margin-top:8px;font-style:italic}
+.footer-section{background:#fff;border-radius:14px;padding:26px 24px;margin-bottom:20px;box-shadow:0 2px 14px rgba(13,110,110,0.08);border-left:4px solid #0d6e6e}
+.footer-section h2{font-size:1.1rem;color:#0d6e6e;margin-bottom:14px;letter-spacing:1px}
+.footer-section ul{list-style:none;padding-left:0}
+.footer-section li{padding:7px 0;font-size:0.9rem;border-bottom:1px dashed #e0eae5;color:#2d4d4d}
+.footer-section li:last-child{border-bottom:none}
+details{background:#f5faf8;border-radius:8px;padding:12px 14px;margin-bottom:10px;border-left:3px solid #3aa17e}
+details summary{cursor:pointer;font-weight:600;color:#0d6e6e;font-size:0.95rem;outline:none}
+details[open] summary{margin-bottom:10px}
+details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
+.nav{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid #d4e8e0}
+.nav a{color:#0d6e6e;text-decoration:none;font-weight:600;padding:10px 24px;background:#fff;border-radius:8px;border:1px solid #d4e8e0;display:inline-block;transition:all 0.2s}
+.nav a:hover{background:#0d6e6e;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+</style></head><body><div class="container">
+
+<header>
+<div class="day">DAY 5</div>
+<h1>健康长寿：心血管长寿<br><span style="font-size:1rem;color:#5a7d7d;font-weight:500">Cardiovascular Longevity — CAC, Lp(a), BP Targets, HRV</span></h1>
+<div class="meta">2026-05-26 · BigCat's Vitality Protocol</div>
+<div class="evidence-note">本期证据等级：以 RCT (SPRINT, JUPITER) + 孟德尔随机化 (Lp(a)) + 大型前瞻队列 (MESA, FHS) + Attia「Medicine 3.0」共识为主</div>
+</header>
+
+<div class="card">
+<div class="tag">SUB · 影像筛查 / 一级预防</div>
+<div class="name">CAC 评分：让你「看见」斑块的最强一级预防工具</div>
+<div class="name-en">Coronary Artery Calcium (CAC) — Seeing Plaque Before It Speaks</div>
+
+<div class="section"><div class="label">一句话结论</div>
+<div class="content"><div class="conclusion">一次 100 元、辐射 ~1 mSv 的低剂量 CT，能把心血管 10 年风险预测准确度提升一个量级。<strong>CAC = 0 几乎排除 5 年内心梗</strong>；CAC ≥ 100 即应启动他汀，无论 LDL-C 多「正常」。</div></div></div>
+
+<div class="section"><div class="label">证据等级</div>
+<div class="content"><div class="evidence">大型前瞻队列：MESA 研究（Detrano 2008 <i>NEJM</i>，6,800 人）确立 CAC 对硬终点的独立预测价值，netreclassification 优于传统风险评分。Budoff 2018 (<i>JACC</i>) 15 年随访：CAC=0 全因死亡率比 CAC>400 低 5 倍。ACC/AHA 2018 与 2019 一级预防指南正式把 CAC 纳入「borderline / intermediate 风险」决策工具。CONFIRM 注册研究 (>30,000 人) 验证跨人群一致性。</div></div></div>
+
+<div class="section"><div class="label">科学背景 + 机制</div>
+<div class="content">CAC 直接量化冠状动脉钙化斑块体积（Agatston 评分），是<strong>动脉粥样硬化已经发生</strong>的影像证据。传统风险评分（Framingham、ASCVD Pooled Cohort）基于人口统计预测概率；CAC 测的是个体真实病理负荷——你是在「平均人群」还是已经偏离曲线。机制上钙化是斑块演进的成熟标志（脂质池 → 纤维帽 → 钙化），既反映既往暴露累积，也预测未来事件率。CAC=0 称为「power of zero」：在低-中风险人群中，10 年事件率 < 1%，可允许更宽松的他汀决策（但 < 45 岁不适用，斑块可能尚未钙化）。</div></div></div>
+
+<div class="section"><div class="label">可视化：CAC 评分与风险分层</div>
+<div class="content">
+<div class="viz">
+<svg viewBox="0 0 720 220" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system,'Noto Sans SC',sans-serif">
+<defs><style>.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}.num{font-size:13px;font-weight:800;fill:#fff}</style></defs>
+<text x="60" y="20" class="lbl">CAC 评分（Agatston）与 10 年 ASCVD 风险</text>
+<rect x="60" y="50" width="110" height="60" fill="#3aa17e" rx="6"/>
+<text x="92" y="78" class="num">0</text>
+<text x="80" y="100" class="num" style="font-size:10px">极低风险</text>
+<text x="60" y="130" class="cap">10 年 &lt; 1%</text>
+<text x="60" y="146" class="cap">可暂缓他汀</text>
+<text x="60" y="162" class="cap">5 年后复查</text>
+<rect x="180" y="50" width="110" height="60" fill="#d4a017" rx="6"/>
+<text x="208" y="78" class="num">1–99</text>
+<text x="195" y="100" class="num" style="font-size:10px">轻度</text>
+<text x="180" y="130" class="cap">10 年 ~ 2–7%</text>
+<text x="180" y="146" class="cap">生活方式 +</text>
+<text x="180" y="162" class="cap">中等强度他汀</text>
+<rect x="300" y="50" width="110" height="60" fill="#e8783a" rx="6"/>
+<text x="322" y="78" class="num">100–299</text>
+<text x="320" y="100" class="num" style="font-size:10px">中度</text>
+<text x="300" y="130" class="cap">10 年 ~ 7–15%</text>
+<text x="300" y="146" class="cap">他汀 + ApoB</text>
+<text x="300" y="162" class="cap">&lt; 60 mg/dL</text>
+<rect x="420" y="50" width="110" height="60" fill="#c25543" rx="6"/>
+<text x="445" y="78" class="num">300–999</text>
+<text x="438" y="100" class="num" style="font-size:10px">重度</text>
+<text x="420" y="130" class="cap">10 年 &gt; 15%</text>
+<text x="420" y="146" class="cap">高强度他汀</text>
+<text x="420" y="162" class="cap">+ Ezetimibe</text>
+<rect x="540" y="50" width="120" height="60" fill="#8b2c2c" rx="6"/>
+<text x="572" y="78" class="num">≥ 1000</text>
+<text x="570" y="100" class="num" style="font-size:10px">极重度</text>
+<text x="540" y="130" class="cap">视为二级预防</text>
+<text x="540" y="146" class="cap">ApoB &lt; 50</text>
+<text x="540" y="162" class="cap">+ PCSK9 评估</text>
+<text x="60" y="195" class="cap" style="font-style:italic">注：&lt;45 岁人群 CAC=0 不能排除软斑块（未钙化），需结合 CCTA 或 ApoB 综合判断</text>
+</svg>
+<div class="viz-caption">CAC 是一把「时间显微镜」——把统计学概率变成你血管里的具体数字。</div>
+</div>
+</div></div>
+
+<div class="section"><div class="label">可执行协议</div>
+<div class="content"><div class="protocol">
+<strong>谁应该做：</strong><br>
+• 男性 ≥ 40 岁 / 女性 ≥ 45 岁，传统风险评分为「中等」或不确定<br>
+• 任何年龄有早发 CV 家族史（一级亲属男 &lt;55 / 女 &lt;65）<br>
+• Lp(a) ≥ 50 mg/dL / 糖尿病 / 自身免疫病 / HIV 感染者<br><br>
+<strong>怎么做：</strong><br>
+• 低剂量门控胸部 CT（不打造影剂），扫描 &lt;10 秒，辐射 0.7–1.0 mSv（≈ 一次跨太平洋飞行）<br>
+• 价格 100–600 元；公立医院心内 / 影像科可开<br>
+• 出结果即 Agatston 评分 + 性别年龄百分位（同年龄同性别人群里的位置）<br><br>
+<strong>结果如何用：</strong><br>
+• CAC = 0 + 风险因素少：可推迟他汀 5 年复查（&lt; 45 岁除外）<br>
+• CAC 1–99：低-中强度他汀 + 严格 ApoB 目标 &lt; 80<br>
+• CAC ≥ 100 或 ≥ 同龄 75 百分位：直接视为高危，ApoB &lt; 60，他汀 + 必要时 Ezetimibe<br>
+• <strong>复查间隔</strong>：CAC=0 → 5 年；CAC&gt;0 → 不必频繁复查（治疗目标看 ApoB，不看 CAC 上升速度）
+</div></div></div>
+
+<div class="section"><div class="label">女性特别提示 + 常见误区</div>
+<div class="content"><div class="female">女性 CAC 出现比男性平均晚 7–10 年，绝经前 CAC=0 普遍，但围绝经期后 ApoB 上漂可使钙化加速。SWAN 影像子研究显示绝经过渡期是冠脉钙化「无症状起跑」的关键窗。<strong>女性 CAC &gt; 0 应被视为比同分男性更严重的信号</strong>（同分下女性心梗 / 死亡风险相对更高，Shaw 2008 <i>JACC</i>）。MESA 数据：女性 CAC ≥ 同龄百分位 75% 即应认真考虑他汀，不要因「我没症状」推迟。</div>
+<div class="myth" style="margin-top:8px">误区 1：「CAC 高就说明他汀没用，已经晚了」——恰恰相反，他汀降低斑块脂核与不稳定性（plaque stabilization），即使总钙化分数不降，事件率也下降 25–35%（FOURIER）。<br>误区 2：「CAC=0 就可以放心吃肉」——CAC 反映的是过去，不是未来。Lp(a)、ApoB、生活方式仍决定未来 10 年是否长出新斑块。<br>误区 3：「年轻人不需要做」——&lt; 45 岁敏感度低（软斑块未钙化），CCTA 或 ApoB / Lp(a) 更合适。</div></div></div>
+
+<div class="section"><div class="label">本周一试 + 思考题</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>查询本市三甲医院或体检中心的「冠脉钙化扫描」/「心脏 CT 钙化积分」预约方式与价格。若符合上述「谁应该做」条件，安排在下次年度体检时一起完成（无需禁食，&lt;30 分钟）。<br><br>思考题：传统风险评分给你一个概率（如 8%），CAC 给你一个具体数字（如 47）。前者是「人群」，后者是「你」。你愿意为多看自己一眼，付出 1 mSv 辐射与 300 元吗？</div></div>
+</div>
+
+<div class="card">
+<div class="tag">SUB · 遗传性脂蛋白 / 终身风险</div>
+<div class="name">Lp(a)：一生只查一次的「隐形心梗基因」</div>
+<div class="name-en">Lp(a) — The One-Time Genetic Test Most People Skip</div>
+
+<div class="section"><div class="label">一句话结论</div>
+<div class="content"><div class="conclusion">Lp(a) 是<strong>遗传决定、几乎不受饮食运动影响</strong>的独立 ASCVD 因果因子。约 20% 全球人口数值升高（≥ 50 mg/dL），心梗、主动脉瓣狭窄、缺血性卒中风险翻倍。一生只需测一次，但<strong>绝大多数医生不主动开</strong>。</div></div></div>
+
+<div class="section"><div class="label">证据等级</div>
+<div class="content"><div class="evidence">孟德尔随机化（顶级因果证据）：Kamstrup 2009 (<i>JAMA</i>) 与 Burgess 2018 (<i>JAMA Cardiol</i>) 利用 LPA 基因变异确立 Lp(a) 与心梗、瓣膜钙化的因果关系。EAS 2022 共识声明（Kronenberg）：所有成人一生至少测一次 Lp(a)。UK Biobank 460,000 人队列：Lp(a) 最高五分位心梗风险约 2 倍，与 LDL-C 独立。HORIZON 试验（pelacarsen，反义寡核苷酸）2025 出结果，是首个直接降 Lp(a) 心血管事件 RCT。</div></div></div>
+
+<div class="section"><div class="label">科学背景 + 机制</div>
+<div class="content">Lp(a) = 一颗 LDL 颗粒外加共价连接的 apo(a) 蛋白。apo(a) 结构类似纤溶酶原（plasminogen），干扰纤溶 → 促血栓；同时携带氧化磷脂（OxPL）→ 强促炎促动脉粥样硬化。<strong>LPA 基因决定 70–90% 的血浆 Lp(a) 水平</strong>——出生后基本恒定（±20%），饮食运动他汀效果均很弱（他汀甚至小幅上调）。这是「无症状者最容易被漏的高危标记」。东亚人群整体 Lp(a) 偏低于欧裔，但仍有 10–15% 升高，不应假设「亚洲人不需要查」。</div></div></div>
+
+<div class="section"><div class="label">可执行协议</div>
+<div class="content">
+<table>
+<tr><th>Lp(a) 水平 (mg/dL)</th><th>风险层级</th><th>下游行动</th></tr>
+<tr><td>&lt; 30</td><td>低</td><td>常规管理；一生不必复查</td></tr>
+<tr><td>30–49</td><td>边缘</td><td>更严格控其他可改因子（ApoB &lt; 80，血压 &lt; 120/80）</td></tr>
+<tr><td>50–99</td><td>升高</td><td>ApoB 目标 &lt; 60；考虑 CAC + 颈动脉超声基线</td></tr>
+<tr><td>≥ 100</td><td>显著升高</td><td>ApoB &lt; 50；积极一级预防；筛查一级亲属</td></tr>
+<tr><td>≥ 180 (nmol/L &gt; 430)</td><td>极高</td><td>等同二级预防，PCSK9 抑制剂可降 25–30%；关注未来 pelacarsen 等新药</td></tr>
+</table>
+<div class="protocol" style="margin-top:10px">• 测量单位：mg/dL 与 nmol/L 不可直接换算（颗粒大小差异），优选 nmol/L 报告<br>• 抽血即可，约 100–200 元，无需禁食<br>• 一生一次足够（除非治疗后复评）；结果加入家庭健康档案<br>• 若 ≥ 50 mg/dL：通知一级亲属也检查（70% 遗传）<br>• 现有药物降 Lp(a) 效果：他汀 0%–上调、Niacin 20–25%（副作用大已弃用）、PCSK9i 25–30%、Lp(a) 反义药物（pelacarsen, olpasiran）80%+（仍在 III 期）</div></div></div>
+
+<div class="section"><div class="label">女性特别提示 + 常见误区</div>
+<div class="content"><div class="female">女性 Lp(a) 升高的人群中，<strong>妊娠并发症（先兆子痫、复发性流产）发生率更高</strong>——孕前测一次有家庭计划意义。绝经后 Lp(a) 可轻微上升（10–15%），但仍以遗传决定为主。SWAN 与 WHI 数据：高 Lp(a) 女性绝经过渡期 ASCVD 风险加速，应在围绝经期评估，而非等绝经多年后。MHT 对 Lp(a) 影响中性或轻微降低，不应作为治疗手段。</div>
+<div class="myth" style="margin-top:8px">误区 1：「Lp(a) 高就没办法，查了也白查」——你不能改基因，但你能把所有<strong>可改因子（ApoB、血压、吸烟、体成分）压得更低</strong>，等于把斑块时钟延后 10–20 年。<br>误区 2：「他汀能降 Lp(a)」——基本不能，部分人轻微上调。降 ApoB 仍是他汀价值，但 Lp(a) 需要专门方案。<br>误区 3：「Lp(a) 是亚洲人罕见标记」——东亚整体偏低但分布有重叠，不查就是赌运气。</div></div></div>
+
+<div class="section"><div class="label">本周一试 + 思考题</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>下次抽血加查 <strong>Lp(a)（脂蛋白a）</strong>。多数医院常规体检不含，需主动勾选，约 100–200 元，<strong>一生只需一次</strong>。把结果与 ApoB、CAC 一起存档。<br><br>思考题：若你 Lp(a) = 80 mg/dL（你父母可能也是），你愿意告诉你的孩子让 TA 18 岁后查一次吗？「无法改」的基因信息有没有伦理与心理代价？</div></div>
+</div>
+
+<div class="card">
+<div class="tag">SUB · 血压管理 / 一级预防</div>
+<div class="name">血压目标值：把「正常 120/80」重新校准为「最优 110/70」</div>
+<div class="name-en">Blood Pressure Targets — Recalibrating "Normal" to "Optimal"</div>
+
+<div class="section"><div class="label">一句话结论</div>
+<div class="content"><div class="conclusion">SPRINT 后血压管理目标已从 &lt;140/90 下移到 &lt;130/80（ACC/AHA 2017），但长寿优化目标是 <strong>≤ 120/80（诊室）或 ≤ 115/75（家测/动态）</strong>。诊室单次测量被「白大褂效应」与测量误差污染——家测+ABPM 比诊室更准、更预测硬终点。</div></div></div>
+
+<div class="section"><div class="label">证据等级</div>
+<div class="content"><div class="evidence">里程碑 RCT：SPRINT 2015 (<i>NEJM</i>，9,361 人) 强化降压（收缩压目标 &lt;120 vs &lt;140）使心血管事件下降 25%、全因死亡下降 27%，提前 1 年终止。STEP 2021 (<i>NEJM</i>，中国老年人 8,500 人) 复制结果。荟萃分析 Ettehad 2016 (<i>Lancet</i>，123 RCT，613,000 人)：收缩压每降 10 mmHg，主要心血管事件降 20%，全因死亡降 13%。家测/ABPM 优于诊室：Sega 2005 PAMELA、Hansen 2007 IDACO 大型队列。</div></div></div>
+
+<div class="section"><div class="label">科学背景 + 机制</div>
+<div class="content">血压是<strong>压力 × 暴露时间</strong>的双重负荷：动脉壁承受机械应力 → 内皮功能障碍 → ApoB 颗粒更易渗入 → 加速粥样硬化。同时高压力使心脏后负荷增加 → 左室肥厚 → 舒张功能受损 → 房颤、HFpEF。<strong>夜间血压</strong>是更强的死亡预测因子（Hansen 2011）——正常人夜间应「dipping」≥ 10%，「非杓型」（non-dipper）独立预测心血管死亡。诊室一次测量误差大、白大褂效应可使诊室高出真实 10–20 mmHg，但「mask hypertension」反之——诊室正常、家测/夜间高，反而更危险。家测和 24 小时 ABPM 才是黄金标准。</div></div></div>
+
+<div class="section"><div class="label">可视化：诊室 vs 家测 vs ABPM 阈值</div>
+<div class="content">
+<div class="viz">
+<svg viewBox="0 0 720 230" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system,'Noto Sans SC',sans-serif">
+<defs><style>.axis{stroke:#5a7d7d;stroke-width:1}.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}.bar{opacity:0.85}</style></defs>
+<text x="280" y="20" class="lbl">收缩压阈值 (mmHg) — 不同测量场景</text>
+<line x1="160" y1="40" x2="160" y2="180" class="axis"/>
+<line x1="160" y1="180" x2="700" y2="180" class="axis"/>
+<text x="80" y="70" class="cap">诊室 (Office)</text>
+<text x="80" y="115" class="cap">家测均值 (Home)</text>
+<text x="80" y="160" class="cap">24h ABPM 均值</text>
+<rect x="160" y="55" width="160" height="22" fill="#3aa17e" class="bar"/>
+<text x="265" y="71" style="font-size:11px;fill:#fff;font-weight:700">≤ 120</text>
+<text x="325" y="71" class="cap">长寿最优</text>
+<rect x="160" y="55" width="225" height="22" fill="none" stroke="#d4a017" stroke-width="2"/>
+<text x="390" y="71" class="cap" style="fill:#d4a017">130 高血压阈值 (ACC/AHA)</text>
+<rect x="160" y="100" width="140" height="22" fill="#3aa17e" class="bar"/>
+<text x="240" y="116" style="font-size:11px;fill:#fff;font-weight:700">≤ 115</text>
+<text x="305" y="116" class="cap">长寿最优</text>
+<rect x="160" y="100" width="200" height="22" fill="none" stroke="#d4a017" stroke-width="2"/>
+<text x="365" y="116" class="cap" style="fill:#d4a017">125 家测高血压阈值</text>
+<rect x="160" y="145" width="135" height="22" fill="#3aa17e" class="bar"/>
+<text x="235" y="161" style="font-size:11px;fill:#fff;font-weight:700">≤ 115/120</text>
+<text x="305" y="161" class="cap">日间均值（去除夜间）</text>
+<rect x="160" y="145" width="190" height="22" fill="none" stroke="#d4a017" stroke-width="2"/>
+<text x="355" y="161" class="cap" style="fill:#d4a017">夜间 &lt;110；非杓型 = 风险</text>
+<text x="160" y="205" class="cap" style="font-style:italic">家测/ABPM 比诊室「低 5–10 mmHg」是正常的，因为去除了白大褂效应</text>
+</svg>
+<div class="viz-caption">「诊室 130」≠「真实 130」。多数人诊室高估 5–15 mmHg，少数人「隐匿高血压」反向欠估——只有家测/ABPM 能识别。</div>
+</div>
+</div></div>
+
+<div class="section"><div class="label">可执行协议</div>
+<div class="content"><div class="protocol">
+<strong>测量方法（最常被忽视的部分）：</strong><br>
+• 上臂式电子血压计（手腕式不可靠），CE/FDA 认证<br>
+• 静坐 5 分钟，背靠椅，脚平放，袖带与心脏齐高<br>
+• 每次测 2–3 遍，间隔 1 分钟，取后两次均值<br>
+• 早晚各一次，连续 7 天 → 取后 6 天平均（首日数据弃用）<br><br>
+<strong>目标值（长寿优化，非疾病阈值）：</strong><br>
+• 诊室：≤ 120 / 80<br>
+• 家测均值：≤ 115 / 75<br>
+• 24h ABPM 均值：≤ 115 / 75；夜间均值：&lt; 110 / 65<br>
+• 老年人（≥ 75）SPRINT 子组分析：强化降压仍有获益但跌倒风险微升，需个体化<br><br>
+<strong>非药物 → 药物阶梯：</strong><br>
+• Zone 2 有氧 150 min/周 → SBP 降 5–8 mmHg<br>
+• 钠 &lt; 2300 mg/d（DASH 饮食）→ SBP 降 5–6 mmHg<br>
+• 减重每 1 kg → SBP 降 ~1 mmHg<br>
+• 限酒 &lt; 1 杯/d → SBP 降 3–4 mmHg<br>
+• 一线药物：ACEi/ARB + CCB（亚洲人群 CCB 反应较强）+ 噻嗪类利尿剂；β 受体阻滞剂用于特殊指征（房颤/冠心病），非首选一线
+</div></div></div>
+
+<div class="section"><div class="label">女性特别提示 + 常见误区</div>
+<div class="content"><div class="female">妊娠高血压、先兆子痫显著增加<strong>未来 ASCVD（2–4 倍）、HFpEF（4 倍）与卒中</strong>风险（Bellamy 2007 <i>BMJ</i>，Wu 2017 <i>Circulation</i>），但常被产后系统忽视——产后 5 年内应建立年度血压档案。围绝经期雌激素下降使血管顺应性下降、收缩压加速上升，平均 SBP 在 50 岁后超过同龄男性，但被「我以前血压都很低」的认知惯性掩盖。口服避孕药使 SBP 平均上升 2–4 mmHg，部分敏感人群更显著，开药前应有基线。HFpEF（射血分数保留型心衰）以中老年女性为主，强化降压是少数被证实有效的一级预防手段。</div>
+<div class="myth" style="margin-top:8px">误区 1：「血压低一点没关系，能撑就行」——SPRINT 之前的「常规组」目标恰恰让大量人群停留在「正常但非最优」，结果心血管事件高 25%。<br>误区 2：「只测诊室就够了」——约 15–30% 是白大褂高血压（高估），10–15% 是隐匿高血压（漏诊），不家测就是猜。<br>误区 3：「年轻人血压 130 不用管」——SPRINT 子组、孟德尔随机化都显示<strong>终身暴露累积</strong>对血管的伤害是线性的，越早控制越好。</div></div></div>
+
+<div class="section"><div class="label">本周一试 + 思考题</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>本周买一台上臂式电子血压计（欧姆龙/松下 200–400 元），连续 7 天早晚测量。取后 6 天均值——这是你真实的血压基线，比任何诊室数字更有用。若家测均值 &gt; 125/80，与医生讨论生活方式 + 药物方案。<br><br>思考题：你愿意把「家测均值」而不是「诊室单次」写入你的长期健康档案吗？数据所有权的转移意味着什么？</div></div>
+</div>
+
+<div class="card">
+<div class="tag">SUB · 自主神经 / 心血管复原力</div>
+<div class="name">HRV：自主神经的「电池电量」与训练复原指标</div>
+<div class="name-en">Heart Rate Variability — The Autonomic Nervous System's Battery Gauge</div>
+
+<div class="section"><div class="label">一句话结论</div>
+<div class="content"><div class="conclusion">HRV（心率变异性）反映副交感神经张力与心血管自主调节能力。<strong>HRV 越高 = 自主神经越「灵活」</strong>。它不是诊断工具，但作为<strong>个体内趋势</strong>是最便宜、最连续的心血管 + 训练复原 + 压力监测指标。绝对值无法跨个体比较。</div></div></div>
+
+<div class="section"><div class="label">证据等级</div>
+<div class="content"><div class="evidence">大型队列：Tsuji 1996 (<i>Circulation</i>，Framingham) 与 Dekker 2000 (<i>Circulation</i>，ARIC) 证实低 HRV 独立预测全因 + 心血管死亡。Thayer 2010 (<i>Int J Cardiol</i>) 综述：HRV 关联血压、炎症、葡萄糖代谢、认知功能。运动科学 RCT (Plews 2013, Stanley 2013 <i>Sports Med</i>)：晨起 HRV 引导训练强度比固定计划提升 VO2max 与表现，过度训练 / 病毒感染早期检出。临床应用证据级别 < ApoB/血压（无 RCT 证明「调 HRV」改善硬终点），更适合作为<strong>趋势监测</strong>而非干预目标。</div></div></div>
+
+<div class="section"><div class="label">科学背景 + 机制</div>
+<div class="content">心率不是恒定节拍。每次心搏间隔（R-R interval）微小变化反映自主神经的「双控」：吸气时迷走神经撤回（HR↑），呼气时迷走神经激活（HR↓）——这就是<strong>呼吸性窦性心律不齐 (RSA)</strong>，副交感（迷走）张力的核心表达。常用指标 <strong>RMSSD</strong>（相邻 R-R 差的均方根，主要反映副交感）与 <strong>SDNN</strong>（总变异）。低 HRV = 交感优势 / 副交感抑制 = 慢性应激、过度训练、感染前驱、不良心血管结局的共同表型。心脏在血管对你有要求时能不能「软」下来。<strong>HRV 极个体化</strong>：基因 + 年龄 + 性别 + 训练状态共同决定基线，不能跨人比较——只能跟自己的滚动平均比。</div></div></div>
+
+<div class="section"><div class="label">可视化：HRV 受什么影响</div>
+<div class="content">
+<div class="viz">
+<svg viewBox="0 0 720 230" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system,'Noto Sans SC',sans-serif">
+<defs><style>.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}.up{fill:#3aa17e}.dn{fill:#c25543}</style></defs>
+<text x="60" y="20" class="lbl">提升 HRV ↑（副交感/复原）vs 降低 HRV ↓（交感/损耗）</text>
+<line x1="360" y1="35" x2="360" y2="210" stroke="#d4e8e0" stroke-width="2"/>
+<text x="80" y="55" class="lbl" style="fill:#3aa17e">↑ 提升因素</text>
+<text x="80" y="80" class="cap">• Zone 2 有氧 (慢性)</text>
+<text x="80" y="98" class="cap">• 充足睡眠 7–9h</text>
+<text x="80" y="116" class="cap">• 慢呼吸 5–6 次/分</text>
+<text x="80" y="134" class="cap">• 冷暴露 (适度)</text>
+<text x="80" y="152" class="cap">• 阅读/冥想/与人连接</text>
+<text x="80" y="170" class="cap">• 餐后步行（餐后 HR↓）</text>
+<text x="80" y="188" class="cap">• 训练后 24–48h 内恢复</text>
+<text x="400" y="55" class="lbl" style="fill:#c25543">↓ 降低因素</text>
+<text x="400" y="80" class="cap">• 酒精（晚上 1–2 杯即显著）</text>
+<text x="400" y="98" class="cap">• 睡眠不足 / 入睡晚</text>
+<text x="400" y="116" class="cap">• 急性病 / 感染前驱</text>
+<text x="400" y="134" class="cap">• 过度训练 / 训练后即刻</text>
+<text x="400" y="152" class="cap">• 心理压力 / 情绪冲击</text>
+<text x="400" y="170" class="cap">• 月经周期黄体期（生理性）</text>
+<text x="400" y="188" class="cap">• 高血糖餐 / 暴食</text>
+<text x="60" y="220" class="cap" style="font-style:italic">「连续 3–5 天 HRV 低于个人 7 日均值」= 强信号，应减量、补睡、查感染征兆</text>
+</svg>
+<div class="viz-caption">HRV 是「身体真实状态的低噪音耳麦」——它不诊断病，但提前几天告诉你「今天别加码」。</div>
+</div>
+</div></div>
+
+<div class="section"><div class="label">可执行协议</div>
+<div class="content"><div class="protocol">
+<strong>怎么测：</strong><br>
+• 工具：Whoop / Oura / Garmin / Polar H10 + Elite HRV / Apple Watch（夜间均值最稳）<br>
+• 时机：<strong>晨起静卧 5 分钟</strong>测 RMSSD，或用穿戴设备夜间均值（最少 4 周建立个人基线）<br>
+• 关键不是绝对数字，是<strong>7 日滚动均值 + 当天偏离百分比</strong><br><br>
+<strong>怎么用：</strong><br>
+• 当天 HRV &gt; 7 日均值：可正常或加码训练（HIIT / 抗阻力量日）<br>
+• 当天 HRV 在 7 日均值 ±10%：常规训练<br>
+• 当天 HRV &lt; 7 日均值 &gt; 10%：Zone 2 或瑜伽 / 休息<br>
+• 连续 3–5 天显著低：警惕感染前驱、过度训练、慢性应激累积 → 减量 + 查体<br><br>
+<strong>提升 HRV 的高证据干预：</strong><br>
+• 慢呼吸 6 次/分（约吸 4s / 呼 6s）× 5–10 min/d → 短期内即可观察提升<br>
+• 戒酒（即使 1–2 杯也使夜间 HRV 下降 20–30%）<br>
+• 一致的睡眠时间窗（±30 min）<br>
+• Zone 2 训练（&gt; 4 周）<br>
+• 冷水浴 / 桑拿（适度）<br><br>
+<strong>HRV 不能做什么：</strong><br>
+• 诊断心律失常（看心电图）<br>
+• 跨人比较「我比她高所以更健康」（无意义）<br>
+• 替代 ApoB、血压、CAC 等硬指标
+</div></div></div>
+
+<div class="section"><div class="label">女性特别提示 + 常见误区</div>
+<div class="content"><div class="female">月经周期对 HRV 有<strong>系统性影响</strong>：卵泡期（月经第 1–14 天）HRV 较高、副交感占优；黄体期（排卵后 ~14 天到下次月经）HRV 自然下降 10–15%，伴静息心率上升 2–5 bpm（Tenan 2014）。这是生理性的，不是训练过度。<strong>解读 HRV 趋势时应与周期同步</strong>——黄体期 HRV 低于卵泡期是常态，不应触发减量决策。围绝经期周期紊乱使 HRV 变异性本身波动加大，潮热与睡眠中断使夜间 HRV 显著下降，可作为客观佐证症状负担。怀孕期 HRV 整体下降（生理性血容量与心输出增加），无参考意义。</div>
+<div class="myth" style="margin-top:8px">误区 1：「HRV 越高越好」——极高 HRV 在某些情况（甲状腺功能减退、严重消瘦、特殊心律）反而异常。趋势比绝对值重要。<br>误区 2：「HRV 是健康的金标准」——它是辅助监测工具，不能替代血压、ApoB、CAC 等硬指标，更不能诊断疾病。<br>误区 3：「不同设备测的 HRV 可比」——算法（频域 vs 时域、夜间均值 vs 晨测）差异巨大，<strong>同一设备追踪自己</strong>才有意义。</div></div></div>
+
+<div class="section"><div class="label">本周一试 + 思考题</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>若你已有穿戴设备：导出过去 4 周的 HRV 趋势，画出与训练日 / 饮酒日 / 睡眠不足日的关系。无设备：每晚睡前做 5 分钟慢呼吸（吸 4 秒 / 呼 6 秒），连续 7 天，主观对比白天压力反应。<br><br>思考题：HRV 把「身体感受」变成数字。这是更精准的自我觉察，还是制造新焦虑的工具？数据驱动 vs 身体直觉，你在哪个比例？</div></div>
+</div>
+
+<div class="footer-section">
+<h2>📚 深入资源 — Resources</h2>
+<ul>
+<li>📕 Peter Attia. <i>Outlive: The Science and Art of Longevity</i>. 2023. — 第 7–8 章 ASCVD「Medicine 3.0」全图景：CAC、ApoB、Lp(a)、血压的整合策略</li>
+<li>🎙 The Drive (Peter Attia) #228 with Allan Sniderman — ApoB & Lp(a)；#284 with Ethan Weiss — CAC scoring 临床应用；#185 with Andrew Huberman — HRV 与自主神经</li>
+<li>🎙 Huberman Lab — "Tools to Improve Cardiovascular Health & Performance"，HRV 与冷热刺激实操</li>
+<li>📕 Mary Claire Haver. <i>The New Menopause</i>. 2024. — 围绝经期心血管风险加速窗与干预时序</li>
+<li>📄 SPRINT Research Group. Intensive vs Standard BP Control. <i>NEJM</i>. 2015;373:2103-2116. — 强化降压里程碑 RCT</li>
+<li>📄 Kronenberg F, et al. EAS Lp(a) Consensus Statement. <i>Eur Heart J</i>. 2022;43:3925-3946. — 所有成人一生测一次 Lp(a)</li>
+<li>📄 Detrano R, et al. CAC for CHD Risk Prediction. <i>NEJM</i>. 2008;358:1336-1345. — MESA 关键论文</li>
+<li>📄 Kamstrup PR, et al. Lp(a) & MI Mendelian Randomization. <i>JAMA</i>. 2009;301:2331-2339.</li>
+<li>📄 Thayer JF, et al. HRV and Cardiovascular Risk. <i>Int J Cardiol</i>. 2010;141:122-131.</li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h2>🧠 深入思考 — Reflections</h2>
+
+<details><summary>① CAC = 0 的人是否就「冠脉清白」？</summary>
+<div>不完全。CAC 反映的是<strong>已钙化</strong>斑块。早期软斑块（脂质池、未钙化纤维斑块）可能完全不显示，尤其 &lt;45 岁人群。MESA 与 CONFIRM 数据显示 CAC=0 + 5 年事件率 &lt; 1%，但「5 年」≠「终身」，且急性事件常发生在<strong>非钙化、不稳定斑块</strong>破裂——这就是为什么 ApoB、Lp(a)、生活方式仍然要管。CCTA（冠脉 CT 血管造影）能看到软斑块，辐射略高，适用于 CAC=0 但其他风险因子很强的人群。</div></details>
+
+<details><summary>② Lp(a) 高的人现在没特效药，查它有意义吗？</summary>
+<div>意义不在「治 Lp(a)」，而在<strong>重定标其他可改因子</strong>。Lp(a) 100 mg/dL = 心血管风险翻倍，等价于把 ApoB 上限从 80 拉到 60，把血压目标从 120 拉到 115，把戒烟从「建议」变成「必须」。这是<strong>风险积分制</strong>的思维——同样的生活方式干预，对高 Lp(a) 人群边际收益更高。pelacarsen / olpasiran 等专门降 Lp(a) 药物 III 期数据 2025–2026 陆续公布，可能在 2027 后改变格局。早查 = 早进数据库 = 早受益。</div></details>
+
+<details><summary>③ 强化降压（&lt;120）真的对所有人都好吗？</summary>
+<div>SPRINT 排除了糖尿病、卒中史、痴呆患者，且测量条件严格（AOBP 自动诊室血压，比常规诊室更接近家测）。在<strong>真实诊室测量「120」相当于 SPRINT 的「130」</strong>。强化降压的副作用是低血压晕厥、跌倒、肾功能短期下降（多为可逆），老年人和合并疾病需个体化。但在中年健康人群中，「我血压一向 125/80 不用管」是常被低估的累积风险——同样收缩压每降 10 mmHg，事件率降 20% 是<strong>跨年龄、跨基线</strong>的稳定效应。</div></details>
+
+<details><summary>④ HRV 数据是「自我量化」的胜利还是新型焦虑？</summary>
+<div>取决于使用框架。<strong>把 HRV 当作输入</strong>（今天 HRV 低 → 减量、补睡、查感染）= 工具服务于决策。<strong>把 HRV 当作分数</strong>（HRV 低 = 我不健康/不努力）= 工具反过来奴役决策。Whoop/Oura 的产品设计倾向后者——「Recovery 30%」让你焦虑，但你已经感受到累了。BigCat 风格的用法：每周看一次趋势 + 关键决策点（赛前、生病前驱、月经周期对照），<strong>不每天盯</strong>。身体感觉与 HRV 数据冲突时，相信身体——HRV 是辅助。</div></details>
+
+<details><summary>⑤ 这四个指标如何整合为一个「心血管长寿仪表盘」？</summary>
+<div>结构化建议：(1) <strong>遗传基线</strong>——Lp(a) 一生一次 + 家族史；(2) <strong>累积病理</strong>——CAC（≥40 岁中风险时一次，≥60 复查）+ 颈动脉超声；(3) <strong>主动负荷</strong>——血压（家测周记录 + 年度 ABPM 一次）+ ApoB（年度）；(4) <strong>动态复原</strong>——HRV 趋势 + 静息心率。前三项决定<strong>风险曲线斜率</strong>（长期），HRV 决定<strong>这周的复原状态</strong>（短期）。把它们写进同一张表 + 每年回顾，是 Attia「Medicine 3.0」的本质：用数据延长健康跨度，而不是用症状追赶疾病。</div></details>
+</div>
+
+<div class="nav"><a href="index.html">← 返回首页</a></div>
+
+</div></body></html>
