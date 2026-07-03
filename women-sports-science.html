@@ -30,120 +30,175 @@ body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;backgr
 .dont h3{color:#b23a2e}
 .flag{background:#fdf4e3;border-left:4px solid #d4a017}
 .flag h3{color:#8a6410}
+.info{background:#eef2fb;border-left:4px solid #4a6cb3}
+.info h3{color:#2d4970}
 .box ul{list-style:none;margin:0}
 .box li{position:relative;padding-left:26px;margin-bottom:10px;font-size:0.96rem;color:#33303a}
 .box li:last-child{margin-bottom:0}
 .do li::before{content:"✓";position:absolute;left:0;top:-1px;color:#2f9e63;font-weight:800}
 .dont li::before{content:"✕";position:absolute;left:0;top:-1px;color:#d1493b;font-weight:800}
 .flag li::before{content:"🚩";position:absolute;left:0;top:0;font-size:0.85rem}
+.info li::before{content:"•";position:absolute;left:6px;top:-2px;color:#4a6cb3;font-weight:800}
 .eg{background:#f4f1f7;border-radius:10px;padding:12px 14px;margin-top:12px;font-size:0.92rem;color:#4a4453}
 .eg b{color:#7a1f56}
+.tbl{width:100%;border-collapse:collapse;margin-top:12px;font-size:0.9rem}
+.tbl th{background:#7a1f56;color:#fff;text-align:left;padding:8px 10px;font-weight:700}
+.tbl td{padding:8px 10px;border-bottom:1px solid #eee6ee;vertical-align:top;color:#33303a}
+.tbl tr:nth-child(even) td{background:#faf7fb}
+.tbl .amt{white-space:nowrap;font-weight:700;color:#7a1f56}
 .startnow{background:linear-gradient(135deg,#0d6e6e,#3aa17e);color:#fff;border-radius:16px;padding:26px 24px;margin-bottom:22px}
 .startnow h2{font-size:1.25rem;margin-bottom:14px}
 .startnow ol{margin:0;padding-left:22px}
 .startnow li{margin-bottom:10px;font-size:1rem}
 .startnow li:last-child{margin-bottom:0}
 .note{font-size:0.85rem;color:#7c7688;text-align:center;padding:6px 10px}
-@media(max-width:600px){.tldr{grid-template-columns:1fr}.hero h1{font-size:1.4rem}.sec{padding:22px 18px}}
+.tip{font-size:0.86rem;color:#8a6410;margin-top:8px;padding-left:2px}
+@media(max-width:600px){.tldr{grid-template-columns:1fr}.hero h1{font-size:1.4rem}.sec{padding:22px 18px}.tbl{font-size:0.84rem}.tbl th,.tbl td{padding:7px 7px}}
 </style></head><body><div class="wrap">
 
 <div class="hero">
 <div class="kick">女性运动科学 · SPECIAL</div>
 <h1>女性不是缩小版男性<br>把 Stacy Sims 讲清楚、能照着做</h1>
-<p>网上大多数"高效"训练/饮食建议来自男性研究，照搬到女性常常事倍功半。这页把 Sims 的核心观点翻成"今天就能照做"的具体步骤，并标注每条的证据强弱。</p>
+<p>网上大多数"高效"训练/饮食建议来自男性研究，照搬到女性常常事倍功半。这页把 Sims 的核心观点拆成"练哪些动作、吃什么、吃多少、什么时候吃"的具体步骤，并标注证据强弱。</p>
 <div class="src">来源：Stacy Sims《ROAR》(2016)、《Next Level》(2022)</div>
 </div>
 
 <div class="tldr">
-<div class="t"><b>1 · 别照搬男性套路</b><span>吃够、练重、补铁/维 D。女性不会因练力量变壮。</span></div>
-<div class="t"><b>2 · 顺周期是框架不是铁律</b><span>按当天状态调整，别把 App 的周期公式当命令。</span></div>
-<div class="t"><b>3 · 最怕"没吃够"</b><span>别空腹硬练、别长期断食+低碳，先把能量和蛋白吃够。</span></div>
-<div class="t"><b>4 · 围绝经期要练更重</b><span>大重量+爆发+高蛋白+肌酸，而不是越练越轻。</span></div>
+<div class="t"><b>1 · 练重，而不是练轻</b><span>每周 2–3 次大重量力量，具体动作与组次见下。</span></div>
+<div class="t"><b>2 · 顺周期是框架不是铁律</b><span>按当天状态调，别把 App 的周期公式当命令。</span></div>
+<div class="t"><b>3 · 先吃够蛋白</b><span>每公斤 1.6–2.2g；一顿 30g≈一掌心肉/10 只大虾/1 勺乳清。</span></div>
+<div class="t"><b>4 · 补剂就 3 样打底</b><span>肌酸每天 3–5g、维 D、缺才补铁；细节见补剂表。</span></div>
 </div>
 
 <div class="sec">
-<h2><span class="n">1</span>女性不是缩小版男性</h2>
-<p class="lead">你刷到的很多"高效方案"——空腹晨跑、生酮、只做有氧、小重量高次数——大多基于男性研究，或本就是给男性设计的。女性的激素、代谢、体温、恢复都不同，直接照搬常常没效果，甚至打乱月经、掉肌肉。</p>
-<p class="lead">好消息是：真正对女性有用的三件事，反而是最常被忽略的——<strong>吃够、练重、补齐铁和维 D</strong>。</p>
-<span class="ev mid">证据：方向明确，具体处方仍在积累</span>
-<div class="box do"><h3>✅ 这样做</h3>
+<h2><span class="n">1</span>力量：具体练哪些、练几组</h2>
+<p class="lead">别再"随便举举小哑铃"。每周做 <b>2–3 次全身力量</b>（隔天一次），以大肌群复合动作为主。下面是一堂可直接照做的全身课：</p>
+<table class="tbl">
+<tr><th>动作</th><th>组 × 次</th><th>练到哪</th></tr>
+<tr><td>高脚杯深蹲（抱一只哑铃）</td><td class="amt">3 × 8–12</td><td>腿 + 臀</td></tr>
+<tr><td>杠铃 / 哑铃臀推</td><td class="amt">3 × 8–12</td><td>臀</td></tr>
+<tr><td>哑铃罗马尼亚硬拉</td><td class="amt">3 × 10</td><td>大腿后侧 + 臀</td></tr>
+<tr><td>哑铃单臂划船（或坐姿绳索划船）</td><td class="amt">3 × 10–12/侧</td><td>背</td></tr>
+<tr><td>哑铃卧推（或俯卧撑）</td><td class="amt">3 × 8–12</td><td>胸 + 肩</td></tr>
+<tr><td>哑铃站姿肩推</td><td class="amt">3 × 10</td><td>肩</td></tr>
+<tr><td>侧平举</td><td class="amt">3 × 12–15</td><td>肩（线条）</td></tr>
+</table>
+<span class="ev mid">证据：方向明确；女性对力量训练适应良好且必要</span>
+<div class="box do"><h3>✅ 关键细节</h3>
 <ul>
-<li><b>力量优先</b>：每周 2–3 次抗阻训练，以大肌群复合动作为主（深蹲、硬拉、推、拉、划船）。</li>
-<li><b>重量要够</b>：选"做 6–12 次就明显吃力"的重量，而不是随便举举的小哑铃；女性睾酮低，练力量只会更紧致，不会变"金刚芭比"。</li>
-<li><b>补两块最常缺的营养</b>：铁（尤其经量大）和维生素 D。不确定就查一次血——铁蛋白、25(OH)D。</li>
-<li><b>停用"男性默认"</b>：空腹晨练、动辄断食、只做有氧——下面几节逐个替换。</li>
+<li><b>选多重</b>：选一个"最后 2 次很吃力、但动作不变形"的重量。能轻松超过次数上限，下次就加重（哑铃加 1–2kg，或多做一组）。</li>
+<li><b>组间休息</b>：大动作 60–90 秒，喘匀再下一组。</li>
+<li><b>频率</b>：每周 2–3 次，隔天做；同一课练全身，比每天只练一个部位更适合大多数人。</li>
+<li><b>动作示范 / 居家版</b>：点站内「女性训练计划」页，每个动作都有火柴人图和器械/居家两种做法。</li>
 </ul></div>
 </div>
 
 <div class="sec">
-<h2><span class="n">2</span>顺着月经周期练——当框架，别当铁律</h2>
-<p class="lead">大致规律：<b>月经开始到排卵</b>（前半程）通常精力好、扛得住大强度；<b>排卵后到下次月经</b>（后半程，也就是经前那一周左右）激素升高，可能体温偏高、更容易累、睡不好、更想吃碳水。可以据此微调——但每个人差异很大，别把手机 App 的"周期公式"当命令。</p>
-<span class="ev mid">证据：会影响状态（有机制）；但"严格按周期周期化训练能提分"证据弱</span>
+<h2><span class="n">2</span>顺着月经周期练——框架，不是铁律</h2>
+<p class="lead">大致规律：<b>月经到排卵</b>（前半程）精力好、扛得住大强度；<b>排卵到下次月经</b>（后半程，经前那一周左右）激素升高，可能体温偏高、更容易累、睡不好、更想吃碳水。可据此微调——但个体差异大，别把 App 的"周期公式"当命令。</p>
+<span class="ev mid">证据：会影响状态（有机制）；"严格按周期周期化训练能提分"证据弱</span>
 <div class="box do"><h3>✅ 这样做</h3>
 <ul>
-<li><b>先记录、后调整</b>：每天花 10 秒记一句「精力 / 睡眠 / 训练感受」＋今天是月经第几天。两三个月后你会看到自己的规律，比任何通用公式都准。</li>
-<li><b>按状态走，不按日历</b>：状态好就安排大重量或冲刺；状态差就降成轻松有氧或技术练习，别硬扛。</li>
-<li><b>经前那一周三件小事</b>：每餐多 5–10g 蛋白；硬训练前后加点碳水；多喝水、适当补钠（出汗多时一撮盐/电解质）。睡不好就早点上床。</li>
-<li><b>月经量大就重点补铁</b>：红肉 / 动物肝 / 豆类，配维 C 帮吸收；表现莫名下滑先查铁蛋白。</li>
+<li><b>先记录</b>：每天 10 秒记「精力/睡眠/训练感受」＋月经第几天，两三个月找出自己的规律。</li>
+<li><b>按状态走</b>：状态好 → 安排最重的力量或冲刺；状态差 → 降成轻松有氧或技术练习，别硬扛。</li>
+<li><b>经前一周三件小事</b>：每餐多 5–10g 蛋白；硬训练前后加点碳水；多喝水 + 出汗多时补钠（一撮盐或一包电解质）。</li>
+<li><b>月经量大就补铁的食物</b>：一掌心红肉、或 1 份动物肝（每周 1–2 次）、或一碗豆类，配维 C（如彩椒、橙子）帮吸收。</li>
 </ul></div>
-<div class="eg"><b>特别提示：</b>吃复方避孕药的人没有自然的激素波动，别硬套"卵泡/黄体"分期，纯按当天体感走即可。</div>
+<div class="eg"><b>提示：</b>吃复方避孕药的人没有自然激素波动，别套"卵泡/黄体"，纯按体感走。</div>
 </div>
 
 <div class="sec">
-<h2><span class="n">3</span>先吃够，再谈其他——空腹与断食的坑</h2>
-<p class="lead">这是 Sims 最强调、证据也最硬的一条：活跃女性一旦长期"吃得比消耗少太多"，身体会关掉"非必需"功能——先牺牲月经、骨骼、甲状腺、免疫。<b>空腹晨练 + 间歇性断食 + 低碳</b>三件套叠在一起，最容易出事（医学上叫 RED-S，运动中相对能量不足）。</p>
+<h2><span class="n">3</span>先吃够蛋白——换算成"看得懂的份量"</h2>
+<p class="lead">这是 Sims 最强调、证据也最硬的一条：活跃女性长期"吃得比消耗少"，身体会先牺牲月经、骨骼、甲状腺、免疫（医学上叫 RED-S）。第一步不是少吃，而是<b>把蛋白吃够</b>。</p>
 <span class="ev strong">证据：强（RED-S 是国际共识的真实综合征）</span>
-<div class="box do"><h3>✅ 这样做</h3>
+
+<div class="box info"><h3>🎯 你一天要吃多少蛋白？</h3>
 <ul>
-<li><b>别空腹硬练</b>：训练前 30–60 分钟吃点好消化的碳水＋一点蛋白。举例：半根香蕉＋一勺乳清；或一片吐司＋酸奶；晨练来不及就几口蜂蜜水/一根能量胶。</li>
-<li><b>蛋白记住这个数</b>：每天每公斤体重 1.6–2.2g。60kg 约 100–130g，分 3–4 餐、每餐 30–40g。</li>
-<li><b>硬训练日加碳水</b>：米饭/面/土豆/水果，围绕训练吃；别在大运动量的日子还叠低碳或断食。</li>
-<li><b>练后补一顿</b>：训练后 30–60 分钟内吃含 30–40g 蛋白＋碳水的正餐或加餐。</li>
+<li>目标：每公斤体重 <b>1.6–2.2g</b>，分 3–4 餐、每餐 30–40g。</li>
+<li>50kg → 约 <b>85–110g/天</b>；60kg → 约 <b>100–130g/天</b>；70kg → 约 <b>115–155g/天</b>。</li>
 </ul></div>
-<div class="eg"><b>一餐 30g 蛋白长这样：</b>一掌心鸡胸/鱼/瘦肉；或 1 盒（150g）希腊酸奶＋2 个蛋；或一勺乳清＋一杯牛奶；或一整块（约 200g）北豆腐＋一把毛豆。</div>
-<div class="box flag"><h3>🚩 自查：是不是"没吃够"</h3>
+
+<table class="tbl">
+<tr><th>一顿约 30g 蛋白 =</th><th>大约份量</th></tr>
+<tr><td>鸡胸 / 低脂牛肉 / 鱼（熟）</td><td class="amt">一掌心（约 100g）</td></tr>
+<tr><td>大虾</td><td class="amt">约 10–12 只</td></tr>
+<tr><td>三文鱼 / 金枪鱼</td><td class="amt">一掌心（约 120g）</td></tr>
+<tr><td>鸡蛋</td><td class="amt">4–5 个</td></tr>
+<tr><td>希腊酸奶</td><td class="amt">1 大盒（约 170g）+ 1 个蛋</td></tr>
+<tr><td>北豆腐 + 毛豆</td><td class="amt">半块（约 200g）+ 1 把</td></tr>
+<tr><td>乳清蛋白粉</td><td class="amt">1 勺（约 25g）+ 1 杯牛奶</td></tr>
+</table>
+
+<div class="box do"><h3>✅ 练前 / 练后怎么吃</h3>
+<ul>
+<li><b>练前 30–60 分钟</b>（别空腹硬练）：好消化的碳水 + 一点蛋白。例：半根香蕉 + 1 勺乳清；或 1 片吐司 + 1 个蛋；晨练赶时间就几口蜂蜜水 / 1 根能量胶。</li>
+<li><b>练后 1–2 小时内</b>：30–40g 蛋白 + 碳水。例：鸡胸 + 一碗米饭；或乳清 + 香蕉；或三文鱼 + 土豆。</li>
+<li><b>每餐都凑够 30g</b>：早餐最容易缺——加 2 个蛋或 1 盒希腊酸奶就补上了。</li>
+</ul></div>
+
+<div class="box flag"><h3>🚩 自查：是不是"没吃够"（占 2 条以上要重视）</h3>
 <ul>
 <li>月经变少或停经</li>
 <li>总是累、易怒、睡不好</li>
-<li>频繁小伤小病、老是感冒</li>
+<li>频繁小伤小病、老感冒</li>
 <li>力量停滞甚至下降、易骨折</li>
 </ul>
-<p style="font-size:0.9rem;color:#8a6410;margin-top:8px;padding-left:2px">占 2 条以上就要认真对待，先把"吃够"补上；持续停经务必就医。</p></div>
-<div class="box dont"><h3>🚫 别做</h3>
+<p class="tip">持续停经务必就医。想减脂也别靠饿——足量蛋白 + 练重 + 温和缺口才可持续。</p></div>
+</div>
+
+<div class="sec">
+<h2><span class="n">4</span>围绝经期 / 更年期——练更重的一周模板</h2>
+<p class="lead">雌激素下降后，肌肉更难长、骨头流失更快、肚子更容易堆脂肪、恢复变慢。这时最该做的是<b>更强</b>的刺激，而不是改成散步和瑜伽。直接照这个一周表做：</p>
+<span class="ev strong">证据：抗阻+蛋白+肌酸较强；冲刺/跳跃的精确剂量偏推论</span>
+<table class="tbl">
+<tr><th>这一天</th><th>练什么</th></tr>
+<tr><td><b>周一 · 力量 A</b></td><td>深蹲 4×5–8 · 哑铃卧推 3×6–8 · 坐姿划船 3×8–10 · 跳箱/原地跳 3×5</td></tr>
+<tr><td><b>周三 · 冲刺</b></td><td>快跑或单车冲刺 20–30 秒 × 6–8 组（组间走 2 分钟）</td></tr>
+<tr><td><b>周五 · 力量 B</b></td><td>罗马尼亚硬拉 4×6–8 · 哑铃肩推 3×8 · 高位下拉 3×8–10 · 跳绳 3×30 秒</td></tr>
+<tr><td>其余日</td><td>散步/轻活动 + 拉伸；睡够</td></tr>
+</table>
+<div class="box do"><h3>✅ 配套</h3>
 <ul>
-<li>长期空腹晨练</li>
-<li>把间歇性断食和大运动量叠在一起</li>
-<li>为减脂把碳水砍到很低——女性激素会先受害</li>
+<li><b>蛋白</b>：拉到上限（每公斤约 2.0–2.2g），每餐 30–40g（照上一节的份量表）。</li>
+<li><b>肌酸</b>：每天 <b>3–5g</b>，任何时间、天天吃（详见下一节）。</li>
+<li><b>护关节</b>：跳跃动作只在膝踝无伤时做；有旧伤就换成快走上坡 / 台阶。</li>
+<li><b>激素治疗（MHT）</b>：是否用请单独问医生，和"练重量"不冲突、可并行。</li>
 </ul></div>
 </div>
 
 <div class="sec">
-<h2><span class="n">4</span>围绝经期 / 更年期——练更重，不是更轻</h2>
-<p class="lead">雌激素下降后，肌肉更难长、骨头流失更快、脂肪更容易堆在肚子、恢复也变慢。很多人这时改成"多散步、多瑜伽、少举重"——恰恰相反。这个阶段最该做的是给身体<b>更强</b>的刺激。</p>
-<span class="ev strong">证据：抗阻+蛋白+肌酸较强；冲刺/跳跃的精确剂量偏推论</span>
-<div class="box do"><h3>✅ 这样做（一周模板示例）</h3>
+<h2><span class="n">5</span>补剂：吃什么、吃多少、什么时候</h2>
+<p class="lead">先说结论：<b>地基是"吃够 + 练重 + 睡好"，补剂只是补充。</b>别一上来买一堆。真正值得的就下面这几样：</p>
+<table class="tbl">
+<tr><th>补剂</th><th>吃多少</th><th>什么时候</th><th>说明</th></tr>
+<tr><td><b>肌酸</b>（一水肌酸）</td><td class="amt">每天 3–5g</td><td>任何时间，<b>天天坚持</b></td><td>证据最硬；女性肌肉和大脑都受益，安全，<b>无需"冲击期"</b>；围绝经期尤其推荐</td></tr>
+<tr><td><b>蛋白粉</b>（乳清/植物）</td><td class="amt">每次约 25g</td><td>练后或加餐凑蛋白</td><td>只是"补足口粮"的工具，吃够真食物也行，不是必须</td></tr>
+<tr><td><b>维生素 D3</b></td><td class="amt">1000–2000 IU/天</td><td>随含脂肪的一餐</td><td>缺乏很常见（少晒太阳）；<b>最好先查血 25(OH)D</b> 再定量</td></tr>
+<tr><td><b>铁</b></td><td class="amt">仅缺铁时，遵医嘱</td><td>空腹或配维 C，避开咖啡/茶/钙</td><td><b>别盲补</b>（过量有害）；经量大 / 铁蛋白低才补，隔天吃吸收更好</td></tr>
+<tr><td>Omega-3 鱼油（可选）</td><td class="amt">1–2g EPA+DHA</td><td>随餐</td><td>平时很少吃鱼可考虑</td></tr>
+<tr><td>镁·甘氨酸镁（可选）</td><td class="amt">200–400mg</td><td>睡前</td><td>助眠/缓解抽筋，证据较弱，锦上添花</td></tr>
+</table>
+<span class="ev strong">证据：肌酸/维 D（缺乏时）较强；鱼油、镁为可选</span>
+<div class="box dont"><h3>🚫 别踩的坑</h3>
 <ul>
-<li><b>2 次大重量力量</b>：复合动作为主（深蹲/硬拉/卧推/划船/推举），每个动作 3–4 组 × 5–8 次，重量选到最后 1–2 次很吃力。</li>
-<li><b>1 次冲刺间歇</b>：快跑或单车冲刺 20–30 秒 × 6–8 组，组间充分休息——比长时间慢跑更值。</li>
-<li><b>护骨跳跃</b>：每次力量后加 2–3 组跳跃/落地（原地跳、跳箱、跳绳），膝踝无伤才做。</li>
-<li><b>蛋白拉到上限</b>：每公斤 1.6–2.2g；<b>每天肌酸 3–5g</b>（任何时间、无需"冲击期"，对女性肌肉和大脑都有益且安全）。</li>
-<li><b>睡眠优先</b>：别把训练堆成慢性疲劳；减少无目的的长时间慢有氧。</li>
+<li>不查血就长期大剂量补铁——过量伤肝、伤肠胃。</li>
+<li>指望某个"燃脂/抗衰"网红补剂替代吃够和练重——没有捷径。</li>
+<li>把一堆补剂当正餐——先把三餐蛋白吃够，再谈补充。</li>
 </ul></div>
-<div class="eg"><b>关于激素治疗（MHT）：</b>是否用请单独和医生讨论，它与"练重量"这条不冲突、可以并行。</div>
 </div>
 
 <div class="startnow">
 <h2>🚀 这周就做这 5 件</h2>
 <ol>
-<li>把 1 次"随便动动"换成一堂正经的大重量力量课。</li>
-<li>训练前吃一点，别再空腹硬练。</li>
-<li>从今天起，每餐凑够约 30g 蛋白。</li>
+<li>做 1 堂上面的全身力量课，重量选到最后 2 次很吃力。</li>
+<li>练前吃一点（半根香蕉 + 1 勺乳清），别再空腹硬练。</li>
+<li>每餐凑够约 30g 蛋白（对照份量表：一掌心肉 / 10 只大虾 / 1 盒希腊酸奶+蛋）。</li>
+<li>开始每天 3–5g 肌酸；不确定维 D 就去查个血。</li>
 <li>每天记一句「精力/睡眠/训练」＋月经第几天。</li>
-<li>（围绝经期）加每天 3–5g 肌酸 ＋ 一次冲刺间歇。</li>
 </ol>
 </div>
 
-<div class="note">本页为循证科普整理，不替代个体化医疗建议。若有停经、疑似 RED-S、关节伤病或慢性病，请先咨询专业人士。</div>
+<div class="note">本页为循证科普整理，不替代个体化医疗建议。补剂剂量为一般范围，服药或有慢性病者请先咨询医生/药师；有停经、疑似 RED-S、关节伤病请先就医。</div>
 
 <script src="https://cissy0802.github.io/comments.js" defer></script>
 <script src="https://cissy0802.github.io/search.js" defer></script>
