@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Longevity Day 62 — Alcohol &amp; Health</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#f0f7f4;color:#1f3a3d;line-height:1.75}
+.container{max-width:820px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;padding:48px 0 28px;border-bottom:2px solid #d4e8e0;margin-bottom:36px}
+header .day{display:inline-block;background:#0d6e6e;color:#fff;font-size:0.78rem;font-weight:700;padding:4px 12px;border-radius:12px;letter-spacing:2px;margin-bottom:14px}
+header h1{font-size:1.85rem;font-weight:800;color:#0d6e6e;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:10px;font-size:0.92rem;color:#5a7d7d}
+header .evidence-note{margin-top:14px;display:inline-block;font-size:0.82rem;color:#3aa17e;background:#e6f3ed;padding:6px 14px;border-radius:8px;border-left:3px solid #3aa17e}
+.card{background:#fff;border-radius:14px;padding:28px 26px;margin-bottom:24px;box-shadow:0 2px 14px rgba(13,110,110,0.08);border-top:4px solid #3aa17e}
+.card .name{font-size:1.25rem;font-weight:700;color:#0d6e6e;margin-bottom:4px}
+.card .name-en{font-size:0.88rem;color:#5a7d7d;font-style:italic;margin-bottom:10px}
+.card .tag{display:inline-block;font-size:0.72rem;background:#e6f3ed;color:#0d6e6e;padding:3px 10px;border-radius:6px;font-weight:600;margin-bottom:16px;letter-spacing:0.5px}
+.section{margin-top:14px}
+.section .label{font-size:0.8rem;font-weight:700;color:#0d6e6e;letter-spacing:1px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.section .label::before{content:"";display:inline-block;width:3px;height:14px;background:#3aa17e;border-radius:2px}
+.section .content{font-size:0.94rem;color:#2d4d4d;padding-left:9px}
+.conclusion{background:#fff8e6;border-left:4px solid #d4a017;padding:12px 14px;border-radius:6px;font-weight:600;color:#7a5c00}
+.evidence{background:#e8f0fa;border-left:4px solid #4a7ab8;padding:10px 14px;border-radius:6px;font-size:0.88rem;color:#2d4970}
+.protocol{background:#e6f3ed;padding:12px 14px;border-radius:6px;border-left:4px solid #3aa17e}
+.female{background:#fae6ee;padding:10px 14px;border-radius:6px;border-left:4px solid #c2438a;font-size:0.92rem}
+.myth{background:#fae8e6;padding:10px 14px;border-radius:6px;border-left:4px solid #c25543;font-size:0.92rem;margin-top:8px}
+.ref{font-size:0.85rem;color:#5a7d7d;font-style:italic}
+.tryit{background:#0d6e6e;color:#fff;padding:14px 16px;border-radius:8px;font-size:0.94rem;font-weight:500}
+.tryit .label{color:#a8e0d0;font-size:0.78rem;letter-spacing:2px;margin-bottom:4px;font-weight:700}
+table{width:100%;border-collapse:collapse;margin-top:8px;font-size:0.88rem}
+table th{background:#0d6e6e;color:#fff;padding:8px;text-align:left;font-weight:600}
+table td{padding:8px;border-bottom:1px solid #e0eae5}
+table tr:nth-child(even) td{background:#f5faf8}
+.chart{margin:12px 0 4px;text-align:center}
+.chart svg{max-width:100%;height:auto}
+.chart .cap{font-size:0.78rem;color:#5a7d7d;margin-top:6px}
+.think summary{cursor:pointer;font-weight:600;color:#0d6e6e;padding:10px 0;font-size:0.95rem}
+.think details{border-bottom:1px solid #e0eae5}
+.think div{font-size:0.9rem;color:#2d4d4d;padding:4px 0 14px 8px}
+.nav{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid #d4e8e0}
+.nav a{color:#0d6e6e;text-decoration:none;font-weight:600;padding:10px 24px;background:#fff;border-radius:8px;border:1px solid #d4e8e0;display:inline-block;transition:all 0.2s}
+.nav a:hover{background:#0d6e6e;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+</style></head><body><div class="container">
+
+<header>
+<div class="day">DAY 62</div>
+<h1>Longevity: Alcohol &amp; Health<br><span style="font-size:1rem;color:#5a7d7d;font-weight:500">Debunking the "Moderate Drinking Is Good for You" Myth</span></h1>
+<div class="meta">2026-07-18 · BigCat's Vitality Protocol</div>
+<div class="evidence-note">This issue dismantles the most widely believed health "fact": that moderate drinking helps. Drawing on Mendelian randomization + large cohorts, we look at alcohol's real dose-risk curve.</div>
+</header>
+
+<div class="card">
+<div class="tag">SUB · Causal Inference / Dose-Response</div>
+<div class="name">The J-Curve Is Dead — "Moderate Drinking Protects the Heart" Is a Statistical Artifact</div>
+
+<div class="section"><div class="label">One-Line Takeaway</div>
+<div class="content"><div class="conclusion">The J-curve behind "a glass of red wine a day protects the heart" comes mainly from <strong>the sick-quitter bias</strong>. Once you use genes as a natural randomizer, alcohol and cardiovascular risk rise almost <strong>monotonically</strong> — the intake that minimizes total health loss is <strong>zero</strong>.</div></div></div>
+
+<div class="section"><div class="label">Evidence Grade</div>
+<div class="content"><div class="evidence">Mendelian randomization + large cohorts: Millwood 2019 (Lancet), using China Kadoorie Biobank's 500,000 people and ALDH2/ADH1B variants as instrumental variables, showed blood pressure and stroke rise <strong>linearly</strong> with genetically predicted alcohol exposure — no protective inflection. Systematic review: Zhao 2023 (JAMA Netw Open), 107 studies, found the "protection" of light drinking vanishes after correcting for sick-quitter bias. GBD 2016 (Lancet 2018): "no safe level of alcohol."</div></div></div>
+
+<div class="section"><div class="label">Science + Mechanism</div>
+<div class="content">The J-curve (light drinkers having the lowest mortality) is almost entirely a <strong>"sick-quitter" artifact</strong>: many "zero-alcohol" control groups are contaminated with people who quit because they were already ill, inflating the control group's mortality and making "moderate" drinkers look healthier. <strong>Mendelian randomization</strong> sidesteps this trap — gene variants are randomly assigned at conception and unlinked to lifestyle confounders; use them to predict lifetime alcohol exposure and red wine's "protection" disappears.
+<div class="chart">
+<svg viewBox="0 0 320 190" role="img" aria-label="Comparison of the mythical J-curve and the true monotonic risk curve">
+<line x1="45" y1="150" x2="300" y2="150" stroke="#9fb2ae" stroke-width="1.5"/>
+<line x1="45" y1="20" x2="45" y2="150" stroke="#9fb2ae" stroke-width="1.5"/>
+<text x="14" y="55" font-size="10" fill="#5a7d7d" transform="rotate(-90 14,90)">Relative risk</text>
+<text x="150" y="175" font-size="10" fill="#5a7d7d">Daily alcohol intake →</text>
+<path d="M45,95 C90,120 120,118 150,110 C200,96 250,60 300,28" fill="none" stroke="#c25543" stroke-width="2.5"/>
+<path d="M45,120 C110,112 190,90 300,32" fill="none" stroke="#0d6e6e" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="120" cy="118" r="3.5" fill="#c25543"/>
+<text x="126" y="132" font-size="9" fill="#c25543">myth "sweet spot"</text>
+<text x="150" y="52" font-size="10" fill="#c25543" font-weight="700">— Old J-curve (biased)</text>
+<text x="150" y="68" font-size="10" fill="#0d6e6e" font-weight="700">┅ True curve (corrected)</text>
+</svg>
+<div class="cap">▲ Once the sick-quitter bias is removed, the fake "protective dip" disappears — risk climbs from the first drink</div>
+</div></div></div>
+
+<div class="section"><div class="label">Actionable Protocol</div>
+<div class="content">
+<table>
+<tr><th>Drinks/week</th><th>Risk profile</th></tr>
+<tr><td>0</td><td>Minimizes total health loss</td></tr>
+<tr><td>1–7</td><td>Measurable rise in cancer risk; no net cardiovascular benefit</td></tr>
+<tr><td>7–14</td><td>Clear buildup of AFib, hypertension, brain atrophy risk</td></tr>
+<tr><td>&gt;14</td><td>Steep rise in liver, heart, brain and multi-site cancer risk</td></tr>
+</table>
+<div class="protocol" style="margin-top:10px">1 standard drink ≈ 10–14 g pure alcohol ≈ 350 ml beer / 150 ml wine / 45 ml spirits. Don't treat "moderate" as a target — treat it as a <strong>ceiling</strong>; less is better, zero is safest.</div></div></div>
+
+<div class="section"><div class="label">Note for Women</div>
+<div class="content"><div class="female">At the same intake, women reach higher blood alcohol levels (less body water, lower gastric ADH activity). Breast cancer risk rises <strong>linearly from about 10 g alcohol/day</strong>, with no safe lower bound (Allen 2009, Million Women Study). In perimenopause, drinking also worsens hot flashes and disrupts already-fragile sleep.</div></div></div>
+
+<div class="section"><div class="label">Common Myths</div>
+<div class="content"><div class="myth">Myth 1: "The resveratrol in red wine is anti-aging" — reaching the doses used in animal studies would mean hundreds of bottles a day; the harm of the alcohol far outweighs resveratrol's hypothetical benefit.<br>Myth 2: "My heart's fine, a little won't hurt" — the cardiovascular "protection" of the J-curve is itself an artifact, and cancer risk rises regardless.</div></div></div>
+
+<div class="section"><div class="label">Key References</div>
+<div class="content"><div class="ref">• Millwood IY, et al. Lancet. 2019;393(10183):1831-1842.<br>• Zhao J, et al. JAMA Netw Open. 2023;6(3):e236185.<br>• GBD 2016 Alcohol Collaborators. Lancet. 2018;392(10152):1015-1035.</div></div></div>
+
+<div class="section"><div class="label">This Week + Reflection</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Count how many standard drinks you actually had this week. <strong>Reflection</strong>: if "moderate drinking protects the heart" is an artifact, what's the real reason you keep drinking — social, relaxation, or habit? Naming it is the start of finding an alternative.</div></div>
+</div>
+</div>
+
+<div class="card">
+<div class="tag">SUB · Metabolism / Carcinogenesis</div>
+<div class="name">Acetaldehyde &amp; Cancer — A Group 1 Carcinogen, Especially for East Asians</div>
+
+<div class="section"><div class="label">One-Line Takeaway</div>
+<div class="content"><div class="conclusion">Alcohol is an IARC-designated <strong>Group 1 carcinogen</strong>, on par with tobacco and asbestos. The real culprit is the metabolite <strong>acetaldehyde</strong> — especially dangerous for East Asians carrying an ALDH2 mutation (the "drinking flush").</div></div></div>
+
+<div class="section"><div class="label">Evidence Grade</div>
+<div class="content"><div class="evidence">Mechanistic studies + large cohorts: IARC Monograph Vol 100E classifies alcoholic beverages as a Group 1 carcinogen. Yokoyama's series shows that ALDH2-deficient people who keep drinking can face 6–10× the esophageal squamous cell carcinoma risk.</div></div></div>
+
+<div class="section"><div class="label">Science + Mechanism</div>
+<div class="content">Ethanol is oxidized by <strong>ADH</strong> into <strong>acetaldehyde</strong>, then converted by <strong>ALDH2</strong> into harmless acetate. Acetaldehyde forms DNA adducts and induces mutations — a key step in carcinogenesis. Roughly 350–500 million East Asians carry the inactivating <strong>ALDH2*2 (rs671)</strong> variant; "flushing and racing heart after just a little" is the signal of acetaldehyde piling up. For these people, forcing "tolerance training" simply lets a carcinogen linger longer in the mouth and esophagus. Alcohol-related cancer sites: <strong>mouth, pharynx, larynx, esophagus, liver, breast, colorectum</strong>.</div></div>
+
+<div class="section"><div class="label">Actionable Protocol</div>
+<div class="content"><div class="protocol">
+• <strong>Self-test first</strong>: does a small amount make you flush / palpitate? If yes → likely ALDH2 deficiency; treat "drink little / none" as a hard constraint.<br>
+• <strong>If you flush</strong>: esophageal cancer is the top concern; if you also smoke, acetaldehyde + tobacco compound each other and risk multiplies.<br>
+• <strong>Cancers with no "safe lower bound"</strong> (mouth/esophagus/breast): only zero brings risk back to baseline.
+</div></div></div>
+
+<div class="section"><div class="label">Note for Women</div>
+<div class="content"><div class="female">Breast cancer is the leading alcohol-related cancer in women. The mechanism is twofold: alcohol raises circulating <strong>estrogen</strong> + acetaldehyde is directly mutagenic. About 10 g/day (≈1 drink) already raises breast cancer risk by ~7–10%, with no safe threshold — one of the hardest examples that "even a little counts."</div></div></div>
+
+<div class="section"><div class="label">Common Myths</div>
+<div class="content"><div class="myth">Myth 1: "Flushing means I metabolize alcohol fast / handle it well" — the opposite; flushing means ALDH2 is inactive and acetaldehyde isn't being cleared, so carcinogen exposure lasts longer.<br>Myth 2: "Practice and your tolerance builds up" — what builds is tolerance to feeling drunk, not the ability to clear acetaldehyde; risk goes up, not down.</div></div></div>
+
+<div class="section"><div class="label">Key References</div>
+<div class="content"><div class="ref">• IARC Monographs Vol 100E. Personal Habits and Indoor Combustions. 2012.<br>• Yokoyama A, et al. Carcinogenesis. 1998;19(8):1383-1387.</div></div></div>
+
+<div class="section"><div class="label">This Week + Reflection</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>If you or a family member flushes when drinking, note it as a "red light" from your body. <strong>Reflection</strong>: how does an unchangeable genotype (ALDH2 deficiency) change your cost calculus for "a little socially is fine"?</div></div>
+</div>
+</div>
+
+<div class="card">
+<div class="tag">SUB · System Damage / Dose-Response</div>
+<div class="name">Sleep · Liver · Heart · Brain — Every System Has a Dose-Response</div>
+
+<div class="section"><div class="label">One-Line Takeaway</div>
+<div class="content"><div class="conclusion">Alcohol isn't just "bad for the liver." <strong>A single nightcap disrupts sleep architecture</strong>; atrial fibrillation, fatty liver and brain atrophy all show clear dose-response, and most have no "safe line."</div></div></div>
+
+<div class="section"><div class="label">Evidence Grade</div>
+<div class="content"><div class="evidence">RCTs (sleep / AFib) + imaging cohorts (brain): Marcus 2021 (Ann Intern Med) used wearable RCT to confirm a single drink raises AFib probability; Topiwala 2017 (BMJ), an Oxford cohort MRI study, linked moderate drinking to hippocampal atrophy.</div></div></div>
+
+<div class="section"><div class="label">Science + Mechanism</div>
+<div class="content"><strong>Sleep</strong>: alcohol is a sedative, not a sleep aid — you fall asleep faster, but it compresses REM, increases second-half-of-night awakenings and raises heart rate; overall sleep quality drops (Ebrahim 2013). <strong>Cardiovascular</strong>: "holiday heart syndrome" — acute drinking can trigger AFib, and the HOLIDAY study nailed the single-dose effect with continuous ECG. <strong>Brain</strong>: even "moderate" intake (14–21 units/week) correlates with hippocampal atrophy, white-matter decline and cognitive decline, worse at higher doses. <strong>Liver</strong>: fatty liver → alcoholic hepatitis → fibrosis → cirrhosis is a continuum, reversible early, irreversible late.</div></div>
+
+<div class="section"><div class="label">Actionable Protocol</div>
+<div class="content">
+<table>
+<tr><th>System</th><th>Dose threshold / effect</th><th>Reversibility</th></tr>
+<tr><td>Sleep</td><td>Any dose before bed lowers REM / quality</td><td>Recovers in days after stopping</td></tr>
+<tr><td>Heart (AFib)</td><td>A single dose can trigger; more = more often</td><td>Cutting back markedly reduces episodes</td></tr>
+<tr><td>Brain</td><td>≥14 units/week linked to atrophy</td><td>Partly reversible</td></tr>
+<tr><td>Liver</td><td>Continuum from early fatty liver → fibrosis</td><td>Early reversible / late not</td></tr>
+</table>
+<div class="protocol" style="margin-top:10px">The highest-leverage move: <strong>delete the "nightcap" entirely</strong> — the payoff for sleep, AFib and next-day energy is immediate.</div></div></div>
+
+<div class="section"><div class="label">Note for Women</div>
+<div class="content"><div class="female">A woman's liver is damaged faster by the same amount of alcohol (less body water, a pro-inflammatory estrogen environment), so fibrosis and cirrhosis progress faster than in men at the same "units." This is the physiological basis for lower thresholds for women in national guidelines — not "coddling."</div></div></div>
+
+<div class="section"><div class="label">Common Myths</div>
+<div class="content"><div class="myth">Myth 1: "A nightcap helps me sleep" — falling asleep faster is a sedative illusion; whole-night quality, REM and recovery all worsen, trading tomorrow's energy for tonight's faster onset.<br>Myth 2: "Normal liver tests mean I'm fine" — normal transaminases don't rule out fatty liver or early fibrosis; imaging is more sensitive.</div></div></div>
+
+<div class="section"><div class="label">Key References</div>
+<div class="content"><div class="ref">• Marcus GM, et al. Ann Intern Med. 2021;174(11):1503-1509.<br>• Topiwala A, et al. BMJ. 2017;357:j2353.<br>• Ebrahim IO, et al. Alcohol Clin Exp Res. 2013;37(4):539-549.</div></div></div>
+
+<div class="section"><div class="label">This Week + Reflection</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Run an A/B: compare deep sleep/REM and resting heart rate on nights with alcohol vs without, using a wearable. <strong>Reflection</strong>: if the data proves the nightcap makes you sleep worse, which reason would you keep it for?</div></div>
+</div>
+</div>
+
+<div class="card">
+<div class="tag">SUB · Behavior Change / Dependence</div>
+<div class="name">Cutting Down &amp; Spotting Dependence — From AUDIT-C to Red Flags</div>
+
+<div class="section"><div class="label">One-Line Takeaway</div>
+<div class="content"><div class="conclusion">Use the <strong>AUDIT-C</strong> three questions to locate yourself; for most people "cutting down" is more sustainable than white-knuckle abstinence. But <strong>morning drinking / hand tremors when you stop</strong> are signs of physical dependence — abruptly stopping then is risky and needs medical supervision.</div></div></div>
+
+<div class="section"><div class="label">Evidence Grade</div>
+<div class="content"><div class="evidence">Expert consensus + RCT: WHO AUDIT / AUDIT-C is a globally used screening tool (Bush 1998); brief interventions for hazardous drinking are supported by multiple primary-care RCTs.</div></div></div>
+
+<div class="section"><div class="label">Science + Mechanism</div>
+<div class="content"><strong>AUDIT-C's three items</strong>: ① how often you drink; ② how many per session; ③ how often ≥6 in one session. A total ≥3 for women or ≥4 for men flags hazardous drinking. The good news: most problem drinkers are <strong>not alcohol-dependent</strong>, and structured cutting-down works. <strong>Cut-down tactics</strong>: set "dry days," order a non-alcoholic drink first, dilute and slow down, clear the home stash (don't buy = don't drink). <strong>Dependence red flags</strong>: tremor/sweating/palpitations/anxiety after stopping, needing a "morning drink" for relief, steadily rising tolerance — this is withdrawal, and for severe dependence abrupt stopping can trigger seizures or delirium tremens, so <strong>taper under medical supervision, don't tough it out</strong>.</div></div>
+
+<div class="section"><div class="label">Actionable Protocol</div>
+<div class="content"><div class="protocol">
+• <strong>Locate</strong>: take an AUDIT-C (1 minute online), record your score as a baseline.<br>
+• <strong>Four cut-down tactics</strong>: dry days → order non-alcoholic first → dilute and slow down → clear the stash.<br>
+• <strong>SMART goal</strong>: not "drink less" but "no alcohol Mon–Thu, ≤3 drinks on weekends."<br>
+• <strong>See-a-doctor line</strong>: morning drinking / withdrawal tremors / a prior withdrawal seizure → don't quit alone; get medically-assisted tapering.
+</div></div></div>
+
+<div class="section"><div class="label">Note for Women</div>
+<div class="content"><div class="female">Women show a "<strong>telescoping effect</strong>": the time from regular drinking to dependence and to organ damage is shorter than in men. So screening thresholds are lower for women and earlier intervention pays off more — a consistent finding across physiology and epidemiology.</div></div></div>
+
+<div class="section"><div class="label">Common Myths</div>
+<div class="content"><div class="myth">Myth 1: "Being able to drink a lot = holding your liquor = you're fine" — rising tolerance is itself an early marker of dependence, not proof of health.<br>Myth 2: "If I quit, it has to be cold-turkey and all at once" — for the already physically dependent, abrupt stopping is dangerous; structured tapering + medication when needed is the safe path.</div></div></div>
+
+<div class="section"><div class="label">Key References</div>
+<div class="content"><div class="ref">• Bush K, et al. (AUDIT-C). Arch Intern Med. 1998;158(16):1789-1795.<br>• Kaner EF, et al. Cochrane review, brief interventions. 2018.</div></div></div>
+
+<div class="section"><div class="label">This Week + Reflection</div>
+<div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Take an AUDIT-C and set one SMART cut-down goal (written down, verifiable). <strong>Reflection</strong>: distinguish "I choose to drink" from "I need to drink" — in the past month, was any occasion the latter?</div></div>
+</div>
+</div>
+
+<div class="section" style="margin-top:34px">
+<div class="label" style="font-size:0.9rem;margin-bottom:10px">Deeper Reflection</div>
+<div class="think">
+<details><summary>① If there's "no safe level," why do many national guidelines still give a "no more than X drinks a week" number?</summary>
+<div>Because guidelines must balance <strong>science and feasibility</strong>. "Zero is safest" is the risk-minimization fact, but in a high-drinking society, pushing "total abstinence" gets very low adherence. So guidelines fall back to a "low-risk" ceiling (e.g. UK ≤14 units/week) — essentially <strong>harm minimization</strong>, not a "safety line." Understand this and you won't misread the "ceiling" as "drinking up to this amount is beneficial."</div></details>
+<details><summary>② Can Mendelian randomization settle it once and for all? What are its limits?</summary>
+<div>It greatly weakens confounding and reverse causation, but isn't a silver bullet. Three limits: gene variants may affect outcomes through other pathways (<strong>pleiotropy</strong>); ALDH2-deficient people have peculiar drinking patterns (flushers tend to drink less), possibly introducing new selection effects; conclusions come mostly from specific populations, so extrapolation needs care. Its value is <strong>triangulation</strong> with traditional cohorts — when both designs point to "less is better," the conclusion is quite robust.</div></details>
+<details><summary>③ If alcohol is net harmful, why is it so universal and enduring in human society?</summary>
+<div>This is a classic case where "health-optimal" and "evolutionary/cultural fit" don't align. Alcohol provides instant social lubrication, anxiety relief and calories — of real historical value; its addictiveness then self-reinforces. <strong>What's good for genes and culture need not be good for an individual's long-term health</strong> — like high sugar and fat. Treat drinking as an "evolutionary mismatch" to actively manage, not "our ancestors all drank so it's fine."</div></details>
+<details><summary>④ Can the sick-quitter-bias lesson transfer to other health conclusions?</summary>
+<div>Yes, and it's very worthwhile. Any observational conclusion that "people who quit some habit are less healthy" should first ask: <strong>did they quit because they were ill?</strong> — quitting coffee, stopping statins, cutting exercise can all hold the same trap. This is the concrete version of Day 61's "correlation ≠ causation": once a control group's "purity" is contaminated, the whole curve's shape may be fake. Learning to ask "who is the control group?" is core evidence-literacy muscle.</div></details>
+</div>
+</div>
+
+<div class="nav"><a href="index.en.html">← Home</a></div>
+
+</div><script src="https://cissy0802.github.io/comments.js" defer></script>
+<script src="https://cissy0802.github.io/search.js" defer></script>
+<script src="https://cissy0802.github.io/index-button.js" defer></script>
+<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+</body></html>
