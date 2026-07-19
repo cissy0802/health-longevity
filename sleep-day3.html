@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>健康长寿 Day 3 — 睡眠科学</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -38,94 +39,77 @@ table tr:nth-child(even) td{background:#f5faf8}
 .nav a:hover{background:#0d6e6e;color:#fff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
 </style></head><body><div class="container">
-
 <header>
 <div class="day">DAY 3</div>
-<h1>健康长寿：睡眠科学<br><span style="font-size:1rem;color:#5a7d7d;font-weight:500">Sleep Science — Architecture, Debt, Circadian Rhythm, Apnea</span></h1>
+<h1 data-tts="769dfcb4ee5b1a5f">健康长寿：睡眠科学<br/><span style="font-size:1rem;color:#5a7d7d;font-weight:500">Sleep Science — Architecture, Debt, Circadian Rhythm, Apnea</span></h1>
 <div class="meta">2026-05-24 · BigCat's Vitality Protocol</div>
 <div class="evidence-note">本期证据等级：以 RCT + 大型前瞻队列 + 多导睡眠图（PSG）研究为主；剂量与协议综合 Walker、Attia、AASM 共识</div>
 </header>
-
-<div class="card">
+<div class="card" data-tts="15652768643119e4">
 <div class="tag">SUB · 睡眠结构 / 神经科学</div>
 <div class="name">睡眠周期与 REM：90 分钟结构</div>
 <div class="name-en">Sleep Architecture — 90-min Cycles, NREM/REM Distribution</div>
-
 <div class="section"><div class="label">一句话结论</div>
 <div class="content"><div class="conclusion">睡眠不是均质的"几小时"，而是 4–6 个 90 分钟周期的有序组合。深度睡眠（SWS）集中于前半夜，REM 集中于后半夜——这就是为什么"晚睡 2 小时"损失的多是 REM。</div></div></div>
-
 <div class="section"><div class="label">证据等级</div>
 <div class="content"><div class="evidence">高质量：基于数千例 PSG（多导睡眠图）研究的共识。Walker 2017 综述 (<i>Nat Neurosci</i>) 总结：SWS 介导陈述性记忆巩固与系统性清理；REM 介导情绪记忆整合与创造性联结。Xie 2013 (<i>Science</i>) 小鼠研究显示 SWS 期间脑脊液冲洗（glymphatic clearance）显著增强 β-淀粉样蛋白清除。</div></div></div>
-
 <div class="section"><div class="label">科学背景</div>
 <div class="content">健康成年人入睡后依次经过 N1（过渡）→ N2（浅睡）→ N3（慢波/深睡）→ REM，每个周期约 90 分钟。前两个周期 N3 占比最高（成年人深睡总量约 70–80% 在前半夜完成），后两到三个周期 REM 占比逐渐拉长（最后一个周期 REM 可达 30–40 分钟）。这种"不对称分布"意味着：晚睡两小时 ≈ 牺牲多数 REM；早起两小时 ≈ 牺牲多数 SWS。两者功能不同，不可互换。</div></div></div>
-
 <div class="section"><div class="label">可视化：典型一夜的睡眠分期</div>
 <div class="content">
 <div class="viz">
-<svg viewBox="0 0 720 220" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system,'Noto Sans SC',sans-serif">
+<svg preserveaspectratio="xMidYMid meet" style="font-family:-apple-system,'Noto Sans SC',sans-serif" viewbox="0 0 720 220" width="100%" xmlns="http://www.w3.org/2000/svg">
 <defs><style>.axis{stroke:#5a7d7d;stroke-width:1}.tick{font-size:10px;fill:#5a7d7d}.stage{font-size:10px;fill:#0d6e6e;font-weight:600}.line{stroke:#0d6e6e;stroke-width:2.2;fill:none}.rem-fill{fill:#c2438a;opacity:0.18}.sws-fill{fill:#3aa17e;opacity:0.18}</style></defs>
-<text x="20" y="18" class="stage">睡眠阶段</text>
-<line x1="60" y1="40" x2="60" y2="180" class="axis"/>
-<line x1="60" y1="180" x2="700" y2="180" class="axis"/>
-<text x="20" y="55" class="stage">REM</text>
-<text x="30" y="80" class="stage">N1</text>
-<text x="30" y="105" class="stage">N2</text>
-<text x="30" y="155" class="stage">N3 SWS</text>
-<rect x="60" y="45" width="640" height="18" class="rem-fill"/>
-<rect x="60" y="130" width="640" height="48" class="sws-fill"/>
-<path d="M60,80 L75,80 L85,105 L115,105 L130,165 L185,160 L195,105 L215,105 L225,55 L260,55 L270,105 L300,105 L315,155 L355,150 L365,105 L390,105 L400,55 L450,55 L460,105 L495,105 L505,135 L535,130 L545,105 L575,105 L585,50 L645,50 L660,80 L680,80 L700,75" class="line"/>
-<line x1="60" y1="180" x2="60" y2="186" class="axis"/><text x="50" y="200" class="tick">23:00</text>
-<line x1="220" y1="180" x2="220" y2="186" class="axis"/><text x="200" y="200" class="tick">01:00</text>
-<line x1="380" y1="180" x2="380" y2="186" class="axis"/><text x="360" y="200" class="tick">03:00</text>
-<line x1="540" y1="180" x2="540" y2="186" class="axis"/><text x="520" y="200" class="tick">05:00</text>
-<line x1="700" y1="180" x2="700" y2="186" class="axis"/><text x="680" y="200" class="tick">07:00</text>
-<text x="100" y="40" class="stage" style="fill:#c2438a">← REM 在后半夜增长 →</text>
-<text x="430" y="170" class="stage" style="fill:#3aa17e">← SWS 集中前半夜</text>
+<text class="stage" x="20" y="18">睡眠阶段</text>
+<line class="axis" x1="60" x2="60" y1="40" y2="180"></line>
+<line class="axis" x1="60" x2="700" y1="180" y2="180"></line>
+<text class="stage" x="20" y="55">REM</text>
+<text class="stage" x="30" y="80">N1</text>
+<text class="stage" x="30" y="105">N2</text>
+<text class="stage" x="30" y="155">N3 SWS</text>
+<rect class="rem-fill" height="18" width="640" x="60" y="45"></rect>
+<rect class="sws-fill" height="48" width="640" x="60" y="130"></rect>
+<path class="line" d="M60,80 L75,80 L85,105 L115,105 L130,165 L185,160 L195,105 L215,105 L225,55 L260,55 L270,105 L300,105 L315,155 L355,150 L365,105 L390,105 L400,55 L450,55 L460,105 L495,105 L505,135 L535,130 L545,105 L575,105 L585,50 L645,50 L660,80 L680,80 L700,75"></path>
+<line class="axis" x1="60" x2="60" y1="180" y2="186"></line><text class="tick" x="50" y="200">23:00</text>
+<line class="axis" x1="220" x2="220" y1="180" y2="186"></line><text class="tick" x="200" y="200">01:00</text>
+<line class="axis" x1="380" x2="380" y1="180" y2="186"></line><text class="tick" x="360" y="200">03:00</text>
+<line class="axis" x1="540" x2="540" y1="180" y2="186"></line><text class="tick" x="520" y="200">05:00</text>
+<line class="axis" x1="700" x2="700" y1="180" y2="186"></line><text class="tick" x="680" y="200">07:00</text>
+<text class="stage" style="fill:#c2438a" x="100" y="40">← REM 在后半夜增长 →</text>
+<text class="stage" style="fill:#3aa17e" x="430" y="170">← SWS 集中前半夜</text>
 </svg>
 <div class="viz-caption">8 小时睡眠的典型分期曲线。粉色带 = REM（后半夜更密集），绿色带 = N3 深睡（前半夜占主导）。截掉哪一端，损失的就是哪种功能。</div>
 </div>
 </div></div>
-
 <div class="section"><div class="label">可执行协议</div>
 <div class="content"><div class="protocol">
-• <b>固定起床时间</b>（比固定就寝更重要）→ 锚定下一夜的睡眠压力<br>
-• <b>保证总时长 7–9 小时</b> → 完成 4–6 个完整周期；从入睡起算，前一小时勿计<br>
-• <b>避免最后一杯酒</b> → 酒精显著抑制 REM，主观入睡变快但梦境片段化<br>
-• <b>避免午后大量咖啡因</b> → 咖啡因半衰期 5–7 小时，14:00 后摄入影响 SWS 深度<br>
+• <b>固定起床时间</b>（比固定就寝更重要）→ 锚定下一夜的睡眠压力<br/>
+• <b>保证总时长 7–9 小时</b> → 完成 4–6 个完整周期；从入睡起算，前一小时勿计<br/>
+• <b>避免最后一杯酒</b> → 酒精显著抑制 REM，主观入睡变快但梦境片段化<br/>
+• <b>避免午后大量咖啡因</b> → 咖啡因半衰期 5–7 小时，14:00 后摄入影响 SWS 深度<br/>
 • <b>追踪</b>：Oura/Whoop/Apple Watch 趋势分析可信，但绝对分期值不要过度解读
 </div></div></div>
-
 <div class="section"><div class="label">女性特别提示</div>
 <div class="content"><div class="female">月经周期后半段（黄体期）核心体温升高 0.3–0.5°C，可降低 SWS、增加夜醒。围绝经期潮热多发于深睡阶段，是中年女性失眠的首因之一（Joffe 2020）。冷静卧室（18°C）、降温寝具、必要时与医生讨论 MHT，可显著改善睡眠结构。</div></div></div>
-
 <div class="section"><div class="label">常见误区</div>
-<div class="content"><div class="myth">误区 1："只要 6 小时就够" — 基因 DEC2 短睡眠者&lt;1% 人口，99% 自评 6 小时充足者实测认知/情绪指标显著受损 (Van Dongen 2003)。<br>误区 2：周末补觉能"还债"— 仅部分恢复，且打乱昼夜节律致"社交时差"。<br>误区 3：酒精助眠 — 缩短入睡 ≠ 改善结构；连续 3 天饮酒已可见 REM 抑制。</div></div></div>
-
+<div class="content"><div class="myth">误区 1："只要 6 小时就够" — 基因 DEC2 短睡眠者&lt;1% 人口，99% 自评 6 小时充足者实测认知/情绪指标显著受损 (Van Dongen 2003)。<br/>误区 2：周末补觉能"还债"— 仅部分恢复，且打乱昼夜节律致"社交时差"。<br/>误区 3：酒精助眠 — 缩短入睡 ≠ 改善结构；连续 3 天饮酒已可见 REM 抑制。</div></div></div>
 <div class="section"><div class="label">关键参考</div>
-<div class="content"><div class="ref">• Walker MP. <i>Why We Sleep</i>. Scribner, 2017.<br>• Xie L, et al. <i>Science</i>. 2013;342(6156):373-377.<br>• Peter Attia podcast #126 with Matthew Walker</div></div></div>
-
+<div class="content"><div class="ref">• Walker MP. <i>Why We Sleep</i>. Scribner, 2017.<br/>• Xie L, et al. <i>Science</i>. 2013;342(6156):373-377.<br/>• Peter Attia podcast #126 with Matthew Walker</div></div></div>
 <div class="section"><div class="label">English Summary</div>
 <div class="content"><div class="en-summary">Sleep is structured as 4–6 ninety-minute cycles. Slow-wave sleep (N3) clusters in the first half of the night and consolidates declarative memory plus glymphatic clearance; REM dominates the second half and integrates emotional memory. Cutting either end of the night sacrifices a distinct, non-substitutable function.</div></div></div>
-
 <div class="section"><div class="label">本周一试</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>本周固定起床时间（含周末），允许就寝时间随困意浮动。第 7 天对比：入睡延迟、夜醒次数、晨起精神。固定起床是重置昼夜节律最强的单一杠杆。</div></div>
 </div>
-
-<div class="card">
+<div class="card" data-tts="f0a595653ef67398">
 <div class="tag">SUB · 睡眠债务 / 认知表现</div>
 <div class="name">睡眠债务：不可完全偿还的累积赤字</div>
 <div class="name-en">Sleep Debt — Cumulative, Largely Non-Repayable</div>
-
 <div class="section"><div class="label">一句话结论</div>
 <div class="content"><div class="conclusion">连续 6 天每晚 6 小时睡眠，认知表现等同于连续 24 小时无睡眠——而你完全意识不到。睡眠债务是"无症状的醉酒"，且无法通过周末补觉完全清零。</div></div></div>
-
 <div class="section"><div class="label">证据等级</div>
 <div class="content"><div class="evidence">RCT：Van Dongen 2003 (<i>Sleep</i>) 经典研究——14 天 4h、6h、8h 三组对照，6h 组第 6 天 PVT（精神运动警觉）表现等同 24 小时彻夜未眠组，但主观疲劳评分仅轻度上升（自我感知严重失准）。Pejovic 2013 显示周末补觉仅部分恢复 PVT，胰岛素敏感性、皮质醇节律仍异常。</div></div></div>
-
 <div class="section"><div class="label">科学背景</div>
 <div class="content">睡眠压力由腺苷积累驱动，咖啡因通过竞争 A1/A2A 受体短暂屏蔽信号但不消除腺苷本身——这就是"咖啡撞墙"现象。慢性睡眠剥夺导致：(1) 海马依赖记忆固化下降；(2) 杏仁核反应性 +60%（情绪不稳）；(3) 胰岛素敏感性下降 ~30%（一夜 4h 即可见）；(4) 自然杀伤细胞（NK）活性 −70%（Irwin 1996）。最危险的是"主观适应"——人会觉得自己适应了，但客观指标持续恶化。</div></div></div>
-
 <div class="section"><div class="label">可执行协议</div>
 <div class="content">
 <table>
@@ -136,86 +120,66 @@ table tr:nth-child(even) td{background:#f5faf8}
 <tr><td>&lt; 5.5 h</td><td>代谢/免疫显著受损</td><td>视为健康警报，必要时医学评估</td></tr>
 </table>
 <div class="protocol" style="margin-top:10px">还债原则：每晚多睡 30–60 分钟（非一次性补 4 小时）；周末补觉控制在 +1 小时内，避免周日"社交时差"；连续 2–4 周才能恢复 PVT 与代谢指标。</div></div></div>
-
 <div class="section"><div class="label">女性特别提示</div>
 <div class="content"><div class="female">学龄儿童母亲的睡眠债务普遍被低估——夜间被打断的"碎片化 7 小时"远不如连续 6 小时恢复力强。Stacy Sims 指出女性对睡眠剥夺的代谢代价比男性更敏感（更快出现皮质醇升高与饥饿激素 ghrelin 异常）。优先保护至少 6 小时不被打断的核心睡眠块。</div></div></div>
-
 <div class="section"><div class="label">常见误区</div>
-<div class="content"><div class="myth">误区 1："我习惯了 5 小时" — 主观适应 ≠ 客观恢复。多数自称习惯者 PVT 测试已严重下降。<br>误区 2："周末睡 12 小时就清账" — Depner 2019 (<i>Curr Biol</i>) RCT：周末补觉组体重增加、胰岛素敏感性仍恶化。<br>误区 3："睡得越多越好" — 长期 &gt;9 小时与全因死亡率呈 U 型曲线相关，但多是潜在疾病的反映，而非睡眠本身有害。</div></div></div>
-
+<div class="content"><div class="myth">误区 1："我习惯了 5 小时" — 主观适应 ≠ 客观恢复。多数自称习惯者 PVT 测试已严重下降。<br/>误区 2："周末睡 12 小时就清账" — Depner 2019 (<i>Curr Biol</i>) RCT：周末补觉组体重增加、胰岛素敏感性仍恶化。<br/>误区 3："睡得越多越好" — 长期 &gt;9 小时与全因死亡率呈 U 型曲线相关，但多是潜在疾病的反映，而非睡眠本身有害。</div></div></div>
 <div class="section"><div class="label">关键参考</div>
-<div class="content"><div class="ref">• Van Dongen HPA, et al. <i>Sleep</i>. 2003;26(2):117-126.<br>• Depner CM, et al. <i>Curr Biol</i>. 2019;29(6):957-967.<br>• Irwin M, et al. <i>FASEB J</i>. 1996;10(5):643-653.</div></div></div>
-
+<div class="content"><div class="ref">• Van Dongen HPA, et al. <i>Sleep</i>. 2003;26(2):117-126.<br/>• Depner CM, et al. <i>Curr Biol</i>. 2019;29(6):957-967.<br/>• Irwin M, et al. <i>FASEB J</i>. 1996;10(5):643-653.</div></div></div>
 <div class="section"><div class="label">English Summary</div>
 <div class="content"><div class="en-summary">Sleep debt accumulates silently: 6 hours/night for 6 nights produces cognitive performance equivalent to 24 hours of total sleep deprivation, while subjective fatigue underestimates the deficit. Weekend catch-up only partially restores PVT and largely fails to repair metabolic markers. Prevention beats repayment.</div></div></div>
-
 <div class="section"><div class="label">本周一试</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>计算本周"睡眠债务"：(目标 8h × 7) − 实际总睡眠 = 累计赤字。若 &gt; 4 小时，本周晚每晚 +45 分钟，连续 2 周，比一次性周末补觉有效得多。</div></div>
 </div>
-
-<div class="card">
+<div class="card" data-tts="905456daf824bf67">
 <div class="tag">SUB · 昼夜节律 / 时间生物学</div>
 <div class="name">昼夜节律三大锚点：光、温度、进食</div>
 <div class="name-en">Circadian Rhythm — Light, Temperature, Food as Zeitgebers</div>
-
 <div class="section"><div class="label">一句话结论</div>
 <div class="content"><div class="conclusion">睡眠质量不只由"睡时"决定，而是 24 小时节律的产物。晨光（&gt;10,000 lux × 10 分钟）、入睡前体温下降（卧室 18°C）、晚餐与就寝间隔 3 小时——三个锚点比任何安眠药都有效。</div></div></div>
-
 <div class="section"><div class="label">证据等级</div>
 <div class="content"><div class="evidence">机制 + RCT 混合：Czeisler 实验室数十年时间生物学研究确立 SCN（视交叉上核）为主时钟，由 ipRGC（黑视蛋白视网膜节细胞）经晨光重置。Wright 2013 (<i>Curr Biol</i>) 露营 1 周显著前移褪黑素相位。Sutton 2018 (<i>Cell Metab</i>) eTRE（早段时间限制进食）改善胰岛素敏感性独立于减重。</div></div></div>
-
 <div class="section"><div class="label">科学背景</div>
 <div class="content">SCN 主时钟通过外周组织时钟（肝、肌、脂肪）协调代谢与免疫。光是最强信号——晨光抑制褪黑素并校准相位前移，夜光（尤其 460–480 nm 蓝光）延后相位、抑制褪黑素分泌。核心体温每晚下降约 1°C，是睡眠启动信号；体温下降越彻底，SWS 越深。进食时机本身是次级 zeitgeber：深夜进食使外周时钟与中枢脱相，独立于热量造成胰岛素抵抗（"代谢时差"）。</div></div></div>
-
 <div class="section"><div class="label">可执行协议</div>
 <div class="content"><div class="protocol">
-<b>晨间（醒后 30–60 分钟内）</b><br>
-• 户外阳光 10–15 分钟（多云仍 &gt; 10,000 lux，远超室内 300–500 lux）<br>
-• 室内无替代——遮阳眼镜也可，但需直视方向（不直视太阳）<br>
-<br>
-<b>白天</b><br>
-• 尽量自然光办公位；若不可能，正午外出再 5–10 分钟<br>
-• 14:00 后停止咖啡因<br>
-<br>
-<b>傍晚（落日 2 小时前）</b><br>
-• 室内灯光调暖、调暗；屏幕开启 night shift / f.lux<br>
-• 最后一餐 ≥ 就寝前 3 小时<br>
-<br>
-<b>就寝前</b><br>
-• 卧室温度 17–19°C，被褥可调；热水澡 1–2 小时前可加速核心体温下降<br>
+<b>晨间（醒后 30–60 分钟内）</b><br/>
+• 户外阳光 10–15 分钟（多云仍 &gt; 10,000 lux，远超室内 300–500 lux）<br/>
+• 室内无替代——遮阳眼镜也可，但需直视方向（不直视太阳）<br/>
+<br/>
+<b>白天</b><br/>
+• 尽量自然光办公位；若不可能，正午外出再 5–10 分钟<br/>
+• 14:00 后停止咖啡因<br/>
+<br/>
+<b>傍晚（落日 2 小时前）</b><br/>
+• 室内灯光调暖、调暗；屏幕开启 night shift / f.lux<br/>
+• 最后一餐 ≥ 就寝前 3 小时<br/>
+<br/>
+<b>就寝前</b><br/>
+• 卧室温度 17–19°C，被褥可调；热水澡 1–2 小时前可加速核心体温下降<br/>
 • 完全遮光（眼罩或遮光帘），即使闭眼，皮肤与眼睑后 ipRGC 仍可感光
 </div></div></div>
-
 <div class="section"><div class="label">女性特别提示</div>
 <div class="content"><div class="female">女性 SCN 对光的相位反应比男性略前移（Cain 2010），早晨光照对女性"夜猫子型"重置效果显著。围绝经期潮热多发于核心体温调节失稳之际，冷却枕头/降温寝具（如 Chilipad、Eight Sleep）有 RCT 级证据改善 SWS。孕中后期可考虑左侧卧 + 抬高躯干以减少 GERD 影响节律。</div></div></div>
-
 <div class="section"><div class="label">常见误区</div>
-<div class="content"><div class="myth">误区 1："褪黑素是安眠药" — 它是相位调节剂，不是镇静剂。低剂量（0.3–0.5 mg）用于时差/相位调整远优于市售 5–10 mg（后者次日嗜睡且抑制内源分泌）。<br>误区 2：蓝光眼镜是关键 — 黄昏整体降低亮度比仅滤蓝光更重要。<br>误区 3：睡前剧烈运动一定有害 — 个体差异大，多数人无影响；只要不在就寝 1 小时内即可。</div></div></div>
-
+<div class="content"><div class="myth">误区 1："褪黑素是安眠药" — 它是相位调节剂，不是镇静剂。低剂量（0.3–0.5 mg）用于时差/相位调整远优于市售 5–10 mg（后者次日嗜睡且抑制内源分泌）。<br/>误区 2：蓝光眼镜是关键 — 黄昏整体降低亮度比仅滤蓝光更重要。<br/>误区 3：睡前剧烈运动一定有害 — 个体差异大，多数人无影响；只要不在就寝 1 小时内即可。</div></div></div>
 <div class="section"><div class="label">关键参考</div>
-<div class="content"><div class="ref">• Wright KP, et al. <i>Curr Biol</i>. 2013;23(16):1554-1558.<br>• Sutton EF, et al. <i>Cell Metab</i>. 2018;27(6):1212-1221.<br>• Huberman Lab podcast "Master Your Sleep" series</div></div></div>
-
+<div class="content"><div class="ref">• Wright KP, et al. <i>Curr Biol</i>. 2013;23(16):1554-1558.<br/>• Sutton EF, et al. <i>Cell Metab</i>. 2018;27(6):1212-1221.<br/>• Huberman Lab podcast "Master Your Sleep" series</div></div></div>
 <div class="section"><div class="label">English Summary</div>
 <div class="content"><div class="en-summary">Three zeitgebers anchor the circadian system: bright morning light (&gt;10,000 lux for 10 min), a cool dark bedroom (~18°C) for nocturnal body-temperature drop, and a last meal ≥3 hours before bed. Aligning these three is a stronger intervention than any sleep aid and underpins both sleep quality and metabolic health.</div></div></div>
-
 <div class="section"><div class="label">本周一试</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>三个微试验：(1) 起床 30 分钟内出门见光 10 分钟（不戴墨镜）；(2) 卧室空调设 18°C；(3) 晚餐提前到就寝前 ≥3 小时。第 7 天评估入睡延迟与晨起精神。</div></div>
 </div>
-
-<div class="card">
+<div class="card" data-tts="5e0e92a61afef18d">
 <div class="tag">SUB · 睡眠呼吸 / 心血管风险</div>
 <div class="name">睡眠呼吸暂停（OSA）筛查与处理</div>
 <div class="name-en">Obstructive Sleep Apnea — Screen, Diagnose, Treat</div>
-
 <div class="section"><div class="label">一句话结论</div>
 <div class="content"><div class="conclusion">阻塞性睡眠呼吸暂停（OSA）是被严重低估的心血管 + 认知风险因素，约 80% 中重度患者从未被诊断。打鼾 + 白天嗜睡 + 清晨头痛 = 立即筛查；STOP-BANG ≥ 3 应做家庭睡眠检测（HSAT）或多导睡眠图（PSG）。</div></div></div>
-
 <div class="section"><div class="label">证据等级</div>
 <div class="content"><div class="evidence">大型流行病学：Benjafield 2019 (<i>Lancet Respir Med</i>) 估算全球 9.36 亿成年人有轻 + 重度 OSA，绝大多数未诊断。Marin 2005 长期队列：未治疗的重度 OSA 心血管死亡风险约 2.87 倍。Yaggi 2005 (<i>NEJM</i>) OSA 与卒中风险独立相关。SAVE 2016 RCT 未显示 CPAP 一级心血管获益，但依从性 &lt;4h 是主要限制；二次分析显示 ≥4h/夜组事件显著降低。</div></div></div>
-
 <div class="section"><div class="label">科学背景</div>
 <div class="content">OSA 由上气道反复塌陷致呼吸暂停（apnea）或低通气（hypopnea），每次伴血氧下降与短暂觉醒（arousal），破坏睡眠结构、激活交感神经、引起夜间血压飙升。后果：高血压（OSA 是难治性高血压最常见可逆原因）、房颤、卒中、2 型糖尿病、抑郁、晨间头痛、性功能障碍、机动车事故风险 2–7 倍。AHI（apnea-hypopnea index）每小时事件数：5–15 轻、15–30 中、&gt;30 重。</div></div></div>
-
 <div class="section"><div class="label">可执行协议</div>
 <div class="content">
 <table>
@@ -230,32 +194,25 @@ table tr:nth-child(even) td{background:#f5faf8}
 <tr><td>G</td><td>Gender 男性</td></tr>
 </table>
 <div class="protocol" style="margin-top:10px">
-• ≥ 3 项："中-高风险"，应做 HSAT（家庭睡眠检测，含血氧、气流、胸腹运动）<br>
-• 确诊轻中度：体重 −10% 可降 AHI 约 50%；侧睡训练（仰卧 OSA 多见）；戒酒、戒安眠药<br>
-• 中重度（AHI ≥ 15）：CPAP 一线，依从性目标 ≥ 4 小时/夜 × ≥ 70% 夜晚；不耐受者口腔矫治器（MAD）、上气道刺激术（Inspire）、减重手术依个案<br>
+• ≥ 3 项："中-高风险"，应做 HSAT（家庭睡眠检测，含血氧、气流、胸腹运动）<br/>
+• 确诊轻中度：体重 −10% 可降 AHI 约 50%；侧睡训练（仰卧 OSA 多见）；戒酒、戒安眠药<br/>
+• 中重度（AHI ≥ 15）：CPAP 一线，依从性目标 ≥ 4 小时/夜 × ≥ 70% 夜晚；不耐受者口腔矫治器（MAD）、上气道刺激术（Inspire）、减重手术依个案<br/>
 • 复查 Oura/Apple Watch 夜间血氧（SpO₂）下降事件可作初筛信号，但不能代替 HSAT
 </div></div></div>
-
 <div class="section"><div class="label">女性特别提示</div>
 <div class="content"><div class="female">女性 OSA 长期被严重漏诊：症状常表现为失眠、晨间头痛、抑郁、疲劳，而非典型大声打鼾。围绝经期后患病率显著上升（雌激素/孕酮对上气道张力有保护作用），雌激素下降 + 体成分改变使风险接近男性。任何不明原因失眠 + 高血压 + 中年女性都应进入筛查考量。</div></div></div>
-
 <div class="section"><div class="label">常见误区</div>
-<div class="content"><div class="myth">误区 1："瘦人不会有 OSA" — 颌面结构（小颌、舌后坠、腭部狭窄）独立致病，BMI 正常人群仍 10–15% 患病。<br>误区 2："只是打鼾，不严重" — 单纯打鼾与 OSA 在客观检测前无法区分；打鼾本身已与颈动脉损伤相关。<br>误区 3："CPAP 太麻烦" — 现代设备静音、自动滴定、面罩选择多；首月坚持是关键，过此期依从性大幅提升。</div></div></div>
-
+<div class="content"><div class="myth">误区 1："瘦人不会有 OSA" — 颌面结构（小颌、舌后坠、腭部狭窄）独立致病，BMI 正常人群仍 10–15% 患病。<br/>误区 2："只是打鼾，不严重" — 单纯打鼾与 OSA 在客观检测前无法区分；打鼾本身已与颈动脉损伤相关。<br/>误区 3："CPAP 太麻烦" — 现代设备静音、自动滴定、面罩选择多；首月坚持是关键，过此期依从性大幅提升。</div></div></div>
 <div class="section"><div class="label">关键参考</div>
-<div class="content"><div class="ref">• Benjafield AV, et al. <i>Lancet Respir Med</i>. 2019;7(8):687-698.<br>• Marin JM, et al. <i>Lancet</i>. 2005;365(9464):1046-1053.<br>• Peter Attia podcast #200 with Cindy Lustig / #275 OSA episode</div></div></div>
-
+<div class="content"><div class="ref">• Benjafield AV, et al. <i>Lancet Respir Med</i>. 2019;7(8):687-698.<br/>• Marin JM, et al. <i>Lancet</i>. 2005;365(9464):1046-1053.<br/>• Peter Attia podcast #200 with Cindy Lustig / #275 OSA episode</div></div></div>
 <div class="section"><div class="label">English Summary</div>
 <div class="content"><div class="en-summary">Obstructive sleep apnea is the most under-diagnosed reversible cardiovascular risk factor: ~80% of moderate-to-severe cases are undetected. Use STOP-BANG (≥3 = high risk) to trigger home sleep testing. CPAP with ≥4 h/night adherence remains first-line; in women, atypical presentations (insomnia, headache, depression) frequently mask the diagnosis.</div></div></div>
-
 <div class="section"><div class="label">本周一试</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>本周完成 STOP-BANG 自评（自己 + 伴侣/家人）。若 ≥ 3，预约家庭睡眠检测或睡眠门诊；若 &lt; 3 但有持续晨起头痛/打鼾，仍建议一次基线评估。OSA 是 30 年长寿曲线上少数"诊断即可显著改写"的杠杆。</div></div>
 </div>
-
 <div class="nav"><a href="index.html">← 返回首页</a></div>
-
-</div><script src="https://cissy0802.github.io/comments.js" defer></script>
-<script src="https://cissy0802.github.io/search.js" defer></script>
-<script src="https://cissy0802.github.io/index-button.js" defer></script>
-<script src="https://cissy0802.github.io/i18n-tts.js" defer></script>
+</div><script defer="" src="https://cissy0802.github.io/comments.js"></script>
+<script defer="" src="https://cissy0802.github.io/search.js"></script>
+<script defer="" src="https://cissy0802.github.io/index-button.js"></script>
+<script defer="" src="https://cissy0802.github.io/i18n-tts.js"></script>
 </body></html>
