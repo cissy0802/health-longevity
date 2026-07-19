@@ -31,7 +31,7 @@ import sys
 from pathlib import Path
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment, NavigableString
 
 # Azure endpoint template — region is filled in at request time
 ENDPOINT_TEMPLATE = "https://{region}.tts.speech.microsoft.com/cognitiveservices/v1"
@@ -258,11 +258,19 @@ def collect_groups(soup) -> list[tuple]:
         bins_split: list[list[str]] = [[] for _ in range(n_groups)]
         h2_set = set(id(h) for h in h2s)
         h2_seen = 0
+        # If we capture an outer container div (because it carries bare text
+        # mixed with block children), skip everything inside it so the same
+        # text isn't narrated twice.
+        skip_descendants_of: set[int] = set()
         # Readable text-bearing tags. Skip nav/controls and obviously decorative bits.
         for node in body.descendants:
             if id(node) in h2_set:
                 h2_seen += 1
             if not hasattr(node, "name") or node.name not in NARRATION_TAGS:
+                continue
+            if skip_descendants_of and any(
+                id(anc) in skip_descendants_of for anc in node.parents
+            ):
                 continue
             if node.find_parent("nav") or node.find_parent(class_="mmd-controls"):
                 continue
@@ -287,12 +295,18 @@ def collect_groups(soup) -> list[tuple]:
                 # THIS WEEK</div>bare instruction text<br/>思考：...</div>), keep
                 # it — that bare text is not covered by any child element.
                 has_direct_text = any(
-                    getattr(child, "name", None) is None
+                    isinstance(child, NavigableString)
+                    and not isinstance(child, Comment)
                     and str(child).strip()
                     for child in node.children
                 )
                 if has_block_children and not has_direct_text:
                     continue
+                if has_block_children and has_direct_text:
+                    # Captured this outer container; suppress its children so
+                    # inner leaf divs (e.g. <div class="label">THIS WEEK</div>)
+                    # aren't re-narrated.
+                    skip_descendants_of.add(id(node))
             # Skip elements explicitly tagged as the opposite language
             if lang == "zh" and "en" in classes:
                 continue
