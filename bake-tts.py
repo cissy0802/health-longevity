@@ -282,7 +282,16 @@ def collect_groups(soup) -> list[tuple]:
                     getattr(child, "name", None) in _BLOCK_TAGS
                     for child in node.children
                 )
-                if has_block_children:
+                # If the div has block children but ALSO carries direct text
+                # nodes with content (e.g. <div class="tryit"><div class="label">
+                # THIS WEEK</div>bare instruction text<br/>思考：...</div>), keep
+                # it — that bare text is not covered by any child element.
+                has_direct_text = any(
+                    getattr(child, "name", None) is None
+                    and str(child).strip()
+                    for child in node.children
+                )
+                if has_block_children and not has_direct_text:
                     continue
             # Skip elements explicitly tagged as the opposite language
             if lang == "zh" and "en" in classes:
