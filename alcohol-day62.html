@@ -45,6 +45,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 62</div>
@@ -180,6 +193,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>做一次 AUDIT-C 并设一个 SMART 减量目标（写下来、可验证）。<strong>思考题</strong>：区分"我选择喝"和"我需要喝"——过去一个月，有没有哪次是后者？</div></div>
 </div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>投资 · 幸存者偏差（Abraham Wald）</b>：二战时 Wald 提醒军方，返航飞机上弹孔少的部位才该加固，因为那里中弹的飞机没能回来；基金数据库删掉清盘的基金，平均回报也被抬高。像在哪：样本先被结局筛过一遍。不像在哪：病退者偏倚里没人消失，是病人被归错了组，混进「零饮酒」那一栏，抬高了它的死亡率。</li>
+<li><b>分布式系统 · 背压（backpressure）</b>：ADH 产乙醛快、ALDH2 清得慢，乙醛就像生产者快于消费者时越排越长的队列。不像的是，好的系统会让下游反压上游降速；人体不会让 ADH 减速，脸红心跳是唯一的告警，「练酒量」等于把告警关掉。</li>
+<li><b>神经科学 · 条件性耐受（Shepard Siegel，1982）</b>：Siegel 发现大鼠在熟悉的给药环境里扛得住海洛因，换个环境同剂量更容易致死：大脑预判药物，提前做反向补偿。像的是，酒量见长就是这种补偿；不像的是，酒停了补偿还在，于是出现手抖、心悸这些方向相反的症状。</li>
+<li><b>佛学 · 第五戒「不饮酒」</b>：五戒戒酒的理由不是伤身，而是酒为「放逸之因」，让人失去觉察。本篇问「我选择喝」还是「我需要喝」，问的也是觉察还在不在。不像在哪：戒律一刀切，本篇给的路线是先自评、再减量。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>「每天一两杯护心」的 J 型曲线，主要是因病戒酒的人混进零饮酒组造成的统计假象。</li>
+<li>孟德尔随机化用 ALDH2、ADH1B 基因变异作天然分组，显示血压和卒中风险随酒精暴露线性上升。</li>
+<li>最小化整体健康损失的饮酒量是零；指南里的每周上限是损害最小化，不是安全线。</li>
+<li>酒精是 IARC 一类致癌物，关键在代谢产物乙醛与 DNA 形成加合物、诱发突变。</li>
+<li>喝一点就脸红多半是 ALDH2 失活、乙醛清不掉，硬练酒量只会让致癌物滞留更久。</li>
+<li>女性乳腺癌风险从每天约 10 克酒精起线性上升，没有安全下限。</li>
+<li>睡前喝酒让人入睡更快，却压缩 REM、增加下半夜觉醒，整夜睡眠质量变差。</li>
+<li>单次饮酒就可能诱发房颤，每周 14 单位以上的饮酒与海马萎缩相关。</li>
+<li>先用 AUDIT-C 三问自评，再用无酒日、清空家中库存等可验证的目标结构化减量。</li>
+<li>晨饮、停饮后手抖心悸是躯体依赖信号，此时骤停有风险，应在医生监督下减停。</li>
+</ol></div>
+
 <div class="section" style="margin-top:34px">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">深入思考</div>
 <div class="think">

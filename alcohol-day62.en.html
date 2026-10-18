@@ -44,6 +44,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -212,6 +225,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Take an AUDIT-C and set one SMART cut-down goal (written down, verifiable). <strong>Reflection</strong>: distinguish "I choose to drink" from "I need to drink" — in the past month, was any occasion the latter?</div></div>
 </div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Investing · Survivorship bias (Abraham Wald)</b>: In WWII, Wald told the military to armor the spots on returning bombers that had few bullet holes, because planes hit there never came back; fund databases that drop closed funds inflate average returns the same way. The likeness: the sample was filtered by the outcome. The difference: in sick-quitter bias nobody vanishes; sick people are filed in the wrong group, landing in the "never drinks" column and raising its death rate.</li>
+<li><b>Distributed systems · Backpressure</b>: ADH makes acetaldehyde fast and ALDH2 clears it slowly, so acetaldehyde piles up like a queue whose producer outruns its consumer. The difference: a good system lets the consumer push back and slow the producer; the body never slows ADH, flushing and palpitations are the only alarm, and "building tolerance" just mutes it.</li>
+<li><b>Neuroscience · Conditioned tolerance (Shepard Siegel, 1982)</b>: Siegel found rats survived heroin in the setting where they usually got it, but the same dose was more often lethal in a new setting: the brain anticipates the drug and counter-adjusts in advance. Rising tolerance is that compensation; unlike the drug, the compensation stays when drinking stops, hence tremor and racing heart, symptoms pointing the opposite way.</li>
+<li><b>Buddhism · The fifth precept</b>: The precept against intoxicants is justified not by bodily harm but because drink is a ground of heedlessness, a loss of awareness. This issue's question, "do I choose to drink or need to drink?", asks whether that awareness is still there. The difference: the precept is all-or-nothing, while this issue's path is self-assessment, then cutting down.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>The J-curve behind "a drink or two a day protects the heart" is mostly an artifact of ill ex-drinkers landing in the non-drinker group.</li>
+<li>Mendelian randomization, using ALDH2 and ADH1B variants as natural groupings, shows blood pressure and stroke risk rising linearly with alcohol exposure.</li>
+<li>The intake that minimizes total health loss is zero; weekly limits in guidelines are harm minimization, not a safety line.</li>
+<li>Alcohol is an IARC Group 1 carcinogen, mainly because its metabolite acetaldehyde forms DNA adducts and drives mutations.</li>
+<li>Flushing after a little alcohol usually means inactive ALDH2; training up your tolerance only keeps acetaldehyde in your tissues longer.</li>
+<li>Breast cancer risk in women rises linearly from about 10 g of alcohol a day, with no safe lower threshold.</li>
+<li>A drink before bed speeds sleep onset but suppresses REM and adds late-night waking, worsening overall sleep quality.</li>
+<li>A single drinking session can trigger atrial fibrillation, and drinking 14 or more units a week is linked to hippocampal atrophy.</li>
+<li>Screen yourself with the three AUDIT-C questions, then cut down with verifiable goals such as alcohol-free days and an empty liquor cabinet.</li>
+<li>Morning drinking and tremor or palpitations when stopping signal physical dependence; quitting abruptly is risky, so taper under medical supervision.</li>
+</ol></div>
 
 <div class="section" style="margin-top:34px">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">Deeper Reflection</div>

@@ -56,6 +56,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 11</div>
@@ -169,6 +182,27 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>不花钱测时钟，先测三个免费的「生物年龄」代理：<strong>静息心率、步速（走 10 米计时）、能否单腿站立 30 秒</strong>。记录基线。<br/><br/>思考：如果一个昂贵指标无法改变你下一步的行动，它对你还有价值吗？</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>分布式系统 · 级联故障</b>：一个服务变慢，调用方超时重试，重试又加重负载，局部故障就这样滚成全站宕机；12 大特征彼此放大，线粒体失灵推高炎症、炎症再伤线粒体，是同一种正反馈。不像在于工程系统可以熔断、回滚、重启，身体只能一边运行一边修补。</li>
+<li><b>计算机科学 · 垃圾回收</b>：程序在空闲或内存吃紧时回收不再用的对象，自噬也是在能量匮乏、mTOR 松手时才开工清理。不像的是，垃圾回收只收「没人引用」的东西，自噬还会主动挑出受损的线粒体和蛋白聚集体。</li>
+<li><b>佛学 · 中道</b>：传说悉达多六年苦行几近饿死，后接受牧女乳糜，转向不纵乐也不苦行的中道；mTOR 与 AMPK 的跷跷板讲的也是不走极端。不像在于中道近乎停在中间，营养感应要的却是在两端之间有节律地来回切换。</li>
+<li><b>生物进化 · 拮抗多效性（George Williams，1957）</b>：同一个基因年轻时帮助生长繁殖、年老后加速衰老，自然选择只看得见前半段；mTOR 驱动生长、长期高开又催老，正是这个结构。不像的是，Williams 讲的是一生尺度的先利后害，mTOR 的利害却能靠每天的节律来调度。</li>
+<li><b>商业 · 古德哈特定律（Charles Goodhart，1975）</b>：一个指标一旦被当成考核目标，人们就会去优化指标本身，它也就不再可靠；表观遗传时钟若成了补剂的成绩单，也会滑向这一步。不像在于，商业时钟眼下的问题首先是测量噪声大，还轮不到被人刻意操纵。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>衰老 12 大特征是 López-Otín 团队提出的研究框架，不是可以逐条购买「逆转」的清单。</li>
+<li>12 大特征分原发损伤、拮抗反应、整合表型三层，并且彼此放大，例如线粒体功能障碍会驱动慢性炎症。</li>
+<li>规律运动同时改善线粒体、营养感应、细胞间通讯和慢性炎症，是已知最强的多特征抗衰干预。</li>
+<li>大隅良典因阐明自噬获 2016 年诺贝尔奖；禁食和运动解除 mTOR 的抑制、激活 AMPK，从而启动自噬。</li>
+<li>「断食 16 小时触发自噬」的阈值主要来自小鼠；务实做法是 12–14 小时夜间禁食窗口，同时保住蛋白摄入。</li>
+<li>育龄女性的 HPG 轴对能量缺口更敏感，长时间或激进禁食可能扰乱月经、抑制甲状腺。</li>
+<li>mTOR 管合成生长，AMPK 管修复清理；长寿要在两者之间有节律地切换，而不是一味压低 mTOR。</li>
+<li>雷帕霉素在 NIH 干预测试项目中延长了小鼠寿命，但用于人体抗衰仍属研究或超适应证用药。</li>
+<li>表观遗传时钟在群体层面能预测死亡风险，但商业检测单次重测误差常达数年，尚不足以指导个人决策。</li>
+<li>握力、VO₂max、步速、ApoB、空腹胰岛素和腰围，是比商业表观遗传时钟更便宜可靠的生物年龄代理指标。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="a455ee98e05f0dd4">🧠 深入思考 — Reflections</h2>
 <details><summary>① 「逆转衰老」和「减缓衰老」在科学上是同一回事吗？</summary>
