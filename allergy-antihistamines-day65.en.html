@@ -47,6 +47,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid #2a4037}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #2a4037;display:inline-block}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}table{font-size:0.8rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <header>
@@ -150,6 +163,26 @@ Histamine acts on H1 receptors, causing vasodilation, leakage and itch at nerve 
 <div class="section"><div class="label">Try this week + reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>If congestion is your main symptom, use a nasal steroid with the technique above at a fixed time every day for 14 days, then compare your symptom-diary scores.<div class="q">Reflect: would you invest 3 years in immunotherapy to take 30 fewer years of pills?</div></div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Evolutionary biology · The smoke detector principle (Randolph Nesse, 2001)</b>: when a defense is cheap and a missed threat is costly, natural selection tolerates frequent false alarms; the IgE pathway, built against parasites, misfiring at pollen fits that bias. The difference: a smoke detector's false alarm is just noise, while an allergic false alarm amplifies itself and grows more sensitive.</li>
+<li><b>Neuroscience · Kindling (Graham Goddard, 1967)</b>: repeatedly giving a rat's amygdala electrical pulses too weak to cause a seizure eventually makes the same pulse trigger one; late-season pollen reactions being worse than early-season ones is the same lowering of a threshold. Unlike kindling, which is close to permanent, nasal priming fades once the season ends.</li>
+<li><b>Psychology · Opponent-process theory (Richard Solomon and John Corbit, 1974)</b>: when a stimulus keeps recurring, the body grows an opposing process that strengthens with practice, so removing the stimulus leaves only the opposite half running. Tolerance to diphenhydramine sedation within days and rebound itch after stopping cetirizine share that shape. The difference: Solomon was describing emotion and motivation, while the presumed H1-receptor upregulation behind withdrawal itch happens at the molecular level.</li>
+<li><b>Psychology · Systematic desensitization and extinction (Joseph Wolpe, 1958; Mark Bouton)</b>: exposure therapy for phobias also means graded, repeated, small doses of the feared thing; Bouton showed extinction is a newly learned layer of inhibition, so old fear returns in a new context, much as two years of immunotherapy fades after stopping. Unlike fear, a full three-year allergen immunotherapy course lasts after treatment ends.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>An allergy is the immune system treating harmless things like pollen or dust mites as enemies, not a sign of weak immunity.</li>
+<li>Histamine drives the early phase 5–30 minutes after exposure; the late phase 4–8 hours later runs on leukotrienes and eosinophils and causes congestion.</li>
+<li>Food IgG tests only show you have eaten a food; allergy is diagnosed with skin-prick tests or specific IgE.</li>
+<li>First-generation antihistamines such as diphenhydramine and chlorpheniramine enter the brain and block acetylcholine receptors, so they should not be long-term sleep aids.</li>
+<li>In the Gray 2015 cohort, the highest cumulative anticholinergic exposure carried a dementia HR of 1.54, though the evidence is observational.</li>
+<li>Fexofenadine causes the least drowsiness and suits driving or focused work; cetirizine acts fastest but causes drowsiness more often.</li>
+<li>Long-term daily cetirizine is broadly safe, but the dose should drop to 5 mg a day when creatinine clearance is below 30 mL/min.</li>
+<li>Stopping cetirizine abruptly after months of use can trigger severe itching (an FDA 2025 safety communication), so taper in steps.</li>
+<li>For moderate to severe allergic rhinitis, a nasal steroid is first-line and beats oral antihistamines for congestion; start 1–2 weeks before pollen season.</li>
+<li>Sublingual immunotherapy needs a full three years for lasting benefit after stopping; in the GRASS trial, two years wore off within a year of stopping.</li>
+</ol></div>
 
 <div class="card think">
 <div class="name">Deeper Questions</div>

@@ -47,6 +47,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid #2a4037}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #2a4037;display:inline-block}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}table{font-size:0.8rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 65</div>
@@ -153,6 +166,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>若有鼻塞型鼻炎，按上面的喷法每天固定一个时间用鼻用激素，连续 14 天，然后对比症状日记评分。<div class="q">思考：你愿意为「少吃 30 年药」投入 3 年脱敏吗？</div></div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>进化生物学 · 烟雾探测器原理（Randolph Nesse，2001）</b>：防御反应便宜、漏报代价大时，自然选择宁可让警报常常响错；IgE 通路本为对付寄生虫而设，对花粉误报正是这种偏向。不像在于：烟雾探测器误报只是吵一下，过敏的误报还会自我放大，越响越敏感。</li>
+<li><b>神经科学 · 点燃效应（kindling，Graham Goddard 1967）</b>：反复给大鼠杏仁核本不足以致痫的弱电刺激，几周后同样的刺激就能诱发癫痫发作；花粉季末比季初反应更重的预激，也是阈值被一次次压低。不像的是，点燃几乎终身不退，鼻黏膜的预激过了季节就会消。</li>
+<li><b>心理学 · 对立过程理论（Richard Solomon 与 John Corbit，1974）</b>：一个刺激反复出现，体内会长出一个方向相反、越练越强的过程，刺激一撤，只剩反向那一半在跑。苯海拉明的镇静几天就耐受、西替利嗪停药后反跳瘙痒，都是这个形状。不像在于，Solomon 讲的是情绪与动机，而停药瘙痒推测的 H1 受体上调发生在分子层面。</li>
+<li><b>心理学 · 系统脱敏与消退（Joseph Wolpe 1958；Mark Bouton）</b>：恐惧症的暴露疗法同样是分级、反复、小剂量地接触害怕的东西；Bouton 的研究表明消退只是新学的一层抑制，换个情境旧恐惧会复燃，像脱敏只做 2 年、停药后效果退回。不像的是，过敏原免疫治疗做满 3 年，停药后能持久。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>过敏是免疫系统把花粉、尘螨等无害物当成敌人，跟「免疫力差」无关。</li>
+<li>组胺主导过敏后 5–30 分钟的速发相；4–8 小时后的迟发相靠白三烯和嗜酸粒细胞，造成鼻塞。</li>
+<li>食物 IgG 检测只说明吃过，不能诊断过敏；查过敏要用皮肤点刺或特异性 IgE。</li>
+<li>苯海拉明、扑尔敏等一代抗组胺药会进脑并阻断乙酰胆碱受体，不应长期当安眠药吃。</li>
+<li>Gray 2015 队列中，累计抗胆碱药暴露最高组的痴呆风险 HR 为 1.54，但这是观察性证据。</li>
+<li>需要开车或高度专注时首选非索非那定，嗜睡最少；西替利嗪起效最快，嗜睡也更常见。</li>
+<li>西替利嗪长期服用总体安全，肌酐清除率低于 30 mL/min 时应减到每天 5 mg。</li>
+<li>连服西替利嗪数月以上后突然停药可能引发剧烈瘙痒（FDA 2025 年通报），宜阶梯减停。</li>
+<li>中重度过敏性鼻炎的一线用药是鼻用激素，治鼻塞明显优于口服抗组胺药，宜花粉季前 1–2 周开始。</li>
+<li>舌下脱敏要做满 3 年才有停药后的持久获益；GRASS 试验只做 2 年，停药一年后效果消失。</li>
+</ol></div>
 
 <div class="card think">
 <div class="name">深入思考</div>
