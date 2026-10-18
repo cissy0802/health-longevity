@@ -51,6 +51,43 @@ TOPICS.md 是本仓选题的**唯一真相源**。以下三条每次运行都适
 
 这样 CI 的 inject-comments 不会再对新页面追加自动提交。
 
+## 文末两节：越界 + 十条要点（2026-10-17 起，每篇新页必写）
+
+本仓页面结构（照最近一期抄）：`header` → 若干张主题 `.card`（每张含一句话结论 / 科学背景 + 机制 / 可执行协议 / 女性特别提示 + 常见误区 / 本周一试 + 思考题）→ `.card.think` 深入思考（有的期没有）→ `.nav`。**2026-10-17 起**，在最后一张主题 `.card` 之后、`<div class="card think">`（深入思考）之前（没有深入思考就放在 `.nav` 之前），按顺序插入下面两节；中英两页都要有。样式照 `.card.think` 的「card 里用 `.name` 当标题」写法：
+
+```html
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>学科 · 概念/人物</b>：……</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>……</li>
+</ol></div>
+```
+
+1. **`.crossx` 越界 · 跨学科的联想**（2026-10-17 起，**必写，3–5 条**）：写本期某个生理机制、证据或协议，和另一个领域里的什么东西是同一个结构——像在哪、不像在哪。每条约 60–90 字（一两句），只有展开的那 1 条可到约 120 字。往 BigCat 的深度兴趣挂：意识、佛学、量子力学、神经科学、东西方哲学、心理学、生物进化、复杂性科学、分布式系统；领导力、投资、商业可作旁支。**别挂回医学、营养、运动、健康本身**（神经科学、进化挂的是机制的同构，不是再讲一遍本期的健康建议）。具体研究、人物、年份必须真实准确，拿不准就换一条。本期正文里引用的研究、指南属于正文；我们自己联想到的才进越界，绝不写进卡片主线。英文页标题 `Crossovers`。
+2. **`.takeaways` 十条要点**（2026-10-17 起，**必写，正好 10 条**）：读者拿它直接记笔记。每条一句完整的话，约 20–45 字，**单独抄出去也能看懂**（写出药名、指标名、机制名，不用「它」「这种药」这类靠上下文的代词）。人名不必每条都当主语开头：研究者/试验名出现两三次就够，其余各条直接写观点、机制或事实（写「鼻用激素治鼻塞优于口服抗组胺药」，不写「Weiner 1998 发现鼻用激素……」）。覆盖各张卡片最值得记的结论、机制和协议，可含越界一两条；顺序跟正文走。**只总结正文已经写过的东西**，不加新信息、不放引语；别把每张卡的「一句话结论」原样抄进来凑数。英文页标题 `Ten takeaways`。
+
+CSS（2026-10-17 起）：本仓没有 TEMPLATE，新页的 `<style>` 照上一期写；若上一期还没有下面这段，就把它追加到新页 `<style>` 末尾（之后各期自然沿用）。照常写浅色，深色由 darken.py 转。越界用紫色跟正文青绿、女性提示的品红区分，十条要点用本仓主强调青 `#0d6e6e`：
+
+```css
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
+```
+
+篇幅：越界约 400 字、十条要点约 350 字。`.maxchars` 为这两节从 3000 上调到 3750（2026-10-17）；主题卡片的篇幅不变（仍按原来 3000 字以内的目标写），别借新上限把正文写长。`publish.sh` 会拦截：新的中英页 `<ol class="takeaways">` 不是正好 10 个 `<li>`、或 `.crossx` 不是 3–5 个 `<li>`，都不让发布（只查从未提交过的新文件，旧页不受影响）。
+
 ## 配色：深色由 CI 兜底，不用你操心
 
 本仓全站深色。**生成页面时照常写你觉得合适的浅色配色**——push 之后 `darken.py`
