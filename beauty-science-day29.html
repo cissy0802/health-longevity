@@ -42,6 +42,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 29</div>
@@ -139,6 +152,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>若你担心脱发，本周用固定光线<strong>拍一张头顶分缝照片</strong>作为基线，每月同条件复拍——肉眼难察的变化，对比照看得很清楚。若近期体检没查过铁蛋白和甲状腺，加进下次清单。思考题：脱发干预需要长期坚持且停药逆转，你愿意把它当成像刷牙一样的日常吗？</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>量子力学 · 光电效应（爱因斯坦，1905）</b>：金属会不会放出电子，看的是单个光子的能量（频率），不是光有多强。UVB 光子能量更高，能直接打坏 DNA 碱基；UVA 单个光子弱，多是绕道活性氧间接伤人。不像在于：光电效应有一道清晰的阈值，皮肤损伤却随累积剂量一点点叠加。</li>
+<li><b>分布式系统 · 控制平面与数据平面</b>：路由器的控制平面只下发「怎么转发」的指令，真正的流量走数据平面。口服胶原小肽更像一条控制面消息，提醒成纤维细胞「该造胶原了」，砖瓦还得用身体自己的氨基酸。不像的是，网络指令有协议保证送达，小肽这条信号有多可靠还没定论。</li>
+<li><b>复杂性科学 · 临界转变（Scheffer 等，2001）</b>：Scheffer 等人在 Nature 上描述，湖泊等生态系统越过临界点会突然翻到另一个稳态，条件调回去也回不来。毛囊从变细到消失也是这样一道门槛：微小化阶段还能拉回，越过去就不可逆。不像在于湖泊有时还能靠大力干预翻回，消失的毛囊目前没有路。</li>
+<li><b>商业 · 柠檬市场（Akerlof，1970）</b>：买家无法验证质量时，好货坏货只能卖一个价，价格信号就失灵了；护肤品不必证明功效，正是这种信息不对称。不像的是，阿克洛夫模型里坏车会把好车挤出市场，维 A 酸这样的好货没被挤走，只是便宜、过了专利、没人替它吆喝。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>面部可见老化约八成来自紫外线累积造成的光老化，而不是时间本身。</li>
+<li>UVA 能穿透到真皮、穿云穿玻璃又不让人晒红，是光老化的主犯，防晒要认准广谱或 PA++++。</li>
+<li>防晒效果取决于用量：全脸约 1/4 茶匙，足量加每 2 小时补涂胜过追求更高 SPF。</li>
+<li>外用抗皱只有视黄酸类和每日防晒有 RCT 证据，Hughes 2013 证明规律防晒能延缓皮肤老化。</li>
+<li>OTC 视黄醇效力约为处方维 A 酸的 1/10~1/20，应晚上用、从低浓度隔几晚一次起步。</li>
+<li>备孕、孕期和哺乳期应停用一切视黄酸类，可换用壬二酸、维 C 或烟酰胺。</li>
+<li>口服胶原会被消化成氨基酸和小肽，小肽最多充当刺激成纤维细胞的信号，不会定向补到脸上。</li>
+<li>胶原补充对皮肤弹性和水合的证据中等且多为厂商资助，优先级排在防晒、视黄醇和足量蛋白质之后。</li>
+<li>雄激素性脱发是 DHT 让毛囊逐渐微小化，外用米诺地尔和男性口服非那雄胺是两种有 RCT 证据的药。</li>
+<li>脱发越早干预越好：微小化的毛囊还能拉回，彻底消失就像越过临界点的生态系统，回不去了。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="0931c0b9f32cc65f">🔬 深入思考 — Reflections</h2>
 <details><summary>① 既然 80% 的皮肤老化是紫外线造成的，为什么人们仍把钱花在精华而非防晒上？</summary>

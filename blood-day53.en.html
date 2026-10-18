@@ -45,6 +45,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}.mcv .row{flex-direction:column}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -193,6 +206,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">Try This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Set an hourly stand-up reminder for sitting; before your next long trip, put "hydrate + ankle pumps + walk" on your checklist. If you self-take aspirin as "prevention," confirm with a doctor this week whether you're primary or secondary prevention. Reflect: have you truly counted the hidden cost of a "just-in-case" daily drug?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Buddhism · The Four Noble Truths</b>: first recognize suffering, then trace where it comes from, the same order as "anemia is a sign, so chase the cause." The difference: the origin of suffering is craving, a cause in the mind, while anemia traces back to material chains like blood loss or missing raw materials that the right supply can cut.</li>
+<li><b>Distributed systems · Ingress rate limiting</b>: a system with no outlet to shed load can only control admission at the door. The body cannot excrete iron, so hepcidin is the rate limiter: each large dose shuts the gate for a while, which is why alternate-day dosing pays off, like a throttled client backing off before retrying. The difference: hepcidin also locks iron already in the warehouse.</li>
+<li><b>Economics · Goodhart's law</b>: in 1975 Charles Goodhart observed that a statistical regularity breaks down once it is used as a target for control; drugs that raised HDL without cutting heart attacks fit that pattern. The difference: swapping LDL-C for ApoB is not a broken metric but a ruler closer to the mechanism.</li>
+<li><b>Complexity science · Normal accidents</b>: Charles Perrow (1984) argued that in tightly coupled systems, several harmless small deviations stack up into disaster; sitting, estrogen and a long flight only make a clot together. The difference: Perrow saw such accidents as unavoidable, while Virchow's triad can be dismantled one factor at a time.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Anemia only means low hemoglobin or red cells; it is a sign, not a diagnosis, and always calls for chasing the cause.</li>
+<li>Mean corpuscular volume (MCV) triages anemia: small cells point mostly to iron deficiency, large cells to B12 or folate deficiency.</li>
+<li>Low ferritin with normal hemoglobin is hidden iron deficiency; new iron deficiency in men or postmenopausal women warrants a check for GI bleeding.</li>
+<li>Ferritin is an acute-phase reactant inflated by inflammation, so low ferritin confirms iron deficiency but normal ferritin does not rule it out.</li>
+<li>The body has no active route to excrete iron; hepcidin from the liver gates gut absorption and briefly shuts it after each large iron dose.</li>
+<li>Stoffel's studies show 40–60 mg elemental iron every other day absorbs better than several daily doses, with fewer GI side effects.</li>
+<li>ApoB directly counts atherogenic particles and beats LDL-C, which estimates cholesterol mass; test Lp(a) at least once in a lifetime.</li>
+<li>Virchow's triad is stasis, vessel injury and hypercoagulability, which sitting, long flights, estrogen and surgery all hit.</li>
+<li>Arterial clots come from plaque rupture and platelets and call for antiplatelets; venous clots come from stasis and hypercoagulability and call for anticoagulants.</li>
+<li>After the ASPREE, ARRIVE and ASCEND trials, daily aspirin is no longer a default for primary prevention in healthy people.</li>
+</ol></div>
 
 <div class="section think">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">Deeper Reflection</div>
