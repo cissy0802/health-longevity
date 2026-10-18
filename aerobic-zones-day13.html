@@ -50,6 +50,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 13</div>
@@ -155,6 +168,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>连续 3 个早晨醒后平卧测静息心率取均值，用 Karvonen 公式算出你的 Z2 区间（60–70% HRR），下次有氧照它走。<br/>思考：当心率、RPE、talk test 三者打架时，你更信哪一个？为什么？</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>投资 · 塔勒布的杠铃策略</b>：塔勒布在《反脆弱》（2012）里主张资产一头放极安全、一头放小额高风险，避开看似稳妥的中间；极化训练的 80/20 是同一副杠铃，Z3 就是那个「中等风险」。不像在于：杠铃是为了押注尾部事件，极化是为了让高强度刺激够深、同时让疲劳恢复得过来。</li>
+<li><b>佛学 · 中道</b>：佛陀离开苦行也离开享乐，说的是不落两边。极化训练看上去正相反：偏偏两头都要、躲开中间。但中道不是取平均值，Z3 这种「两头都沾一点」的平庸，恰好也不是中道。</li>
+<li><b>分布式系统 · 排队论</b>：乳酸产生快过清除就开始堆积，像队列的到达率逼近服务率：M/M/1 队列平均长度是 ρ/(1−ρ)，ρ 接近 1 时陡然爆炸，LT2 就是这个拐点。不像的是，乳酸会被当燃料回收，而训练能把「服务率」本身往右推。</li>
+<li><b>心理学 · 韦伯-费希纳定律</b>：韦伯（1834）发现人对刺激的感知按相对比例而非绝对差值，费希纳（1860）把它写成对数律。心率储备法同理：同样加 10 bpm，对静息 50 和静息 75 的人意义不同。差别在于，心率储备是线性比例，感知是对数刻度。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>有氧不是单一强度：Zone 2 练线粒体与脂肪供能的底盘，Zone 5 推高 VO2max 天花板。</li>
+<li>Zone 3 是灰色地带：疲劳不低，练底盘不如 Z2 干净，冲上限又不如 Z5 充分。</li>
+<li>VO2max 是全因死亡率最强的单一体能预测因子之一（Mandsager 2018，约 12 万人）。</li>
+<li>估算最大心率用 Tanaka 公式 208 − 0.7×年龄，比「220−年龄」更准。</li>
+<li>极化训练约 80% 时间在 Z1–Z2、约 20% 在 Z4–Z5，刻意压缩中间的 Z3。</li>
+<li>Stöggl 与 Sperlich 2014 年的 RCT 里，极化组的 VO2max 与峰值功率提升最大。</li>
+<li>乳酸阈是个体化刻度：LT1（约 2 mmol/L）是 Z2 上沿，LT2（约 4 mmol/L）是可长时间维持的极限。</li>
+<li>乳酸是可回收的燃料，延迟性肌肉酸痛来自肌纤维微损伤与炎症，与乳酸无关。</li>
+<li>心率储备法的目标心率 = 静息心率 + 强度% ×（最大心率 − 静息心率）。</li>
+<li>心率、主观用力度 RPE 和 talk test 三把尺交叉校验；能说整句、唱歌费力就是 Z2。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="fd76ff0cb8be6ab1">🏃 深入思考 — Reflections</h2>
 <details><summary>① 时间有限，只能二选一：先补 Zone 2 还是先上 Zone 5？</summary>

@@ -48,6 +48,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}.ladder .rung{flex-direction:column;gap:4px}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 24</div>
@@ -154,6 +167,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>若近期打算做医美，用上面的「选机构清单」逐条核验，缺一项就缓一缓；再把每月护肤/医美预算列出来，看多少花在「智商税」分级上。思考题：你愿为「看起来年轻」付费，那愿把同等预算投到「真正活得久而健康」（睡眠、训练、体检）上吗？</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>哲学 · 塔勒布的「反脆弱」</b>：热玛吉、超声刀用可控热损伤换来新生胶原，正是塔勒布 2012 年《反脆弱》说的「适度冲击让系统变强」。不像在于：胶原储备有限、随年龄递减，能量加过头只会烫伤和脂肪流失，这里的反脆弱有天花板。</li>
+<li><b>经济学 · 古德哈特定律</b>：一个指标一旦变成目标，就不再是好指标（Goodhart，1975）。「看起来年轻」原本是内在衰老的粗略读数，专门优化外观后，这个读数和端粒、激素就脱了钩。不同的是，有人真心要的就是外观本身，那它就不只是代理指标。</li>
+<li><b>领导力 · 贝佐斯的单向门与双向门</b>：贝佐斯在 2015 年致股东信里把决策分成可撤回（双向门）和不可撤回（单向门）两类，前者要快、后者要慢。医美阶梯就是按可逆性排的：肉毒 3–4 个月自己退、玻尿酸有透明质酸酶这把后门钥匙，手术才是单向门。不像在于：公司试错的是业务，这里试错的是你的脸，双向门也要等几个月才能回头。</li>
+<li><b>心理学 · 享乐适应（Brickman &amp; Campbell，1971）</b>：人会很快把新状态当成基线，于是要更多才觉得满足。「越填越多」以致面部失真正是这条跑步机。不像的是，心情的基线会回落，填充物却留在脸上，适应是心理的、代价是物理累积的。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>肉毒素阻断乙酰胆碱释放、让表情肌暂时放松，专治动态皱纹，维持约 3–4 个月。</li>
+<li>玻尿酸填充补的是静态容积流失（泪沟、苹果肌），是物理填充，不是除皱。</li>
+<li>IPL 光子主治色斑与泛红，点阵激光改善肤质、毛孔和痘坑，两者对皱纹都几乎无效。</li>
+<li>玻尿酸填充的血管栓塞可致失明或坏死，注射须由医师操作并备好透明质酸酶急救。</li>
+<li>热玛吉、超声刀和射频微针都靠可控热损伤刺激新生胶原，2–3 个月起效、6 个月达峰。</li>
+<li>能量紧致的效果真实但温和，替代不了手术拉皮，对重度松弛下垂性价比低。</li>
+<li>抗衰决策按阶梯走：外用地基先做满 3–6 个月，再按需上微创，手术留给结构性松弛。</li>
+<li>防晒加维 A 酸证据最强、成本最低，是性价比之王，所有医美项目的效果也都靠防晒维持。</li>
+<li>口服胶原蛋白在胃肠道被降解为氨基酸，无法定向补到脸上，属于智商税倾向。</li>
+<li>选机构要核验医师资质、正品可查和栓塞急救预案，拒绝在工作室或美容院做注射与光电。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="01ad8393900226e5">🔬 深入思考 — Reflections</h2>
 <details><summary>① 医美改善「外观衰老」，它和「内在衰老」是什么关系？</summary>
