@@ -44,6 +44,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -171,6 +184,27 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>If you suspect a food, keep a 7-day <strong>symptom diary</strong> (what you ate, how long after, what symptom) instead of rushing to order an IgG test. Turn "I feel intolerant" into "I have an objective record."<br>Reflect: the foods you currently avoid long-term — are they based on a <strong>clear reaction</strong>, or on a dubious test or hearsay?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Investing &middot; Markowitz diversification (1952)</b>: add assets that don't move in lockstep and the portfolio's overall volatility falls, the mathematical form of "don't put all your eggs in one basket"; a high-diversity microbiome fed by 30 plants a week also trades variety for resilience. The difference: stocks don't feed each other, while microbes are wired together by cross-feeding, one species' waste often another's food.</li>
+<li><b>Distributed systems &middot; restoring from your own snapshot</b>: after a crash, the safest recovery is rolling back to your own backup snapshot, not bolting on someone else's components; that autologous fecal transplant restores the gut fastest after antibiotics while foreign probiotics slow it is the same logic. Unlike a snapshot, though, a microbiome only grows back approximately.</li>
+<li><b>Neuroscience &middot; interoception and the "beast machine" (Anil Seth)</b>: Seth argues that emotion and selfhood start as the brain's predictions about the body's internal state, and vagal signals rising from the gut are raw material for those predictions. The difference: interoception is about how the brain reads the body, not about a bacterium manufacturing a mood.</li>
+<li><b>Psychology &middot; need for cognitive closure (Arie Kruglanski)</b>: under uncertainty people grab a definite answer even when it's unreliable; an IgG report saying "you're intolerant to 30 foods" is closure you pay for. The difference: psychology measures an individual trait, while the IgG test's popularity also has sellers supplying the certainty.</li>
+<li><b>Buddhism &middot; the five aggregates and non-self</b>: Buddhism holds that the "self" is a passing bundle of form, feeling, perception, formations and consciousness, with no independent core; some 38 trillion microbes running alongside our own cells blur the edge of "me" too. The difference: non-self is an insight to be realized in practice, while the microbiome is only a biological reminder.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>The goal of gut health is a diverse, stable microbial ecosystem, not topping up one "star" good bacterium.</li>
+<li>Eating 30 different plants a week is the most actionable lever for microbiome diversity, based on the American Gut Project.</li>
+<li>Gut microbes ferment fermentable fiber into short-chain fatty acids; butyrate is colon cells' preferred fuel and maintains the gut barrier.</li>
+<li>In Wastyk's 2021 Stanford RCT, 10 weeks of a high-fermented-food diet raised diversity and lowered 19 inflammatory markers.</li>
+<li>Probiotic effects are strain-specific: pick supplements by named strain and matching indication, not by species count or CFU.</li>
+<li>Suez in 2018 found that probiotics after antibiotics delayed native microbiome recovery, while autologous fecal transplant restored it fastest.</li>
+<li>The gut-brain axis runs both ways via the vagus nerve, immune signals and metabolites, but human evidence for "psychobiotics" is small and inconsistent.</li>
+<li>Food allergy is IgE-mediated, triggered by trace amounts and potentially fatal; food intolerance is a non-immune, dose-dependent digestive problem.</li>
+<li>IgG food intolerance tests only reflect normal food exposure; AAAAI and EAACI advise against them, and avoidance based on them harms diversity.</li>
+<li>A low-FODMAP diet runs in three phases, restriction, reintroduction and personalization, and is not a permanent elimination.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>🔬 Reflections</h2>

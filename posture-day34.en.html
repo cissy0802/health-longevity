@@ -41,6 +41,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -236,6 +249,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">Progression & safety</div>
 <div class="content"><div class="myth">• <b>Progress</b>: when you hit the top of the rep range, add weight/band tension, or go from 2 rounds to 3.<br>• <b>Soreness vs. warning</b>: post-workout muscle soreness is normal; but <strong>numbness/weakness radiating down the arm, pain that worsens with training, or dizziness/palpitations</strong>—stop and get assessed, don't push through.<br>• <b>Frequency</b>: the intensity is gentle, so daily is fine; if tired, just do ①③.</div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Buddhism · "abiding nowhere"</b>: the Diamond Sutra says the mind should arise without abiding anywhere, and Huineng is said to have awakened on hearing that line. "The best posture is your next posture" has the same shape: the good is not a fixed point but not staying too long at any point. The difference: Buddhism is about the mind not clinging; posture is only about tissue not carrying one load too long. Mechanics, not liberation.</li>
+<li><b>Distributed systems · hot spots and load balancing</b>: route every request to one shard and that machine falls over first; the fix is rotating the load, not buying a bigger machine. Sitting still turns the same muscles and the same discs into the hot spot. Unlike servers, though, muscles adapt and get stronger in the gaps between loads.</li>
+<li><b>Psychology · nudges and defaults (Thaler and Sunstein, 2008)</b>: people mostly follow the default, so changing the default beats exhorting resolve; a standing desk, walking meetings and timed reminders give the body a new default. The difference: a nudge is usually designed by someone else, while here the architect and the one being nudged are the same person.</li>
+<li><b>Philosophy · Foucault's "docile bodies"</b>: in Discipline and Punish (1975), Foucault describes schools prescribing the position of trunk and elbows for writing; the upright body is both a product and a badge of discipline, and reading "sit up straight" as character comes from that tradition. Where it parts ways: Foucault asks how power shapes bodies, while this issue's evidence says the disciplined posture does not even protect the spine.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Upper-crossed syndrome is a reversible imbalance: tight, short pecs and upper traps; weak, long deep neck flexors and mid/lower traps.</li>
+<li>The "27 kg on the neck at 60° of head tilt" figure comes from Hansraj's 2014 static model, not a measurement, and is often overstated.</li>
+<li>The upper-cross protocol: loosen the tight, strengthen the weak, mobilize the thoracic spine, and do daily wall chin tucks for the deep neck flexors.</li>
+<li>Systematic reviews find forward-head angle only weakly linked to neck pain; sitting, stress, poor sleep and inactivity predict it better.</li>
+<li>Degeneration on neck imaging often does not match pain, and posture-corrector straps help only as a short-term reminder; long-term use weakens your own muscles.</li>
+<li>No single "correct" sitting posture prevents back pain; what matters is sitting too long and too still, plus a lack of movement and strength.</li>
+<li>Spinal discs get nutrients through the pump effect of movement, and back-pain guidelines make staying active and exercise therapy first-line, not bed rest or pricey chairs.</li>
+<li>Frequent micro-breaks often ease neck and shoulder discomfort more than new equipment, and a sit-stand desk only helps if you alternate.</li>
+<li>The 20-minute desk-relief routine has three blocks: loosen what sitting tightens, strengthen what it weakens, and breathe to calm the sympathetic system.</li>
+<li>Reshaping the environment and defaults so that moving is the path of least resistance beats willpower reminders to sit up straight, which is the logic of a nudge.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>🔬 Reflections</h2>

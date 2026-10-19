@@ -41,6 +41,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -178,6 +191,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Spend 30 minutes taking stock of your current medical and critical-illness coverage, and mark the gaps that "you can't buy once diagnosed." Reflection: you make long-term plans for "financial freedom"—have you given "healthspan" the same foresight and discipline?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Philosophy · Canguilhem, <i>The Normal and the Pathological</i></b>: In 1943 Georges Canguilhem argued that "normal" in medicine fuses two meanings: statistically common and normatively healthy. A reference range only supplies the first, which is why you need a separate "optimal range." The difference: he saw health as an organism's capacity to set new norms for itself, something that resists being pinned to any set of numbers.</li>
+<li><b>Buddhism · The two arrows</b>: The Sallatha Sutta says an untrained person, struck by a bodily first arrow, shoots himself with a second arrow of worry. Late-night symptom searching is that second arrow; watching and logging a non-red-flag symptom means taking only the first. The difference: the Buddha says leave the second arrow alone, while a red flag demands you pull out the first one now.</li>
+<li><b>Distributed systems · N-version programming</b>: Independent implementations vote to mask faults, on the assumption that they will not fail together. Knight and Leveson's 1986 experiment found that independently written versions often failed on the same inputs. Seeking a second opinion outside the first team guards against exactly this correlated failure.</li>
+<li><b>Evolution · Bet-hedging</b>: Desert annual plants keep part of their seed dormant, giving up average yield so a bad year cannot wipe them out (Cohen, 1966). Insurance has the same shape: a certain small cost keeps one disaster from zeroing out long-run growth. The difference: seeds face no underwriting, while a person who is already diagnosed can no longer buy the hedge.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>A lab reference range is the central 95% of a reference population, so it describes what is common, not what is optimal.</li>
+<li>ApoB counts atherogenic particles directly and signals cardiovascular risk more accurately than LDL-C.</li>
+<li>A raised fasting insulin can reveal insulin resistance while fasting glucose still looks "normal."</li>
+<li>Ask for ApoB, fasting insulin and hs-CRP at checkups, test Lp(a) once in life, and track your own trend rather than single values.</li>
+<li>Red-flag symptoms such as unexplained weight loss, exertional chest pain, blood in stool or postmenopausal bleeding need a doctor within 48 hours.</li>
+<li>Watch and log a non-red-flag symptom for 1–2 weeks before seeing a doctor, instead of letting cyberchondria amplify the worry.</li>
+<li>In a Mayo Clinic study of referred patients, about 21% had their diagnosis meaningfully changed by a second opinion.</li>
+<li>For a second opinion, bring the original imaging and pathology to a doctor independent of the first team; two independent opinions usually suffice.</li>
+<li>Insurance trades a certain small cost for protection against the tail risk of serious illness, and underwriting judges your health at purchase, so earlier is better.</li>
+<li>The goal of longevity planning is to compress the disabled years at the end of life, not merely to extend years lived with disease.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>🔬 Reflections</h2>

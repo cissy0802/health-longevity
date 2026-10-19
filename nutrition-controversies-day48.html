@@ -45,6 +45,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 48</div>
@@ -158,6 +171,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>先别追求 16:8。这周只做一件事：设 12 小时夜间禁食（如 20:00 后不进食到次日 8:00），并保证每餐 ≥30 g 蛋白。<br/>思考题：你想靠禁食解决的问题，是不是其实是"总热量"和"蛋白不足"？</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>投资 · 机会成本与业绩基准</b>：基金收益要对照基准指数才知好坏；饱和脂肪的净效应也只能相对「换成了什么」来算。不像的是，基准由人约定，替代物的效应由生理决定。</li>
+<li><b>佛学 · 缘起与无自性</b>：中观说事物依条件而起、没有固定「自性」；同样的饱和脂肪，在奶酪和加工肉里效应不同，依基质而定。不像的是，饱和脂肪升 LDL 跨基质都成立。</li>
+<li><b>进化生物学 · 超常刺激（Niko Tinbergen）</b>：蛎鹬会撇下自己的蛋，去孵一只大得离谱的假蛋；超加工食品同样把甜、油、咸放大到祖先环境里没有的强度，压过饱腹调节。不同在于，假蛋是实验者摆的，超加工配方是市场一轮轮迭代选出来的；而且人能读配料表，鸟不能。</li>
+<li><b>复杂性科学 · 反馈延迟与超调（啤酒游戏）</b>：MIT 啤酒游戏里订单信息隔几轮才传回，玩家几乎必然订过头；饱腹信号约 20 分钟才起效，吃得快同理。不像的是，供应链延迟难改，吃饭放慢就能等到信号。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>加工肉被 IARC 列为 1 类致癌物，未加工红肉只是 2A 类，两者的证据强度相差很远。</li>
+<li>血红素铁催化肠道生成 N-亚硝基化合物，是红肉损伤结肠上皮 DNA 的主要机制之一。</li>
+<li>实用做法是把加工肉减到每周一次以内，未加工红肉控制在每周 350–500 克。</li>
+<li>饱和脂肪确定会升高 LDL 和 ApoB，「饱和脂肪已平反」的说法略过了这一点。</li>
+<li>饱和脂肪的净效应取决于替代物：换成不饱和脂肪降低冠心病风险，换成精制碳水则无益。</li>
+<li>ApoB 比 LDL-C 更能反映致动脉粥样硬化的颗粒数，围绝经期女性尤其值得检测。</li>
+<li>Hall 2019 代谢病房试验中，营养素匹配的超加工饮食仍让人每天自发多吃约 500 千卡。</li>
+<li>配料表里出现厨房没有的工业成分，如分离蛋白、乳化剂、氢化油，基本就是超加工食品。</li>
+<li>TREAT 试验显示，16:8 时间限制进食的减重效果不优于常规三餐，还多掉了肌肉。</li>
+<li>间歇禁食的价值在于简化进食、帮人少吃热量，配足蛋白和抗阻训练才能不丢肌肉。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="0d4022689c783ca6">深入思考</h2>
 <details><summary>① 营养流行病学几乎都是观察性队列，充满健康用户偏倚与混杂，为何我们仍据此给全民建议？</summary>

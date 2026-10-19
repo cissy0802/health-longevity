@@ -42,6 +42,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 58</div>
@@ -145,6 +158,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>下次看病前，用 AI 帮你<strong>把症状、疑问整理成一份清单</strong>带去问诊——让 AI 做助手、医生做诊断，体会"人机协同"该怎么分工。<br/><span style="color:#a8e0d0">思考题：作为 AI 从业者，你会如何设计一个"让人保持质疑、而不是被自动化偏见接管"的医疗 AI 界面？</span></div></div>
 </div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>商业 · 古德哈特定律（Charles Goodhart，1975）</b>：指标一旦变成目标，就不再是好指标。把血糖曲线压平、把睡眠分数刷高，正是把代理当成了目的。不像的是，古德哈特说的是市场会钻指标的空子，身体不会博弈，是盯分数的焦虑本身把睡眠搅坏了。</li>
+<li><b>神经科学 · 内感受推断（Anil Seth，2013）</b>：Seth 认为「我觉得累不累」本身就是大脑用先验去猜身体内部状态的结果。恢复分数是另一个外置的模型，读的是同一具身体；两者冲突时，未必谁对谁错，而是两个模型各自漏掉了不同的信号。</li>
+<li><b>佛学 · 指月之指（《楞严经》）</b>：经中说以手指月示人，若把手指当成月亮，不仅失了月，也失了指。睡眠分数、血糖峰值是手指，健康才是月亮。不像的是，佛经里的手指终究要放下，而在糖尿病管理里，这根手指真能救命。</li>
+<li><b>机器学习理论 · 没有免费午餐定理（Wolpert 与 Macready，1997）</b>：在所有可能的问题上取平均，任何优化算法的表现都一样，擅长一类问题必然以别处为代价；医学 AI 在眼底图上超人、在开放问诊里露怯，是同一个结构。不像的是，定理讲的是对所有问题的平均，现实中的问题并不均匀分布，所以通用系统并非注定无望。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>消费级手环手表是趋势追踪器：静息心率较准，睡眠分期、HRV、血氧只能做相对参考。</li>
+<li>晨起在固定条件下连续记录静息心率和 HRV，看 7–14 天的个人趋势，不和别人比绝对值。</li>
+<li>Apple Heart Study 显示手表能筛出房颤信号，但低风险人群假阳性高，提醒只是去做心电图的理由。</li>
+<li>黄体期静息心率升高、HRV 下降是正常生理，不该被读成恢复差或训练过度。</li>
+<li>连续血糖监测在糖尿病管理中能降低 HbA1c、减少低血糖，核心指标是目标范围内时间超过 70%。</li>
+<li>健康人餐后血糖升高再回落是胰岛素在正常工作，靠 CGM 调饮食改善硬结局目前缺乏证据。</li>
+<li>餐后散步 10–15 分钟就能显著削减血糖峰值，不需要任何设备。</li>
+<li>绝大多数健康 APP 没有临床证据，数字化失眠认知行为治疗（CBT-i）却有 RCT 支持、可作一线。</li>
+<li>医学 AI 在眼底、乳腺 X 线等窄任务上达专家级，症状自查工具把正确诊断排进前三的比例仅约五成。</li>
+<li>指标一旦变成目标就不再是好指标，盯着睡眠分数追求完美反而可能睡得更差（orthosomnia）。</li>
+</ol></div>
+
 <div class="card" data-tts="a506472baa8c8402">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">深入思考</div>
 <div class="think">

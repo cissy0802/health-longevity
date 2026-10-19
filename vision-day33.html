@@ -42,6 +42,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 33</div>
@@ -144,6 +157,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>翻出家里的太阳镜，找镜片或镜腿上的「UV400 / 100% UV」标识；没有就别再戴它挡太阳。思考题：当一件事（老花）注定发生、另一件（白内障）能被几十年的小习惯改变，我们的注意力和焦虑，是不是常常放错了地方？</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>神经科学 · 多巴胺的两份差事</b>：在视网膜里，多巴胺报告的是「光够不够亮」，亮光促其释放、进而刹住眼轴增长；在中脑奖赏回路里，同一个分子编码的却是「比预期好多少」（Schultz、Dayan、Montague，1997）。像在一个分子被借去传递调控信号；不像在于视网膜报告环境的绝对强度，奖赏神经元只对意外放电，见惯了就沉默。</li>
+<li><b>分布式系统 · 租约（Gray &amp; Cheriton，1989）</b>：分布式缓存靠租约保一致，持有者须在到期前续约，否则权限自动失效。泪膜也是一份靠眨眼续约的租约，盯屏时眨眼从约 15 次/分降到 5 次，续约赶不上蒸发。不像的是，睑板腺缺油会缩短每份租约本身，光多眨眼补不回来。</li>
+<li><b>心理学 · 控制错觉（Langer，1975）</b>：Ellen Langer 发现，自己挑的彩票会被估得更值钱，哪怕中奖全凭运气。防蓝光镜卖的正是这种「我做了点什么」的掌控感。不像在于：彩票确实不可控，眼疲劳本来可控，只是起作用的是眨眼和亮度，不是镜片。</li>
+<li><b>斯多葛哲学 · 爱比克泰德的控制二分法</b>：《手册》开篇把事情分成「取决于我们的」和「不取决于我们的」，只在前者上用力。老花属于后者，白内障风险部分属于前者。不像的是，爱比克泰德把身体整个划在可控之外，而手术早把白内障挪到了可修复的一侧。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>近视的本质是眼轴拉长，眼轴每长 1 毫米约加深 250–300 度，且不可逆。</li>
+<li>儿童防近视证据最强的是每天累计 2 小时户外光照，关键在光照强度而非运动。</li>
+<li>广州学校整群随机试验中，每天多 40 分钟户外，3 年近视发病率降低约 23%。</li>
+<li>已近视的孩子可经眼科评估后用低浓度阿托品、角膜塑形镜或周边离焦镜片控制进展。</li>
+<li>Cochrane 2023 系统综述显示，防蓝光镜片对视疲劳、视力和睡眠均无显著获益。</li>
+<li>数字眼疲劳主要源于盯屏时眨眼从每分钟约 15 次降到 5 次，应对靠 20-20-20 法则和主动眨眼。</li>
+<li>夜间光照经含黑视素的视网膜细胞抑制褪黑素，降低睡前屏幕亮度和使用时长比开夜间模式更关键。</li>
+<li>多数干眼源于睑板腺功能障碍导致油脂层不足、泪膜蒸发过快，热敷加睑缘清洁才针对根因。</li>
+<li>白内障可靠 UV400 太阳镜、戒烟和控血糖延缓，唯一有效的治疗是手术，没有滴眼液能溶解白内障。</li>
+<li>老花是晶状体变硬的必然老化，练不回来；接受注定的、干预可改变的，正合斯多葛的控制二分法。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="7a938b32b94f749b">🔬 深入思考 — Reflections</h2>
 <details><summary>① 户外光能防近视，但城市儿童的时间被课业塞满——这是医学问题还是社会问题？</summary>

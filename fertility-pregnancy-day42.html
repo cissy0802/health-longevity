@@ -43,6 +43,19 @@ details .think{font-size:0.9rem;color:#9cbcbc;padding:0 0 12px}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 42</div>
@@ -146,6 +159,27 @@ details .think{font-size:0.9rem;color:#9cbcbc;padding:0 0 12px}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>若在备孕，男方本周把"<strong>精液分析</strong>"列入计划，并启动护精生活方式（控温、控烟、减脂）。<strong>思考题</strong>：在你的家庭里，生育的检查与责任是否被默认成了"女方的事"？</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>心理学 · 锚定效应</b>：Tversky 与 Kahneman（1974）发现，一个随手给出的数字就能把人的估计拽过去。低 AMH 正是这样一枚锚：它只回答「卵还剩多少」，却被读成「还能不能怀」。不像的是，AMH 并非随机数，在试管决策里确有用处。</li>
+<li><b>哲学 · 连锁悖论</b>：古希腊的欧布里德问：一粒沙不成堆，再加一粒也不成，那堆从哪一粒开始？「35 岁高龄」是同一种划线：生育力连续下滑，35 只是统计上曲线变陡处。不同在于沙堆没有代价，这条线却会被贴成污名。</li>
+<li><b>神经科学 · 关键期</b>：Hubel 与 Wiesel 发现小猫视觉皮层只在生后一段窗口内可塑，并因此获 1981 年诺奖。神经管闭合也有窗口，且多在知道怀孕前就关上；不同在于前者靠经验塑造，后者只看原料是否及时到位。</li>
+<li><b>商业 · 古德哈特定律</b>：Goodhart（1975）说，指标一旦成了目标就不再是好指标。「产后瘦回去」把体重变成目标，核心、盆底和情绪反倒没人量，像只盯 KPI 的公司。差别是身体不配合造假，代价迟早以漏尿或抑郁兑现。</li>
+<li><b>复杂性科学 · 啤酒游戏</b>：MIT 在 1960 年代设计的供应链模拟里，下单到到货隔着几周，玩家看不到效果就不断加单，库存随之剧烈震荡。精子发生约 74 天也是一条延迟回路：改了作息一个月就复查、没变化就放弃，是同一种误判。不同的是这里不会震荡，只需按季度耐心等。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>生育力的第一变量是年龄；自然受孕率 35 岁后明显下降，主因是卵子非整倍体率升高。</li>
+<li>AMH 反映卵巢储备的数量，能预测试管促排反应，但不预测自然受孕概率（Steiner 2017）。</li>
+<li>35 岁以下试孕 12 个月、35 岁及以上试孕 6 个月未成功，就该夫妻同时做生育评估。</li>
+<li>叶酸要在孕前 1 个月开始每天补 400–800 µg，因为神经管在受孕后约 28 天内闭合。</li>
+<li>MRC 维生素研究（1991）显示，围孕期补叶酸使神经管缺陷复发风险降低约 70%。</li>
+<li>无并发症的孕妇每周宜做 150 分钟中等强度运动，强度以「能说话、不能唱歌」为准。</li>
+<li>腹直肌分离在产后 6–8 周仍约 60% 存在，早期应练呼吸、腹横肌和盆底，避免卷腹。</li>
+<li>产后抑郁影响约 10–15% 的产妇，是可治疗的并发症，可用 EPDS 量表自评筛查。</li>
+<li>不孕约一半涉及男方，精液分析便宜而基础，应与女方评估同步做。</li>
+<li>精子发生约需 74 天，减脂、戒烟、避免阴囊高温等改变要按约 3 个月为周期评估效果。</li>
+</ol></div>
+
 <div class="deep-title">深入思考</div>
 <details><summary>"生育力检测"卖的是信息，还是焦虑？</summary><div class="think">AMH/AFC 对计划试管或冻卵的人是有价值的决策工具，能预测促排反应、辅助制定方案。但把它推销给健康年轻女性当"生育力体检"，就把一个<strong>数量指标</strong>误用成"还能不能怀"的判决。Steiner 2017 已表明低 AMH 不预测自然受孕。理性用法：有明确生育规划或不孕史时检测，而非被营销驱动地常规筛查、再为一个数字恐慌。</div></details>
 <details><summary>"35 岁高龄产妇"是医学分层还是社会污名？</summary><div class="think">生育力与部分孕产风险确实随年龄上升，"35"是统计上风险曲线开始变陡的分界，用于<strong>风险分层与知情决策</strong>。但它被异化成贴在女性身上的污名标签，制造恐慌却忽略：风险是连续的、个体差异大、且男方年龄同样重要。更健康的框架是把年龄当作"提早规划"的提示，而非"过期作废"的红线。</div></details>

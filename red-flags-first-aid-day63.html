@@ -46,6 +46,19 @@ details .think{font-size:0.9rem;color:#94b1b1;padding:4px 0 12px}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 63</div>
@@ -154,6 +167,26 @@ details .think{font-size:0.9rem;color:#94b1b1;padding:4px 0 12px}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>找一次线下或视频版「只按压 CPR + AED」教学（红十字会/AHA），全家学 20 分钟；清点药箱、丢弃过期药，把急救电话和过敏史贴在药箱上。<br/>思考题：如果现在家人倒地无反应，你敢在救护车到来前的 8 分钟里动手吗？</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>心理学 · 旁观者效应（Darley 与 Latané，1968）</b>：实验里被试以为还有别人听见呼救时，出手更少也更慢，责任被分摊掉了。本篇演练「谁打 120、谁记发病时间」正是解法：把责任点到具体的人。不像在哪：家里人少，迟疑多半不是分摊，而是怕做错。</li>
+<li><b>分布式系统 · 级联故障与重试风暴</b>：服务一慢，客户端拼命重试，防御动作反把系统压垮；脓毒症里免疫对感染的失控反应，同样伤了自己的血管和器官。不像的是，工程师能预装熔断器（circuit breaker），人体没有，只能靠外部治疗抢时间。</li>
+<li><b>进化生物学 · 烟雾报警器原理（Randolph Nesse）</b>：漏报代价远大于误报时，自然选择让防御宁可多响，发热、呕吐都是这种设计；过敏性休克是同一套警报对无害过敏原的误报。不像在哪：报警器误报只是吵，这里警报本身成了火。</li>
+<li><b>东方哲学 · 扁鹊见蔡桓公（《韩非子·喻老》）</b>：病在腠理时一句「寡人无疾」，拖到骨髓便无可救，正是「再看看」的代价。不像在哪：桓侯的病在几十天里一步步加深，卒中与心梗的窗口以分钟计，症状还可能自行消失，更让人放下戒心。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>突发脸歪、肢体无力、口齿不清，哪怕几分钟内缓解也要立刻叫救护车，TIA 是大卒中最强的预警。</li>
+<li>缺血性卒中每延误 1 分钟约有 190 万个神经元死亡，必须记准发病或最后一次正常的时刻。</li>
+<li>等救护车时让疑似卒中者平卧、头偏向一侧，不进食进水、不自行服药，掐人中和放血都无效。</li>
+<li>持续压榨样胸痛伴冷汗、气短应按心梗处理：立即叫救护车，无禁忌嚼服 300 mg 阿司匹林，切勿自己开车。</li>
+<li>女性、糖尿病人和老人的心梗常不典型，可能只表现为极度乏力、气短、恶心或上腹、后背痛。</li>
+<li>脓毒症是感染加器官功能障碍，有感染又出现意识模糊、呼吸急促或皮肤花斑就该去急诊。</li>
+<li>过敏性休克唯一的一线药是大腿外侧肌注肾上腺素，抗组胺药和激素都不是急救药，孕期也照打。</li>
+<li>心脏骤停能否存活取决于旁观者立刻按压、尽早用 AED，除颤每延迟 1 分钟存活率降 7–10%。</li>
+<li>成人心源性骤停旁观者只按压即可：每分钟 100–120 次、深 5–6 cm、充分回弹、尽量不中断。</li>
+<li>家庭药箱最大的风险是重复用药与相互作用，多种复方感冒药叠加易致对乙酰氨基酚过量伤肝。</li>
+</ol></div>
+
 <div class="deep-title">深入思考</div>
 <details><summary>为什么急救反复强调「叫救护车」而非「自己去医院」？</summary>
 <div class="think">救护车＝把急诊前移到现场：途中能监护心律、除颤、给药，还能提前预警医院启动导管室或卒中绿色通道，到院即治。自己开车则途中一旦室颤或意识丧失将无人施救，也失去了这段黄金抢救时间。</div></details>

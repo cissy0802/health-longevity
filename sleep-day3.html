@@ -42,6 +42,20 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
+
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 3</div>
@@ -214,6 +228,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">本周一试</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>本周完成 STOP-BANG 自评（自己 + 伴侣/家人）。若 ≥ 3，预约家庭睡眠检测或睡眠门诊；若 &lt; 3 但有持续晨起头痛/打鼾，仍建议一次基线评估。OSA 是 30 年长寿曲线上少数"诊断即可显著改写"的杠杆。</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>分布式系统 · NTP 分层授时</b>：David Mills 设计的 NTP 让各节点逐层向上游时钟对时；SCN 是主时钟，肝、肌、脂肪的外周时钟向它看齐。深夜进食像让某个节点改向另一个时间源对表，局部各自走时、整体失步。不像的是，NTP 交换的是精确时间戳，身体只靠光、温度、进食这类粗信号对时。</li>
+<li><b>商业 · 技术债（Ward Cunningham，1992）</b>：为赶工期欠下的代码捷径会不断计息，拖得越久越难还，睡眠债同样逐晚累积。不像在于：技术债可以靠一次重构清零，睡眠债的代谢损伤却很难靠周末补觉一笔还清。</li>
+<li><b>心理学 · 邓宁-克鲁格效应（1999）</b>：Kruger 与 Dunning 发现，能力不足的人往往也缺判断自己不足的能力。睡眠剥夺同理，受损的恰是评估自身状态的那套机制，所以警觉跌到通宵水平，主观疲劳却只轻度上升。</li>
+<li><b>复杂性科学 · 惠更斯的摆钟同步（1665）</b>：惠更斯发现挂在同一根梁上的两只摆钟会自发同步，弱耦合就能让振子对齐；晨光、体温、进食也是这样把身体里众多节律拉到同一相位。不像的是，摆钟没有指挥，人体有 SCN 当主时钟，外面还有太阳这个外部驱动。</li>
+<li><b>工程 · 看门狗定时器</b>：系统卡死时，看门狗强制重启保住运行。OSA 里每次气道塌陷、血氧下降，大脑就用一次短暂觉醒「重启」呼吸。不像在于：看门狗偶尔触发，重度 OSA 每小时触发 30 次以上，救命的保护机制本身成了破坏睡眠的来源。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>一夜睡眠由 4–6 个约 90 分钟的周期组成，深睡（SWS）集中在前半夜，REM 集中在后半夜。</li>
+<li>晚睡两小时主要损失 REM，早起两小时主要损失深睡，两种睡眠功能不同、不能互换。</li>
+<li>固定起床时间比固定就寝时间更重要，是重置昼夜节律最强的单一杠杆。</li>
+<li>Van Dongen 2003 研究中，连续 6 晚每晚睡 6 小时，警觉表现跌到彻夜不眠的水平，本人却几乎察觉不到。</li>
+<li>周末补觉只能部分偿还睡眠债；每晚多睡 30–60 分钟、连续 2–4 周才能恢复警觉与代谢指标。</li>
+<li>醒后 30–60 分钟内到户外见光 10–15 分钟，是校准视交叉上核（SCN）主时钟最强的信号。</li>
+<li>卧室保持 17–19°C、最后一餐距就寝至少 3 小时，分别借助体温下降和进食时机两个节律锚点。</li>
+<li>褪黑素是相位调节剂而非安眠药，0.3–0.5 mg 低剂量调时差优于市售 5–10 mg。</li>
+<li>阻塞性睡眠呼吸暂停（OSA）约 80% 中重度患者未被诊断，STOP-BANG 自评 ≥3 项就应做家庭睡眠检测。</li>
+<li>女性 OSA 常表现为失眠、晨间头痛和抑郁而非大声打鼾，围绝经期后患病率明显上升。</li>
+</ol></div>
 <div class="nav"><a href="index.html">← 返回首页</a></div>
 </div><script defer="" src="https://hub.cissychen.com/comments.js"></script>
 <script defer="" src="https://hub.cissychen.com/search.js"></script>

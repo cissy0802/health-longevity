@@ -41,6 +41,20 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
+
 </style></head><body><div class="container">
 
 <header>
@@ -256,6 +270,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Complete STOP-BANG this week (yourself + partner/family). If ≥ 3, book a home sleep test or sleep clinic; if &lt; 3 but you have persistent morning headache or snoring, still get a baseline evaluation. OSA is one of the few levers on the 30-year longevity curve that "diagnosis alone can substantially rewrite."</div></div>
 </div>
 
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Distributed systems · NTP's stratum hierarchy</b>: In David Mills's NTP, each node syncs to an upstream clock layer by layer; the SCN is the master, and peripheral clocks in liver, muscle and fat follow it. Eating late is like one node switching to a different time source: local clocks run on their own and the system drifts out of sync. Unlike NTP, which trades precise timestamps, the body syncs only on coarse signals like light, temperature and meals.</li>
+<li><b>Business · Technical debt (Ward Cunningham, 1992)</b>: Shortcuts taken to hit a deadline keep accruing interest and get harder to repay the longer they sit, and sleep debt piles up night by night the same way. The difference: one big refactor can clear technical debt, while weekend catch-up sleep cannot wipe out the metabolic damage of sleep debt.</li>
+<li><b>Psychology · The Dunning–Kruger effect (1999)</b>: Kruger and Dunning found that people lacking a skill often also lack the ability to see that they lack it. Sleep loss works similarly: it impairs the very machinery that judges your own state, so alertness drops to all-nighter levels while felt fatigue barely rises.</li>
+<li><b>Complexity science · Huygens's synchronized pendulums (1665)</b>: Huygens saw two pendulum clocks hung on one beam fall into step on their own; weak coupling is enough to align oscillators, much as light, body temperature and meals pull the body's many rhythms into one phase. Unlike the clocks, which have no conductor, the body has the SCN as master clock plus the sun as an external driver.</li>
+<li><b>Engineering · The watchdog timer</b>: When a system hangs, a watchdog forces a reboot to keep it running. In OSA, each airway collapse and oxygen drop triggers a brief arousal that "reboots" breathing. The difference: a watchdog fires rarely, while severe OSA fires it 30+ times an hour, so the life-saving safeguard itself becomes what wrecks sleep.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>A night of sleep is 4–6 cycles of about 90 minutes; deep sleep (SWS) clusters early in the night and REM clusters late.</li>
+<li>Going to bed two hours late mostly costs REM, waking two hours early mostly costs deep sleep, and the two are not interchangeable.</li>
+<li>A fixed wake time matters more than a fixed bedtime and is the strongest single lever for resetting circadian rhythm.</li>
+<li>In Van Dongen's 2003 study, six nights of 6-hour sleep dropped alertness to all-nighter levels while subjects barely noticed.</li>
+<li>Weekend catch-up only partly repays sleep debt; 30–60 extra minutes nightly for 2–4 weeks restores alertness and metabolic markers.</li>
+<li>Outdoor light for 10–15 minutes within 30–60 minutes of waking is the strongest signal for setting the SCN master clock.</li>
+<li>A 17–19°C bedroom and a last meal at least 3 hours before bed use the body-temperature drop and meal timing as rhythm anchors.</li>
+<li>Melatonin is a phase shifter, not a sedative, and a low 0.3–0.5 mg dose beats the common 5–10 mg for jet lag.</li>
+<li>About 80% of moderate-to-severe obstructive sleep apnea (OSA) is undiagnosed; a STOP-BANG score of 3 or more warrants a home sleep test.</li>
+<li>In women, OSA often shows up as insomnia, morning headaches and depression rather than loud snoring, and it rises sharply after menopause.</li>
+</ol></div>
 <div class="nav"><a href="index.en.html">← Back to index</a></div>
 
 </div><script src="https://hub.cissychen.com/comments.js" defer></script>

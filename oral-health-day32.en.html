@@ -41,6 +41,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -173,6 +186,27 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">Try this week + reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>If you use antibacterial mouthwash daily without medical advice, switch back to water/fluoride rinse this week and do brushing and flossing thoroughly. Reflection: in chasing the "germ-free" sensation, are we using a marketing-defined "clean" to wreck a microecology that's meant to be symbiotic?</div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Complexity science · Regime shifts (Scheffer et al., 2001)</b>: as nutrient load creeps up, a lake can flip abruptly from clear to turbid at a tipping point, and flipping it back takes cutting the load far below the original threshold (hysteresis). Marsh's ecological plaque hypothesis has the same shape: repeated acid attacks push the biofilm past a threshold, after which acid-tolerant bacteria sustain themselves. The difference: a mouth gets an external reset every day from saliva and brushing; a lake does not.</li>
+<li><b>Distributed systems · Overload and recovery time</b>: a service needs a cool-down after each burst, and if requests arrive faster than it recovers, the backlog never drains. A tooth surface needs 20–40 minutes to recover from each acid attack, so closely spaced snacks are the same failure. Unlike a server, though, a tooth cannot scale out; it can only rate-limit.</li>
+<li><b>Neuroscience · Critical periods (Hubel and Wiesel)</b>: cover one eye of a young kitten for a few weeks and its visual cortex shifts permanently toward the other eye, while the same treatment in an adult cat does almost nothing. The jaw is likewise shaped by early input, the constant upward support of the tongue. Unlike vision, which is set by competing neural activity, bone responds to mechanical force.</li>
+<li><b>Buddhism · Dependent origination</b>: caries and periodontitis are not the inherent nature of some "bad germ" but a state of imbalance among microbes; the same species is harmless in a balanced community, close to the idea that things arise from conditions and have no independent self-nature. Where Buddhism draws the lesson of letting go, dentistry draws the lesson of adjusting the conditions more carefully.</li>
+<li><b>Business · Goodhart's law (Goodhart, 1975)</b>: once a measure becomes a target, it stops being a good measure. Mouthwash turned a "fresh, germ-free" feeling into the proxy for clean, and ends up killing the nitric-oxide-producing bacteria on the tongue and raising blood pressure. Unlike economic metrics, which people game on purpose, here marketing simply misleads a sensation.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Caries is an oral dysbiosis: what drives demineralization is how often teeth are bathed in acid, not the day's total sugar.</li>
+<li>Enamel starts dissolving below pH 5.5 and saliva needs about 20–40 minutes to bring it back, so each snack is one more acid attack.</li>
+<li>Fluoride toothpaste (1000–1500 ppm) is the single best-evidenced caries prevention; at bedtime, spit out the foam and don't rinse.</li>
+<li>An inflamed periodontal pocket is a chronic wound that keeps leaking bacteria and inflammatory signals into the blood, linked to heart disease and type 2 diabetes.</li>
+<li>Thorough periodontal treatment lowers HbA1c by about 0.4%, roughly the effect of adding one more diabetes drug.</li>
+<li>Dominy 2019 found gingipain, a toxin of P. gingivalis, in the brains of Alzheimer's patients, which remains mechanistic evidence only.</li>
+<li>Chronic mouth breathing drops the tongue so the upper jaw isn't widened, giving a high narrow palate, crowding and a retruded jaw; the window to act closes before puberty.</li>
+<li>A child who habitually snores or keeps the mouth open may have an airway blocked by enlarged adenoids or tonsils and merits assessment.</li>
+<li>In a dysbiotic state, oral Klebsiella can colonize the gut and activate inflammatory T cells, so oral hygiene is also part of gut health.</li>
+<li>Nitrate-reducing bacteria on the tongue turn dietary nitrate into vasodilating nitric oxide; daily chlorhexidine mouthwash kills them and raises blood pressure.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>🔬 Reflections</h2>

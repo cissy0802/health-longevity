@@ -39,6 +39,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -204,6 +217,27 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">This Week</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Test: eyes-closed single-leg stand, record seconds for each side. If either side is &lt; 10 sec, do 3×30 sec daily (eyes open to start) for 7 straight days, then retest.</div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Buddhism · The lute simile</b>: The Buddha told the over-striving monk Sona that a lute string too tight snaps and too loose won't sound; practice should be neither strained nor slack. Zone 2's "talk but can't sing" is the same tuning for a just-right tension. Where it breaks: the Buddha meant a consistent middle way, while the Polarized model in this issue argues against living at moderate intensity, pushing both ends instead.</li>
+<li><b>Neuroscience · Synaptic pruning</b>: The developing brain prunes synapses it rarely uses, because every connection costs energy to keep. Losing 3–8% of muscle per decade after 30 follows the same cost-cutting logic. Where it breaks: pruning sharpens circuits, while muscle loss just burns reserve and buys nothing.</li>
+<li><b>Distributed systems · Capacity headroom</b>: Engineers size clusters for peak traffic and run them well below it, because headroom decides whether a spike takes the service down. VO2max is the body's peak capacity, rarely used day to day but decisive when it counts. Where it breaks: a cluster can scale out in minutes; cardiorespiratory headroom takes months of training to build.</li>
+<li><b>Investing · Taleb's barbell</b>: Taleb puts most capital somewhere extremely safe and a small slice into high-risk bets, avoiding the mushy middle. 80/20 Polarized training has the same shape: lots of easy work, a little very hard work. Where it breaks: the barbell hedges unknown tail risk; the training split lets two adaptations each run fully.</li>
+<li><b>Cybernetics · Negative feedback</b>: In <i>Cybernetics</i> (1948), Norbert Wiener framed stability as constantly measuring error and correcting against it. A single-leg stand is exactly such a loop: the ankle senses each wobble and corrects, never truly still. Where it breaks: a thermostat's loop is fixed at the factory; the body's balance loop dulls unless trained.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Zone 2 is easy aerobic work at a "can talk, can't sing" pace, done 3–4 times a week for 45–60 minutes.</li>
+<li>Zone 2 builds mitochondrial density and fat oxidation in type I muscle fibers, forming the base for VO2max.</li>
+<li>In Mandsager's 2018 cohort of about 120,000 people, the fittest group had roughly one-fifth the all-cause mortality of the least fit.</li>
+<li>In the luteal phase, core temperature rises and Zone 2 heart rate runs 5–10 bpm higher, so pace by RPE rather than heart rate.</li>
+<li>Skeletal muscle is the body's largest glucose-disposal organ, and 3–8% of muscle mass is lost per decade after 30.</li>
+<li>Resistance training works best 2–3 times a week with compound lifts, 10–20 weekly sets per muscle, ending 1–2 reps short of failure.</li>
+<li>Women should prioritize heavy lifting over light weights for high reps, which better protects perimenopausal bone density and metabolism.</li>
+<li>The Norwegian 4×4 interval protocol is the best-evidenced way to raise VO2max, done once or twice a week and no more.</li>
+<li>HIIT does not replace Zone 2; a Polarized split of about 80% easy and 20% hard works best, much like an investor's barbell.</li>
+<li>Failing a 10-second single-leg stand doubles 7-year mortality, so 5 minutes of daily balance practice is cheap fall insurance.</li>
+</ol></div>
 
 <div class="nav"><a href="index.en.html">← Back to Index</a></div>
 

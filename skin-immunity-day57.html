@@ -42,6 +42,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 57</div>
@@ -147,6 +160,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>把每日洁面减到温和洗面奶 1–2 次，停用磨砂与皂基/抗菌洁面，2 周观察泛红、脱屑、出油是否反而改善。<br/><span style="color:#a8e0d0">思考题：从"杀菌"到"养生态"——这与肠道菌群、甚至复杂系统治理有何共通逻辑？</span></div></div>
 </div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>分布式系统 · 重试风暴与熔断器</b>：服务一超时，客户端就重试，重试又加重负载、造成更多超时；湿疹的「痒—抓—屏障更破」是同一个正反馈环。工程上的解法是指数退避加熔断器，先切断环再修上游，对应皮肤这边的控炎止痒加修屏障。不像在于：熔断器是外加的开关，皮肤的环最后得靠组织自己把墙长回来。</li>
+<li><b>生态学 · 高斯的竞争排斥原理（1934）</b>：Gause 用草履虫实验说明，两个物种争同一个生态位，必有一方被挤出去；常驻菌先占住皮肤，金葡菌就少了落脚处。不像的是，皮肤上几百个菌株长期共存，靠的是把生态位切得很细，而不是一家独大。</li>
+<li><b>心理学 · 行动偏差（Bar-Eli，2007）</b>：对职业联赛点球的分析发现，门将九成以上会扑向一侧，尽管留在中间并不更差，因为「扑了没扑到」比「站着没动」好受。把脸洗到紧绷、双氧水反复灌伤口，也是「多做一点才安心」。不像在于：门将多扑只是白费力，皮肤上多做会主动拆墙。</li>
+<li><b>佛学 · 一行禅师的「相即」（interbeing）</b>：一张纸里有云、有雨、有伐木人，没有什么能独立存在；皮肤这道「自我」的边界，本身就住满了非我的菌。不像的是，佛学借此看破边界，免疫却得天天维护这道边界，只是维护的办法是养住户，而不是清除一切非我。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>角质层是砖墙结构，脂质灰浆由神经酰胺、胆固醇、游离脂肪酸按约 3:1:1 组成。</li>
+<li>屏障缺陷常是皮肤炎症的起点而非结果，丝聚蛋白（FLG）突变是特应性皮炎最强的单基因风险因素。</li>
+<li>修屏障靠弱酸性洁面加「保湿剂 + 神经酰胺 + 封闭剂」三件套，洗后 3 分钟内趁微湿涂。</li>
+<li>湿疹是屏障缺陷叠加 Th2 免疫，银屑病是 IL-23/Th17 自身免疫，两者都不传染、与卫生无关。</li>
+<li>银屑病是伴发心血管病、代谢综合征和关节炎的系统性炎症病，患者应查血压、血脂、血糖。</li>
+<li>每日外用润肤剂是湿疹和银屑病共通的地基；短程规范、按强度分级的外用激素安全有效。</li>
+<li>伤口愈合分止血、炎症、增生、重塑四阶段，Winter 1962 年实验显示湿润创面上皮化约快一倍。</li>
+<li>小伤口用清水冲洗、凡士林加敷料保湿即可，反复用双氧水会杀伤成纤维细胞、延迟愈合。</li>
+<li>表皮葡萄球菌等常驻菌能抑制金黄色葡萄球菌、训练 T 细胞，过度清洁反让致病菌趁虚而入。</li>
+<li>痤疮循证用阿达帕林加过氧化苯甲酰，外用抗生素必须联合过氧化苯甲酰且短程使用以防耐药。</li>
+</ol></div>
+
 <div class="card" data-tts="99b1535599cb0dfd">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">深入思考</div>
 <div class="think">

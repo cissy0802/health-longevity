@@ -41,6 +41,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -175,6 +188,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">Try This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Before a winter/cold-region trip, check gear by "onion layering + moisture control": a wicking base layer + insulating mid layer + windproof, waterproof shell, plus spare dry socks, gloves, and a hat. Remember three nevers: no rubbing, no dry heat, no freeze-thaw cycles. Reflect: why is "not dead until warm" an iron rule in cold-injury first aid, yet doesn't hold at normal temperature?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Distributed systems · backpressure and rate limiting</b>: "No more than 500 m of altitude a day" and "no faster than 10 m a minute" are both rate limits: input cannot outrun the system's drain rate, or work piles up, and nitrogen that the lungs cannot clear in time turns into bubbles, like a queue overflowing. The difference: the body scales up while it waits, since acclimatization is itself a rise in service rate.</li>
+<li><b>Distributed systems · graceful degradation and load shedding</b>: An overloaded system switches off non-core services to keep the main path alive. In cold, heat and hypoxia the body clamps peripheral vessels to protect brain and heart, the same trade. Unlike a disabled recommendation module, shed fingers and toes can freeze and die, and that cannot be rolled back.</li>
+<li><b>Western philosophy · the Ulysses contract</b>: Odysseus had his crew bind him to the mast because he knew the Sirens' song would wreck his judgment, and Jon Elster, in <i>Ulysses and the Sirens</i> (1979), treated this binding of one's future self while still clear-headed as a form of rationality. Setting turnaround thresholds in advance and handing the call to a partner at altitude or underwater is the same structure. The difference: the Sirens tempt the will, whereas hypoxia and nitrogen narcosis damage judgment itself, so the victim cannot even notice that something is wrong.</li>
+<li><b>Evolution · the Tibetan EPAS1 variant</b>: Individuals acclimatize over days through breathing and kidney compensation; populations adapt over millennia through selection. Huerta-Sánchez and colleagues reported in <i>Nature</i> in 2014 that the Tibetan high-altitude EPAS1 variant most likely entered through interbreeding with Denisovans, sparing carriers from pushing hemoglobin too high. Same problem: the individual buys adaptation with days, the species with generations.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Acute mountain sickness risk depends on ascent rate and sleeping altitude, not on fitness or VO₂max.</li>
+<li>Above a sleeping altitude of 3000 m, climb no more than 500 m a day and add a rest day for every 1000 m gained.</li>
+<li>Acetazolamide makes the kidneys excrete bicarbonate, and the resulting mild metabolic acidosis drives breathing and helps prevent acute mountain sickness.</li>
+<li>At signs of high-altitude cerebral or pulmonary edema, descending 300–1000 m at once is the only reliably effective treatment.</li>
+<li>Divers should ascend no faster than 9–10 m per minute and make a 3–5 minute safety stop at 5 m.</li>
+<li>After repetitive or multi-day diving, wait at least 18 hours before flying so residual nitrogen does not bubble out at cabin pressure.</li>
+<li>Heat stroke damage accumulates as temperature × time, so immerse the victim in cold water on the spot: cool first, transport second.</li>
+<li>Cold slashes the brain's oxygen use, so a severely hypothermic person cannot be declared dead until fully rewarmed.</li>
+<li>Rewarm frostbite fast in 37–39 °C water, never rub or dry-heat it, and skip rewarming if refreezing cannot be prevented.</li>
+<li>Hypoxia, cold and nitrogen narcosis all impair judgment, so set turnaround thresholds in advance and let a partner enforce them.</li>
+</ol></div>
 
 <div class="card" style="border-top-color:#87e8e8">
 <div class="section"><div class="label" style="font-size:0.9rem">Deeper Questions</div>

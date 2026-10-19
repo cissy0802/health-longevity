@@ -39,6 +39,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -205,6 +218,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">Try this week</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Three experiments: (1) eliminate all sugar-sweetened drinks for 7 days; (2) eat vegetables and protein first, then starches at every meal; (3) walk 15 minutes after dinner. On day 7, log differences in energy and hunger.</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Psychology · Ebbinghaus's spacing effect</b>: testing himself on nonsense syllables in 1885, Hermann Ebbinghaus found that spaced review beats cramming. Splitting protein across 3–4 meals to dodge the refractory "muscle full" window is the same rule: space the stimulus. The difference: memory rewards ever-longer gaps, while muscle protein synthesis wants a roughly fixed gap of a few hours, and stretching it only wastes the window.</li>
+<li><b>Complexity science · Diversity and stability</b>: David Tilman's long-running Minnesota grassland plots showed that species-rich plots held up better through a severe drought; "30 plants a week" bets on the same redundancy. The difference: Robert May proved in 1972 that randomly assembled complex systems are less stable, so gut diversity helps only because coevolution has already vetted the members.</li>
+<li><b>Distributed systems · Alert fatigue</b>: when monitoring alerts never stop firing, on-call engineers learn to ignore them; when insulin stays high, cells turn down their response too, which is the shape of insulin resistance. The difference: ops can delete noisy alerts outright, while the body can only cut the stimulus and wait for sensitivity to return.</li>
+<li><b>Evolution · The broken GULO gene</b>: an ancestor of monkeys and apes lost GULO, the gene for making vitamin C, and because the diet never lacked it, nothing weeded the loss out. Humans converting ALA to EPA/DHA so poorly is the same pattern of leaning on food for direct supply. The difference: GULO is fully dead, while the ALA pathway still runs, just barely.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>The protein RDA of 0.8 g/kg/day only prevents deficiency; healthy adults should aim for 1.6–2.2 g/kg/day.</li>
+<li>About 30 g of quality protein per meal (roughly 2.5 g leucine) is needed to trigger muscle protein synthesis, so 3–4 meals beat one big serving.</li>
+<li>Falling estrogen in perimenopause worsens anabolic resistance, so women should lift breakfast protein from a typical 10–15 g to at least 30 g.</li>
+<li>Eating 30–50 g of fiber a day and 30 different plant foods a week are the two simplest levers for gut microbiome diversity.</li>
+<li>Gut bacteria ferment fiber into short-chain fatty acids such as butyrate, which fuels colon cells, seals the gut barrier and dampens systemic inflammation.</li>
+<li>Judge fish oil by its actual EPA+DHA content, not total oil, and aim for an Omega-3 Index of 8% or higher.</li>
+<li>In the REDUCE-IT trial, 4 g/day of high-dose EPA cut major cardiovascular events by a further 25% on top of statins.</li>
+<li>The core metabolic problem is chronic hyperinsulinemia, so control refined carbs and post-meal glucose rather than banning sugar outright.</li>
+<li>Eating vegetables and protein before starches, plus a 15-minute walk after meals, clearly flattens post-meal glucose spikes.</li>
+<li>Chronically high insulin is like an alert that never stops firing: cells turn down their response the way on-call engineers do, producing insulin resistance.</li>
+</ol></div>
 
 <div class="nav"><a href="index.en.html">← Back to index</a></div>
 

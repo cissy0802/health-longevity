@@ -48,6 +48,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 52</div>
@@ -159,6 +172,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>若你有结石史：连续 3 天用有刻度水瓶量化饮水，目标让尿量稳定 &gt;2.5 L（尿色回到 1–2 级）；每天加一杯柠檬水。思考：把菠菜和酸奶/豆腐同餐吃，为什么反而比「戒掉高草酸食物」更聪明？</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>控制论 · 维纳的负反馈</b>：口渴中枢加抗利尿激素是一个闭环恒温器，血浆渗透压偏离 1–2% 就自动纠偏，正是维纳 1948 年《控制论》讲的负反馈。「每天 8 杯」等于拆掉传感器、换成开环定时器；不像的是，老年人的传感器会钝化，这时定时提醒反而是对的补丁。</li>
+<li><b>生物进化 · Homer Smith《从鱼到哲学家》</b>：Smith 1953 年在这本书里说，脊椎动物从水里走上陆地，靠的是肾脏一步步学会存水。能把尿浓缩到远高于血浆的亨利袢，只有哺乳类和鸟类才有。我们对饮水量的宽容，是几亿年缺水压力换来的。</li>
+<li><b>佛学 · 中道</b>：钠摄入的 J 型曲线两头都危险，像佛陀在苦行与纵欲之间选的中道。不像的是，中道是修行者向内体察的分寸，J 曲线的谷底却因人而异，要看血压、出汗量和饮食里的钾。</li>
+<li><b>分布式系统 · SRE 的黄金信号</b>：Google 的《SRE》（2016）提醒监控别只看吞吐量，还要看错误率。eGFR 像吞吐量，尿 ACR 像漏包率，常比吞吐下滑早几年报警。不同在于，服务出错能秒级回滚，肾小球的渗漏一旦成形多半只能延缓。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>「每天 8 杯水」没有原始文献支撑，日常补水看口渴和晨尿颜色，淡稻草色（1–3 级）就够。</li>
+<li>IOM 定的总水分充足摄入量是女性 2.7 L、男性 3.7 L，其中约 20% 来自食物。</li>
+<li>肾脏能把尿液浓度调到 50–1200 mOsm/kg，健康人对饮水量容错极大，过量饮水反可致低钠血症。</li>
+<li>口渴和抗利尿激素构成负反馈闭环，固定杯数是开环控制，只有口渴钝化的老年人才需要定时喝。</li>
+<li>大量出汗后只喝纯水会稀释血钠，运动超过 60 分钟应每小时补钠 300–600 mg。</li>
+<li>钠摄入与死亡风险呈 J 型曲线，多数人钠过量而钾不足，钾摄入达到 3.5 g/天以上有助降压。</li>
+<li>血肌酐受肌肉量影响，肌少的老人和女性肌酐「正常」时可能已有肾损伤。</li>
+<li>肾功能要双维度评估：eGFR 看滤过，尿白蛋白/肌酐比（ACR）往往比 eGFR 早数年报警；高危者再加测胱抑素 C。</li>
+<li>膳食钙在肠道里结合草酸，限钙反而增加草酸钙结石，钙要从食物来并随餐吃。</li>
+<li>预防结石复发的四根支柱是尿量超过 2.5 L/天、补柠檬酸、限钠和保持正常膳食钙。</li>
+</ol></div>
+
 <div class="section think" style="background:#050f0f;border-radius:14px;padding:24px 26px;box-shadow:0 2px 14px rgba(0,0,0,0.08)">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">深入思考</div>
 <details><summary>① 「多喝水排毒/养肾」的说法，边界在哪里？</summary>

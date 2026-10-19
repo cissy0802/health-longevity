@@ -49,6 +49,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -243,6 +256,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">THIS WEEK + REFLECTION</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Measure your waist with a tape (1 cm above the navel, end-expiration, fasted morning) and compute <b>waist-to-height ratio</b>. Re-measure monthly at the same time and track a 6-month trend. If you have access to DEXA, get a baseline within 3 years.<br><br>Reflection: If the scale stays flat but your waist quietly grows 1 cm/year, which number do you trust more? How does the "silent drift" of body composition fit into a 30-year health-decision framework?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Distributed systems · The blind spot of a health check</b>: Checking only fasting glucose is like judging a service by ping. Requests still return, but the backend is surviving by throwing more machines at the load, and the headroom is gone. Insulin compensation is that scale-out. The difference: you can keep adding servers, while beta cells wear out and die.</li>
+<li><b>Complexity science · Critical slowing down (Scheffer et al., 2009)</b>: As a system nears a tipping point, it recovers from disturbances more slowly and fluctuates more, an early warning before the flip. A delayed OGTT insulin peak and wider CGM swings look like that slower rebound. The difference: ecosystems often flip abruptly at the threshold, whereas beta-cell function erodes over years and the diagnostic line is drawn by convention.</li>
+<li><b>Networking · Packet rate vs bandwidth</b>: Routers are often overwhelmed by packets per second rather than bits, so the same traffic split into small packets hurts more. Small dense LDL works the same way: the cholesterol total is unchanged, but more particles mean more hits on the artery wall. The difference: networks can throttle, particle count has to be cut at the source.</li>
+<li><b>Philosophy · Canguilhem, The Normal and the Pathological (1943)</b>: Canguilhem argued that health is not sitting inside a statistical average but having the capacity to absorb deviation, a margin of tolerance. The split between "reference range" and "optimal range" echoes this; the difference is that this issue still measures the margin in numbers, while he resisted reducing health to numbers.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Lab reference ranges were designed to diagnose diabetes; an HbA1c of 4.9–5.4% is the optimal range for longevity.</li>
+<li>HbA1c has three blind spots (variability, red-cell turnover, compensation), so people with iron deficiency or heavy periods should cross-check with fructosamine or an OGTT.</li>
+<li>Insulin resistance means more insulin is needed for the same glucose, and high-insulin compensation can keep glucose looking normal for 10–15 years.</li>
+<li>Ask for fasting insulin at your annual checkup and compute HOMA-IR and the TG/HDL ratio to screen early for insulin resistance.</li>
+<li>The Kraft test measures insulin at 0/30/60/120 minutes during an OGTT and can reveal problems while glucose is still fully normal.</li>
+<li>ApoB counts the disease-causing particles while LDL-C only measures their cholesterol cargo; Mendelian randomization supports ApoB as the causal driver.</li>
+<li>Lp(a) is genetically set, barely moved by diet, and an independent cardiovascular risk marker worth testing at least once in life.</li>
+<li>Statins slightly raise diabetes risk but cut cardiovascular events by 25–35%, an overwhelming net benefit that supplements cannot replace.</li>
+<li>A normal BMI can hide excess visceral fat; keeping waist-to-height ratio below 0.50 is a robust target across sexes and ethnicities.</li>
+<li>During the menopause transition, visceral fat and ApoB drift up even at stable weight, making it a key window for metabolic action.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>📚 Deep Dive — Resources</h2>

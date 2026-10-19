@@ -52,6 +52,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 64</div>
@@ -171,6 +184,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">本周一试</div>选一款你在考虑买的补剂，完整走一遍三步，把结论写成一句话存进备忘录，下次同类决策复用。<br/>思考题：若某问题只有厂商愿意出钱研究，该降低证据标准，还是承认它暂时无解？</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>投资 · 评级机构的「发行方付费」</b>：债券评级由被评的发行方付钱，2008 年一批 AAA 级次贷证券大面积违约。付钱者不改数字，却影响打分者；不像的是评级终会被市场价格检验，单项研究没有这样的价格。</li>
+<li><b>分布式系统 · 故障域</b>：同一机架、同一电源上的三个副本只算一个故障域，一次断电全灭。五篇共享队列的论文就是同一故障域里的副本；不像的是数据库副本本就有意复制，没人拿它当独立证据。</li>
+<li><b>进化生物学 · Felsenstein 的系统发育非独立</b>：Felsenstein 1985 年指出近缘物种共享祖先，不能当独立数据点，二十个近亲共有一个性状，可能只是一次进化事件；他的独立对比法只比分叉后的差异，像追到引文源头再计数。不像的是物种的共祖明摆着，论文的共同上游常被隐去。</li>
+<li><b>哲学 · 埃尔斯特的「尤利西斯契约」</b>：Elster 在《尤利西斯与塞壬》（1979）里把尤利西斯让水手绑住自己看作预先承诺，预注册终点就是研究者的桅杆。不像的是尤利西斯只防自己，注册库把绳结公开给所有人检查。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>厂商资助的药械试验得出有利结论的风险比，约为独立资助的 1.27–1.34 倍。</li>
+<li>钱进入证据链分出钱、供试验品、设计统计、撰稿投稿四环，真正扭曲结论的是后两环。</li>
+<li>资助偏倚很少靠造假，主要靠选择性设计和选择性发表，如挑替代终点、把阴性试验压进抽屉。</li>
+<li>独立资助、厂商只供样的试验风险低，WHI 激素治疗试验正因如此才发得出颠覆性的阴性结果。</li>
+<li>利益冲突声明是自报，最常见的红旗是同一页声明无冲突，资助段和致谢里却写着公司。</li>
+<li>「已披露」不等于「已中和」：披露只让读者知情，设计层的倾斜早已固化在数据里。</li>
+<li>共享作者、队列或上游数据的五篇论文，只是一项证据的五次回声。</li>
+<li>隐蔽重复发表让 meta 分析重复计数，Tramèr 发现昂丹司琼疗效因此被高估约 23%。</li>
+<li>论文主要终点与 ClinicalTrials.gov 预注册的不符，即终点掉包，是最能定性的红旗。</li>
+<li>依赖厂商资金的出路不是断钱，而是把数据托管、统计分析和投稿决定权留在独立方。</li>
+</ol></div>
+
 <div class="card think" data-tts="2f65c267f66728d8">
 <div class="name">深入思考</div>
 <details><summary>没有厂商出钱，一半的临床试验不会存在——「依赖」与「独立」的线划在哪？</summary>

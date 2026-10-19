@@ -42,6 +42,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 59</div>
@@ -143,6 +156,29 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>为下一次就诊（自己或家人）预先写一张"3 个问题 + 1 句最担心"的清单，并练习 BRAN 四问框架。<br/><br/>思考题：过去哪次就诊你"没问出口"的问题让你后悔？下次如何确保它被说出来？</div></div>
 </div>
+</div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>神经科学 · 社会疼痛（Eisenberger 2003）</b>：Eisenberger 等人让受试者在传球游戏 Cyberball 里被冷落，fMRI 显示背侧前扣带皮层被激活，与身体疼痛的回路重叠，正合 Cacioppo 把孤独看作「社会性饥饿」报警信号的说法。不像在于：后来的研究质疑这块脑区并非疼痛专属，「社会痛就是物理痛」说得过头了。</li>
+<li><b>进化人类学 · Dunbar 的社交圈层</b>：Dunbar 从灵长类新皮层比例推算，人能维持约 150 段关系，最内一圈只有约 5 人；本篇「3–5 段可托付的关系」恰好落在这一层。不像在于：Dunbar 讲的是认知容量的上限，本篇讲的是保护作用的下限。</li>
+<li><b>灵长类学 · Sapolsky 的森林狒狒群</b>：1980 年代一群狒狒里最好斗的雄性因抢食垃圾场的污染肉死于结核，剩下的群体攻击性骤降，这种温和风气被后来加入的雄性延续多年（Sapolsky &amp; Share 2004）。像 Whitehall：压力取决于等级怎么运作，不只是排第几；不像的是，人类梯度还经收入和住房传导。</li>
+<li><b>经济学 · 古德哈特定律</b>：一个指标一旦成为目标，就不再是好指标。养老金按年龄发放，「年龄」这条记录就有了被改写的动机，蓝区数据受到的质疑正是这个结构。不像在于：没人想刷高「长寿」，被刷的是附着在年龄上的钱。</li>
+<li><b>西方哲学 · 爱比克泰德的控制二分</b>：《手册》开篇把事物分为「在我们能力之内」和「不在」，只在前者上用力；本篇「在可掌控的领域重建自主」是同一招。不像在于：奴隶出身的爱比克泰德认为心灵可以不受地位束缚，Whitehall 却显示地位照样写进皮质醇和血管。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>孤独与社会隔离让早死风险上升三成左右，量级与每天吸 15 支烟相当。</li>
+<li>孤独是主观感知、社会隔离是客观事实，两者各自独立预测死亡，独居者未必孤独。</li>
+<li>大脑把缺乏联结当作威胁，持续激活 HPA 轴与交感神经，CTRA 反应让促炎基因上调、抗病毒基因下调。</li>
+<li>被动刷社交媒体反而升高孤独感，只有双向、深度的互动才算真正的社会联结。</li>
+<li>蓝区的极端长寿记录与出生登记缺失、养老金欺诈相关，蓝区叙事应当作灵感而非圣经。</li>
+<li>蓝区里可迁移的是有独立证据的成分，例如地中海饮食在 PREDIMED 试验中降低主要心血管事件约 30%。</li>
+<li>Whitehall 研究中英国公务员职级越低死亡率越高且逐级递增，单纯的绝对贫困解释不了这条梯度。</li>
+<li>社会经济梯度的核心机制是控制感：「高要求—低控制」的慢性压力抬高皮质醇与炎症。</li>
+<li>医生平均在患者开口约 11 秒后打断，就诊前写好 3 个问题和 1 句最担心的话能保住关键信息。</li>
+<li>用 BRAN 四问评估任何检查或治疗：获益、风险、替代方案，以及什么都不做会怎样。</li>
+</ol></div>
+
+<div class="section" style="margin-top:34px">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">深入思考</div>
 <div class="think">
 <details><summary>① 孤独是主观还是客观？这个区分为何对干预至关重要？</summary>

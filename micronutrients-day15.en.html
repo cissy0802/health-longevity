@@ -49,6 +49,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}.zlab{width:74px}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -178,6 +191,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">This week + reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Read your magnesium supplement label — if it's <strong>oxide</strong>, switch to glycinate next time, take it <strong>before bed</strong>, and watch a week of sleep onset and quality. Or start from food: a handful of nuts plus a serving of leafy greens daily.<br>Reflect: Between "normal blood value" and "tissue deficiency," which do you trust more?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Ecology · The law of the minimum (Sprengel and Liebig)</b>: Proposed by Sprengel in 1828 and popularized by Liebig in 1840: a plant grows only as well as its scarcest nutrient allows, and adding more of a nutrient already in good supply does nothing. VITAL giving 2,000 IU of vitamin D to people who weren't deficient and seeing no benefit is the same structure. Where it differs: fill the short stave of the barrel and you're done, but micronutrients run on a U-curve, and overshooting starts to do harm.</li>
+<li><b>Distributed systems · Gray failure</b>: Peng Huang and colleagues described it in 2017: every health check reports green while users are already seeing slowdowns and errors. Serum magnesium, propped up by reserves in bone and cells, looks "healthy" while tissues run short, which is exactly the failure the probe can't see. The difference: engineers can swap in a better probe; magnesium still lacks a practical tissue marker.</li>
+<li><b>Psychology · Ebbinghaus's spacing effect</b>: In 1885 Ebbinghaus found that repetitions spread over several days stick better than one cram session. Alternate-day iron is also spaced beating massed: multiple daily doses hit the window when hepcidin has shut the gate, and are simply excreted. Unlike memory, which consolidates in the gaps, iron absorption is waiting for the body to reopen the gate.</li>
+<li><b>Philosophy, East and West · The mean "relative to us"</b>: Confucius said going too far is as bad as falling short; Aristotle said the mean is "relative to us," so Milo the wrestler should eat more than a beginner. Test-then-supplement works the same way: the dose is set against your own 25(OH)D and ferritin. The difference: the mean of virtue is judged by practical wisdom, while the mean of a nutrient can be read off a lab report.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Vitamin D fills a gap: test serum 25(OH)D first, aim for 30–50 ng/mL, and for most people 1,000–2,000 IU a day is enough.</li>
+<li>The VITAL trial gave a general population 2,000 IU of vitamin D daily for five years and did not reduce cancer or cardiovascular events.</li>
+<li>Vitamin D activation needs magnesium as a cofactor; take vitamin D with a fat-containing meal and pair it with vitamin K2.</li>
+<li>Vitamin B12 is found only in animal foods; vegans, adults over 50, and long-term metformin or PPI users are prone to deficiency.</li>
+<li>Serum B12 is unreliable in the 200–400 pg/mL gray zone, so add methylmalonic acid (MMA) or homocysteine to confirm.</li>
+<li>For most people with B12 deficiency, 1,000 mcg taken orally each day works; injections are rarely needed.</li>
+<li>Iron deficiency drains stores before it causes anemia, so ferritin falls first and a normal hemoglobin doesn't mean iron is adequate.</li>
+<li>A single iron dose raises hepcidin and blocks absorption afterward, so one dose every other day with vitamin C absorbs better with fewer side effects.</li>
+<li>Serum magnesium is about 1% of the body's total, so a normal level can't rule out tissue deficiency; choose glycinate, not poorly absorbed oxide.</li>
+<li>B12, magnesium, and iron can all be "normal in blood, low in tissue," like a gray failure where health checks pass while users suffer.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>🔬 Reflections</h2>

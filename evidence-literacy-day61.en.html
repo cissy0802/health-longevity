@@ -44,6 +44,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -203,6 +216,27 @@ Correlation is not causation, and there are three common escape routes: <strong>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Take a supplement or wellness plan you're using or thinking of buying and <strong>tick it against the five fingerprints</strong>—how many does it hit?<br><br>Reflection: if a plan "can call itself effective no matter the outcome," what does that fact alone tell you?</div></div>
 </div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Psychology · Framing effect (Tversky &amp; Kahneman, 1981)</b>: In the "Asian disease problem," most people pick a program described as "200 people will be saved," but switch to the risky option when the same program reads "400 people will die." RRR versus ARR has the same structure: the numbers stay fixed, the wording changes the decision. The difference: framing flips gain and loss, while relative risk works by hiding the baseline.</li>
+<li><b>Buddhism · The Kalama Sutta</b>: The Buddha told the Kalamas not to accept a claim because of tradition, scripture, reasoning, or "this is our teacher," but to test it themselves, much as the evidence pyramid puts expert opinion at the bottom. Unlike this page, though, the Buddha ends by appealing to direct experience, which is exactly the "it worked for me" this page says is not evidence.</li>
+<li><b>Philosophy · Hume's problem of causation</b>: Hume argued we only ever see one event constantly following another, never the "necessary connection" itself, which is precisely the position of an observational study. The RCT answers by intervening and randomizing instead of just watching. The difference: Hume's doubt can never be removed in principle; randomization only shrinks it to something you can bet on.</li>
+<li><b>Investing · Backtest overfitting</b>: Try a thousand trading strategies and one will have a beautiful historical backtest; López de Prado and colleagues call this backtest overfitting, the same structure as p-hacking, where "significance" after many comparisons is mostly noise. Unlike medicine, markets also change as participants learn, so even real patterns can stop working.</li>
+<li><b>Management · Goodhart's law (Charles Goodhart, 1975)</b>: Once a measure becomes a target for control, its link to the real goal tends to collapse, and the suppressed premature beats in CAST were exactly such a measure. The difference: Goodhart was describing people gaming the metric; nobody cheated in CAST, the drug cut the link between marker and death through another pathway.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>When you see "studies show," first ask three things: what design, how many people, and was there a control group.</li>
+<li>Randomized controlled trials (RCTs) average out known and unknown confounders through random assignment, so they get closer to causation than observational studies.</li>
+<li>The three escape routes from correlation to false causation are confounding, reverse causation, and selection bias.</li>
+<li>Animal research has long been dominated by males, so check a study's sex composition and whether it analyzed results by sex.</li>
+<li>Relative risk reduction (RRR) inflates the impression; absolute risk reduction (ARR) is the benefit a person actually gets.</li>
+<li>Number needed to treat is NNT = 1/ARR: cutting risk from 2.0% to 1.5% is a 25% RRR but an NNT of 200.</li>
+<li>A p-value below 0.05 says nothing about effect size or truth; with a large enough sample, trivial differences become significant.</li>
+<li>Low power, p-hacking, and publication bias together tilt the literature toward positive results, which is why many "breakthroughs" fail to replicate.</li>
+<li>In the CAST trial, antiarrhythmic drugs suppressed premature beats yet doubled mortality: a surrogate endpoint cannot stand in for a hard one.</li>
+<li>A remedy that can explain away any result is unfalsifiable, and that alone is a fingerprint of pseudoscience.</li>
+</ol></div>
 
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">Deeper Reflections</div>
 

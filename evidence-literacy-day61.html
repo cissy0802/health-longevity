@@ -45,6 +45,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 61</div>
@@ -167,6 +180,27 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>拿一个你正在用或想买的保健方案，<strong>照五指纹逐条打勾</strong>——中了几条？<br/><br/>思考题：如果一个方案"无论结果如何都能说自己有效"，这件事本身说明了什么？</div></div>
 </div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>心理学 · 框架效应（Tversky &amp; Kahneman，1981）</b>：「亚洲疾病问题」里，同一方案说成「救活 200 人」多数人选它，说成「400 人会死」多数人改选冒险方案。RRR 与 ARR 是同一个结构：数字没变，换个说法就换了决策。不像在于，框架效应翻转的是得失方向，相对风险靠的是把基线藏起来。</li>
+<li><b>佛学 · 《卡拉玛经》</b>：佛陀劝卡拉玛人，不要因传说、经典、推理或「这是我们的老师」就接受一个说法，要自己验证，正像证据金字塔把专家意见放在最底层。不像在于，佛陀最后诉诸亲身体验，而本篇恰恰提醒「我个人有效」不算证据。</li>
+<li><b>哲学 · 休谟的因果问题</b>：休谟说我们只看到两件事恒常相随，从未看到「必然联系」本身，观察性研究的处境正是如此。RCT 的回答是不再只看，而是动手干预、随机分配。不像在于，休谟的怀疑原则上消除不了，随机化只是把它降到可以下注的程度。</li>
+<li><b>投资 · 回测过拟合</b>：量化研究员试上千个策略，总有一个历史回测很漂亮，López de Prado 等人把这叫回测过拟合，和 p-hacking 同构：多次比较之后的「显著」大多是噪声。不像的是，市场还会因参与者学习而变，假阳性之外，真规律本身也会失效。</li>
+<li><b>管理学 · 古德哈特定律（Charles Goodhart，1975）</b>：一个指标一旦被当成控制目标，它和真实目标的关系就会塌掉，CAST 里被压下去的早搏就是这样的指标。不像在于，古德哈特讲的是人有意钻空子，CAST 里没人作弊，是药物从另一条通路切断了指标与死亡的联系。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>看到「研究显示」先问三件事：什么设计、多少人、有没有对照。</li>
+<li>随机对照试验（RCT）靠随机分组平均掉已知和未知混杂，所以比观察性研究更接近因果。</li>
+<li>相关推不出因果的三条逃逸路径是混杂、反向因果和选择偏倚。</li>
+<li>动物实验长期以雄性为主，读研究要看受试者的性别构成和是否做了性别分层。</li>
+<li>相对风险降低（RRR）放大观感，绝对风险降低（ARR）才是个人实际拿到的获益。</li>
+<li>需治疗人数 NNT = 1/ARR：风险从 2.0% 降到 1.5%，RRR 是 25%，NNT 却是 200。</li>
+<li>p&lt;0.05 不说明效应有多大，更不说明结论为真；样本够大时，微不足道的差异也能显著。</li>
+<li>检验力不足、p-hacking 和发表偏倚叠加，让整片文献偏向阳性，许多「突破」无法重复。</li>
+<li>CAST 试验中抗心律失常药压住了室性早搏，死亡率却翻倍：替代终点不能冒充硬终点。</li>
+<li>无论结果如何都能自圆其说的方案无法证伪，这本身就是伪科学的指纹。</li>
+</ol></div>
+
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">深入思考</div>
 <div class="think">
 <details><summary>① 既然 RCT 最强，为什么营养学几乎没有终身随访的饮食 RCT？</summary>

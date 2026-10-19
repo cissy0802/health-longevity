@@ -42,6 +42,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 26</div>
@@ -150,6 +163,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>用 30 分钟盘点现有的医疗险与重疾险保额，标出「确诊后就买不到」的缺口。思考题：你为「财务自由」做长期规划，是否给「健康寿命」配置了同等的远见与纪律？</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>哲学 · 康吉莱姆《正常与病理》</b>：康吉莱姆 1943 年指出，医学里的「正常」混着两层意思：统计上常见，和规范上健康。参考范围只给了前一层，所以才要另找「最优区间」。不像在于：他认为健康是机体自己设立新规范的能力，本就抗拒被一组数字定义。</li>
+<li><b>佛学 · 二箭之喻</b>：《箭经》说凡人中了身体的第一箭，又用忧恼给自己补上第二箭。深夜搜症状就是第二箭，非红旗症状先观察记录，正是只受第一箭。不像的是，佛陀教人别补第二箭，红旗症状却要求立刻去拔第一箭。</li>
+<li><b>分布式系统 · N 版本编程</b>：多份独立实现互相表决来容错，前提是它们不会一起犯错。Knight 与 Leveson 1986 年的实验却发现，独立团队写的版本常在同一批输入上同时出错。第二意见要避开同科室同团队，防的正是这种相关失效。</li>
+<li><b>生物进化 · 两头下注</b>：沙漠一年生植物让一部分种子休眠不发芽，牺牲平均收益换坏年份不绝种（Cohen，1966）。保险同构：付确定的小成本，保住长期增长不被一次灾难清零。不像在于：种子不用核保，人一旦确诊就买不到这份对冲。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>化验单的参考范围是参考人群的 95% 分布区间，描述的是「常见」，不等于健康最优。</li>
+<li>ApoB 直接反映致动脉粥样硬化颗粒的数量，比 LDL-C 更准地提示心血管风险。</li>
+<li>空腹血糖还在「正常」范围时，空腹胰岛素升高往往已提示胰岛素抵抗先行。</li>
+<li>体检时主动加测 ApoB、空腹胰岛素和 hs-CRP，一生测一次 Lp(a)，并追踪自身趋势而非只看单点。</li>
+<li>不明原因消瘦、劳力性胸痛、便血、绝经后阴道出血等红旗症状须在 48 小时内就医。</li>
+<li>非红旗症状先观察记录 1–2 周，不缓解或加重再就诊，别让网络疑病症放大焦虑。</li>
+<li>Mayo Clinic 的转诊研究中，约 21% 的患者在第二意见后诊断出现重大改变。</li>
+<li>求第二意见要带齐原始影像和病理资料，找独立于首诊团队的医生，两个独立意见通常已够。</li>
+<li>保险用确定的小成本对冲大病与失能的尾部风险，核保看投保时的健康，所以越早越有利。</li>
+<li>长寿筹划的目标是压缩晚年失能期，而不是单纯延长带病生存的寿命。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="b4327269df04be86">🔬 深入思考 — Reflections</h2>
 <details><summary>① 参考范围只是统计描述，为什么医疗系统仍以它为决策基线？</summary>

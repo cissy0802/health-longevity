@@ -42,6 +42,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 38</div>
@@ -144,6 +157,25 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>若近期计划进入高海拔（高原旅行/徒步），本周核对行程的每日睡眠海拔升幅，超 500 m 就调整路线或与医生讨论乙酰唑胺。思考题：在缺氧这种身体诚实报警的处境里，「靠意志力克服」的文化叙事为何反而危险？</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>佛学 · 入出息念</b>：巴利《入出息念经》（中部第 118 经）以呼吸为禅修所缘，正因它站在自动与随意的交界。像在哪：都把呼吸当作通往身心状态的门。不像在哪：本篇是主动「接管」，拉长呼气去调副交感；入出息念只要求清楚知道息长息短，不去操控它。</li>
+<li><b>复杂性科学 · 惠更斯的摆钟</b>：1665 年惠更斯发现挂在同一横梁上的两只摆钟会渐渐同步。0.1 Hz 共振呼吸同理：呼吸节律对上压力感受器反射自带的约 10 秒周期，HRV 振幅被推到最大。不像在哪：摆钟是双向互相牵引，这里是用意志单向驱动一个有延迟的反馈环去撞它的固有频率。</li>
+<li><b>心理学 · 基线漂移综合征</b>：渔业学家 Daniel Pauly 1995 年提出，每代人把自己初见的鱼群当作「正常」，衰退因此隐形。慢阻肺被当成「年纪大、爬楼喘」是同一结构：参照点跟着病一起下滑。不像在哪：肺功能有 FEV₁/FVC 0.70 这条不随感受漂移的固定线，海洋没有。</li>
+<li><b>分布式系统 · 金丝雀发布</b>：新版本先推给一小部分流量，指标稳了再扩大。高原「每日睡眠海拔升幅 ≤300–500 m、爬高睡低」是同一种增量放量：白天试探更高，夜里退回安全版本。不像在哪：软件可以多加机器来提速，身体的代偿（肾排碳酸氢盐、增加红细胞）有天数级的固定节奏，没法并行。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>鼻旁窦持续产生一氧化氮，随吸气入肺可舒张肺血管、改善通气-灌注匹配。</li>
+<li>鼻腔增加气道阻力，迫使呼吸更慢更深；口呼吸则绕过加温、加湿和过滤。</li>
+<li>长期口呼吸先查过敏性鼻炎或鼻中隔偏曲；未排除睡眠呼吸暂停前不要用口贴。</li>
+<li>慢呼吸降焦虑的关键是呼气长于吸气，约每分钟 6 次时心率变异性最大。</li>
+<li>Balban 2023 的 RCT 显示，每天 5 分钟生理性叹息改善情绪优于正念冥想和盒式呼吸。</li>
+<li>深呼吸不是用力大口吸；吸太多会过度换气、排出过多二氧化碳，引起头晕手麻。</li>
+<li>慢阻肺的金标准是肺功能检查，支气管扩张后 FEV₁/FVC 低于 0.70 提示气流受限。</li>
+<li>王辰团队 2018 年流调显示，中国 40 岁以上慢阻肺患病率约 13.7%，绝大多数从未确诊。</li>
+<li>急性高原病的头号风险是上升速度而非体能，3000 米以上每日睡眠海拔升幅不超过 300–500 米。</li>
+<li>乙酰唑胺促肾排碳酸氢盐、造成轻度代谢性酸中毒以刺激通气，可预防急性高原病。</li>
+</ol></div>
 <div class="footer-section">
 <h2 data-tts="2ca5a6195f8d018f">深入思考</h2>
 <details><summary>鼻呼吸的好处大多来自机制推断和小样本，把它当「万能优化」是否过度？</summary><div>NO 与 V/Q 改善证据扎实，但「鼻呼吸提升运动表现/睡眠质量」的临床终点证据仍弱。它更像一个低成本默认设置而非神药。对鼻中隔严重偏曲、慢性鼻窦炎者强求鼻呼吸可能适得其反——先解决结构/炎症问题，再谈优化。</div></details>

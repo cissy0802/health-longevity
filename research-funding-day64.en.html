@@ -51,6 +51,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 64</div>
@@ -174,6 +187,26 @@ Rule: in a real replication, <strong>the authors, the sample, and the funder hav
 <div class="section"><div class="label">Try This Week + A Question</div>
 <div class="content"><div class="tryit"><div class="label">TRY THIS WEEK</div>Pick a supplement you're considering buying, run the full three steps, and save the verdict as one sentence in your notes — reuse it on the next decision of the same kind.<br/>Question: if only manufacturers will fund research on a given question, should we lower the evidence bar, or accept that the question is unanswerable for now?</div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Investing · Issuer-pays credit ratings</b>: Bond issuers pay the agencies that rate their bonds, and in 2008 many AAA-rated subprime securities defaulted en masse. Same structure as industry funding: whoever pays does not touch the numbers but shapes the grader's choices. Unlike a single study, though, a rating is eventually checked by market prices.</li>
+<li><b>Distributed systems · Failure domains</b>: Three replicas on the same rack and power supply count as one failure domain; one outage takes them all down. Five papers on a shared cohort are replicas in one failure domain. The difference: database replicas copy the same data on purpose, and nobody mistakes them for independent evidence.</li>
+<li><b>Evolutionary biology · Felsenstein and phylogenetic non-independence</b>: In 1985 Joseph Felsenstein showed that related species share ancestry and are not independent data points; twenty close relatives sharing a trait may reflect a single evolutionary event. His independent-contrasts method compares only changes after each split, much like tracing citations to their source before counting. The difference: shared ancestry is plain to see, while papers' shared upstream is often hidden.</li>
+<li><b>Philosophy · Elster's Ulysses contract</b>: In <em>Ulysses and the Sirens</em> (1979), Jon Elster read Ulysses having his crew bind him to the mast as rational precommitment; a preregistered outcome is the researcher's mast. Unlike Ulysses, who guarded only against himself, a trial registry lets every reader inspect the knots.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Industry-sponsored drug and device trials reach favorable conclusions at a risk ratio of about 1.27–1.34 versus independent funding.</li>
+<li>Money enters the evidence chain at four links: funding, supplying the product, design and statistics, writing and submission; the last two distort conclusions most.</li>
+<li>Funding bias rarely means fabricated data; it works through selective design and selective publication, such as easy-win surrogate endpoints and shelved negative trials.</li>
+<li>Independently funded trials where the company only supplies the product are low risk, which is why the WHI hormone therapy trial could publish its upending negative result.</li>
+<li>Conflict-of-interest statements are self-reported, and the commonest red flag is "no conflicts" on the same page where the funding and acknowledgments name a company.</li>
+<li>Disclosed is not neutralized: disclosure only informs the reader, while any tilt in the design is already baked into the data.</li>
+<li>Five papers sharing authors, a cohort or upstream data are five echoes of a single piece of evidence.</li>
+<li>Covert duplicate publication makes a meta-analysis double-count; Tramèr (1997) found it inflated ondansetron's efficacy by about 23%.</li>
+<li>Comparing a paper's primary outcome with the one preregistered on ClinicalTrials.gov exposes outcome switching, the most decisive red flag.</li>
+<li>The fix for dependence on industry money is not cutting the money but keeping data custody, statistical analysis and the decision to publish with independent parties.</li>
+</ol></div>
 
 <div class="card think">
 <div class="name">Going Deeper</div>

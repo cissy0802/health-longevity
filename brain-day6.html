@@ -49,6 +49,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 6</div>
@@ -179,6 +192,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>开始一项「有难度且新颖」的学习，每天 20 分钟（不是你已经擅长的领域）。<br/><br/>思考题：作为终身学习的技术人，你的认知储备可能已较高——但「储备耗尽后下降更快」意味着什么？它能否成为忽视前 3 个支柱的借口？</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>分布式系统 · 冗余与优雅降级</b>：神经储备像多备几份副本，神经代偿像节点坏了换条路由。连坏处也像：冗余把故障藏起来，副本耗尽才整体崩溃，所以储备用完后下降更陡。不像的是，集群能换新节点，大脑丢掉的神经元基本补不回来。</li>
+<li><b>复杂性科学 · 临界转变（Marten Scheffer，2009）</b>：湖泊、气候在压力慢慢累积后突然翻转；病理堆积多年、症状骤然出现是同一种形状。不像的是，生态系统翻转前常有可测的「临界减速」，大脑的预警信号还没找准。</li>
+<li><b>生物进化 · 昂贵组织假说（Aiello 与 Wheeler，1995）</b>：人脑太贵，演化可能靠缩短肠道给它腾能量。「2% 体重耗 20% 氧」是同一笔账：贵器官靠别的系统供养，血管出事脑先受累。不像在于，这是百万年尺度的取舍，肠道那半边后来也受到质疑。</li>
+<li><b>投资 · 格雷厄姆的安全边际</b>：安全边际不保证不看错，只保证看错时不亏光；储备同样不阻止病理，只让功能撑得住。不像的是，安全边际买入时一次留出，储备得靠终身学习持续往里存。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>保护大脑没有健脑药，靠睡眠、有氧运动、营养、认知与社交参与四个互相强化的支柱。</li>
+<li>FINGER 试验同时干预饮食、运动、认知训练和血管风险，2 年后高危老人总认知评分比对照高 25%。</li>
+<li>脑训练 App 只提升被训练的那个任务，几乎不迁移到日常认知；新颖且难度递增的真实学习才有效。</li>
+<li>Lancet 2024 痴呆委员会列出 14 个可改变风险因素，合计约可解释 45% 的痴呆。</li>
+<li>听力损失和中年高 LDL 胆固醇各占约 7%，是最大的两项可改风险；中年是痴呆预防杠杆最高的窗口。</li>
+<li>中年高血压预测晚年痴呆；SPRINT MIND 把收缩压降到 120 以下，轻度认知障碍发生率降低 19%。</li>
+<li>大脑占体重 2% 却消耗 20% 的氧，血压、ApoB、血糖这些心血管与代谢指标同时也是脑指标。</li>
+<li>认知储备分神经储备和神经代偿两类，修女研究发现满脑阿尔茨海默病理的人生前也可能毫无症状。</li>
+<li>认知储备不阻止病理、只推迟症状，一旦耗尽临床下降更陡，不能当忽视血压、睡眠、血脂的借口。</li>
+<li>认知储备掩盖损伤的方式像分布式系统的冗余：平时看不出故障，冗余耗尽才突然崩溃。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="95dd90f426b146d8">📚 深入资源 — Resources</h2>
 <ul>

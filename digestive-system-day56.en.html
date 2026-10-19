@@ -45,6 +45,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}.subtype .row{flex-direction:column}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -191,6 +204,27 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">Try This Week + Reflect</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Do three things: a warm glass of water on waking + a fixed post-meal toilet slot + feet on a small stool while you go. Log how straining changes over the week. Reflect: if fiber, water, and exercise are all covered and you still can't go, is the problem no longer the "material" but the "movement" (pelvic-floor coordination)?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Distributed systems · Backpressure</b>: when a downstream stage can't keep up, a well-built system pushes back and slows the producer instead of letting data spill back upstream. Lying down on a full stomach raises abdominal pressure: the downstream is full and the valve can't hold. The difference: backpressure is a designed signal, reflux is what leaks out once the valve fails.</li>
+<li><b>Neuroscience · Predictive processing of interoception</b>: on this view the brain assigns each bodily signal a precision weight, and anxiety turns that weight up. In functional dyspepsia ordinary gas gets read as pain, as if the gain knob were cranked too far. The difference: part of the amplification sits in hypersensitive gut nerves, not only in the skull.</li>
+<li><b>Buddhism · The second arrow (Sallatha Sutta, SN 36.6)</b>: the Buddha says bodily pain is the first arrow; the distress and resistance that follow are a second arrow we shoot into ourselves. Low-dose tricyclics and CBT likewise treat the amplification, not the signal. The difference: the Buddha trains the mind not to fire the second arrow; here we turn down neural gain.</li>
+<li><b>Evolution · The thrifty gene hypothesis (James Neel, 1962)</b>: Neel argued that genes good at hoarding energy were favored through famines and turn into a source of metabolic disease once food is abundant; the liver turning surplus sugar into fat is exactly that storage program built for scarcity. The difference: in 2008 John Speakman argued famine selection was probably too weak and proposed the "drifty gene" alternative, so the thrifty story remains contested.</li>
+<li><b>Psychology · Ironic process theory (Daniel Wegner, 1994)</b>: the harder you try not to think of a white bear, the more it pops up; in outlet-type constipation, the harder you strain, the more the pelvic floor clenches. The difference: Wegner describes mental self-monitoring, while pelvic dyssynergia is a motor pattern that biofeedback has to retrain into letting go.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Most acid reflux is not excess acid but a lax lower esophageal sphincter (LES) letting normal acid splash up and burn the esophagus.</li>
+<li>Lifestyle fixes for reflux: lose weight, raise the whole head of the bed 15–20 cm, sleep on your left side, and stop eating 3 hours before bed.</li>
+<li>PPIs neutralize acid but don't fix the valve; take them before breakfast on a regular schedule, reassess at 4–8 weeks, and taper when you can.</li>
+<li>Functional dyspepsia is real despite a normal scope, driven by impaired gastric accommodation, visceral hypersensitivity, and gut-brain axis dysregulation.</li>
+<li>For functional dyspepsia, test for H. pylori first; postprandial distress responds to prokinetics, epigastric pain to low-dose tricyclics that calm visceral nerves.</li>
+<li>Gallstones and fatty liver (MASLD) grow from the same soil of insulin resistance and visceral fat, and losing 7–10% of body weight markedly reverses liver fat and inflammation.</li>
+<li>Cutting sugary drinks to zero is the key lever for reversing fatty liver; lose a steady 0.5–1 kg a week, because crash dieting can trigger gallstones.</li>
+<li>Constipation comes in normal-transit, slow-transit, and outlet types; outlet type needs pelvic-floor biofeedback, and piling on fiber or laxatives only adds bloating.</li>
+<li>The osmotic laxative PEG is safe for long-term use, while stimulant laxatives such as senna and bisacodyl are for short-term rescue only.</li>
+<li>In outlet-type constipation, straining harder makes the pelvic floor clench harder, the same shape as Wegner's ironic process theory of suppressed thoughts rebounding.</li>
+</ol></div>
 
 <div class="card" style="border-top-color:#87e8e8">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">Deeper Reflection</div>

@@ -47,6 +47,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}.ladder .lx{min-width:56px}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 54</div>
@@ -151,6 +164,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="content"><div class="tryit"><div class="label">本周一试</div>
 做一个替换：把一个常用塑料饭盒/水杯换成玻璃或不锈钢，并停止用塑料容器微波加热。<br/><span style="opacity:0.85">思考题：面对"暴露普遍、危害未定"，你怎么在"忽视"和"过度恐慌"之间校准？这套判断能否迁移到别的健康新闻上？</span></div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>神经科学 · 盲视（Lawrence Weiskrantz）</b>：初级视皮层受损的病人说自己什么都没看见，却能远高于随机地指出光点在哪——意识报告和信息处理是两条线。夜间噪音是同一个结构：你说"早听惯了"，杏仁核和下丘脑照样在应激。不像的是，盲视是损伤造成的分离，睡眠中的噪音反应走的是完好的正常通路。</li>
+<li><b>生物进化 · 视黑质的旁支血统</b>：melanopsin 1998 年由 Ignacio Provencio 在非洲爪蟾皮肤的色素细胞里发现，序列更像昆虫、章鱼的感光蛋白，不像视锥视杆里的视蛋白。眼睛里等于住着两套系统，一套看图像，一套只报时；报时那套不管形状，只累计亮度和蓝光。</li>
+<li><b>分布式系统 · 时钟同步</b>：每台机器的晶振都会漂移，要定期向参考源（如 NTP 服务器）对时；人的内在节律也略偏离 24 小时，靠晨光每天校一次。夜间灯光像一台报错时间的时间服务器。不像的是，机器对时一步到位，生物钟每天只能挪一小段。</li>
+<li><b>投资 · 塔勒布的不对称下注</b>：找"亏得少、可能赚得多"的头寸；不加热塑料、换玻璃杯这类动作就是便宜的期权。不像的是，期权的赔付写在合约里，微塑料的"赔付"连有没有都还不知道，所以只配下小注、别重仓。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>夜间交通噪音每升 10 dB，高血压与缺血性心脏病风险约升 6–8%，卧室夜间目标是低于 30 dB。</li>
+<li>噪音经听觉通路直连杏仁核与下丘脑，睡着时照样激活应激反应，"听惯了"不等于身体适应了。</li>
+<li>夜间降噪可用隔音窗、厚窗帘、把床挪离临街墙，或用泡棉耳塞加白噪音掩蔽突发噪音。</li>
+<li>视网膜里含视黑质的 ipRGC 对约 480 nm 蓝光最敏感，夜里见光会经 SCN 抑制褪黑素分泌。</li>
+<li>普通客厅灯约 100 lux 就能抑制约一半褪黑素，睡前 2–3 小时应把灯光调暖、调暗到 10 lux 以下。</li>
+<li>晨起 10 分钟户外强光是最强的节律锚定信号，能前移睡眠时相、抵消部分夜间光的影响。</li>
+<li>厨房是家里最大的 PM2.5 来源，做饭全程开抽油烟机、饭后再抽几分钟是性价比最高的一步。</li>
+<li>哈佛 COGfx 研究发现室内 CO₂ 从约 550 升到 1400 ppm 时决策类认知得分显著下降，目标应低于 1000 ppm。</li>
+<li>微塑料已在血液、胎盘和动脉斑块中检出，但 Marfella 2024 的心血管结果只是关联，剂量与危害尚无定论。</li>
+<li>环境风险要看终身累积剂量，先做证据强且成本低的事，再做证据弱但几乎无代价的事。</li>
+</ol></div>
+
 <div class="card think" data-tts="afdeadf90e2ad083">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">深入思考</div>
 <details><summary>① 环境暴露多是"低剂量、长时间"，和药物的"急性剂量"逻辑有何不同？</summary>

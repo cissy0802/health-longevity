@@ -48,6 +48,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -206,6 +219,27 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">This week + reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>When you enter the luteal phase, set the AC/fan 1–2°C cooler and take a warm bath 90 minutes before bed. Compare sleep-onset speed and number of awakenings across the premenstrual nights (a phone sleep app gives a rough read).<br><br>Reflection: if sleep, mood, appetite, and training performance all ride the same set of hormones, to what extent is "discipline" actually "cooperating with your physiology" rather than "fighting it"?</div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Complexity science · positive feedback and tipping points</b>: Estrogen normally exerts negative feedback on the hypothalamus and pituitary, but once it stays high enough for long enough it flips to positive feedback and fires the LH surge that triggers ovulation. That is an avalanche or a bank run: slow build-up, a threshold, then self-amplification and a one-shot change of state. The difference: avalanches do not reset themselves, while the cycle flips the switch back every month.</li>
+<li><b>Psychology · the ergodicity problem (Peter Molenaar, 2004)</b>: Molenaar argued that group averages say something about an individual only if everyone behaves like the average person, which most psychological data do not. Cycle research fits exactly: tiny average effects, huge individual spread. Unlike most traits, though, the cycle repeats monthly, so personal data pile up fast.</li>
+<li><b>Buddhism · the second arrow (Sallatha Sutta)</b>: The Buddha described bodily pain as a first arrow, and our resistance and self-blame as a second one we fire at ourselves. The hormonal swing is the first arrow; calling premenstrual irritability "drama" is the second. The difference: PMDD sensitivity sits at the receptor level, so awareness can pull out the second arrow but not the first.</li>
+<li><b>Evolutionary biology · life-history trade-offs</b>: Organisms split limited energy among survival, growth and reproduction, and when energy runs short they cut reproduction first, as the costliest and most postponable item. Exercise-induced amenorrhea is that arithmetic. In business terms, it is a cash-strapped firm cutting R&amp;D: it survives the quarter, and bone density is the debt that comes due later.</li>
+<li><b>Distributed systems · clock synchronization</b>: Every machine's local clock drifts and must be corrected against an authoritative time source; a fixed wake time plus morning light is a daily sync for the body clock. The difference: the body also runs a crowd of peripheral clocks pulled by meals and temperature, so syncing looks more like negotiation than broadcast.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>The menstrual cycle really does shift hormones, body temperature and fuel use, but individual differences dwarf the average differences between phases.</li>
+<li>McNulty's 2020 meta-analysis found at most a trivial drop in exercise performance during menstruation, with low-certainty evidence.</li>
+<li>In the progesterone-dominated luteal phase, core temperature rises 0.3–0.5°C, perceived exertion climbs, and heat tolerance and recovery worsen.</li>
+<li>Combined oral contraceptives flatten natural hormone swings, so cycle-synced training barely applies; losing your period from training is a RED-S red flag.</li>
+<li>PMDD stems from the brain's sensitivity to allopregnanolone, a progesterone metabolite acting on GABA-A receptors, not from abnormal hormone levels.</li>
+<li>Calcium at 1,000–1,200 mg a day is the best-supported nutritional fix for premenstrual symptoms, and SSRIs are first-line treatment for severe PMDD.</li>
+<li>Resting metabolic rate rises about 2–10% in the luteal phase, so eating an extra 100–200 kcal is physiology, not a lapse, and a steep deficit backfires.</li>
+<li>Menstrual blood loss is a hidden route to iron deficiency; check serum ferritin before supplementing, since below 30 ng/mL signals low stores.</li>
+<li>Falling asleep depends on core temperature dropping, and the luteal phase raises the baseline, so sleep is often lighter and more broken in the premenstrual week.</li>
+<li>In the luteal phase, a bedroom 1–2°C cooler, a warm bath before bed, and a fixed wake time with morning light help get sleep back on track.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>📚 Resources</h2>

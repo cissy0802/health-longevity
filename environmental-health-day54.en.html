@@ -46,6 +46,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}.ladder .lx{min-width:56px}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -175,6 +188,26 @@ When you do one stir-fry meal, run the range hood the whole time and crack a win
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>
 Make one swap: replace a frequently used plastic lunchbox/cup with glass or stainless steel, and stop microwaving in plastic containers.<br><span style="opacity:0.85">Reflection: facing "exposure ubiquitous, harm unsettled," how do you calibrate between "ignore" and "over-panic"? Can that judgment transfer to other health news?</span></div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Neuroscience · Blindsight (Lawrence Weiskrantz)</b>: patients with damage to primary visual cortex say they see nothing, yet point to a flash of light far better than chance; conscious report and information processing run on separate lines. Night noise has the same shape: you say you are used to it, while the amygdala and hypothalamus keep firing. The difference is that blindsight is a split caused by injury, whereas the sleeping stress response runs on intact, normal wiring.</li>
+<li><b>Evolution · Melanopsin's side lineage</b>: Ignacio Provencio found melanopsin in 1998 in skin pigment cells of the African clawed frog, and its sequence looks more like the photopigments of insects and octopuses than the opsins in rods and cones. The eye houses two systems, one for images and one that only tells time, and the timekeeper ignores shape and simply adds up brightness and blue.</li>
+<li><b>Distributed systems · Clock synchronization</b>: every machine's crystal drifts, so it resyncs against a reference such as an NTP server; the body's internal rhythm also runs slightly off 24 hours and is reset each morning by daylight. Light at night is a time server reporting the wrong time. Unlike a machine, though, the body clock can only shift a little each day.</li>
+<li><b>Investing · Taleb's asymmetric bets</b>: look for positions where the downside is small and the upside could be large; not heating plastic and switching to a glass cup are cheap options of that kind. Unlike a real option, whose payoff is written in the contract, the microplastics payoff may not exist at all, so it deserves a small stake, not a big one.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Each 10 dB rise in nighttime traffic noise raises the risk of hypertension and ischemic heart disease by about 6–8%; aim for a bedroom below 30 dB at night.</li>
+<li>Noise reaches the amygdala and hypothalamus directly through the auditory pathway, triggering stress even in sleep, so feeling used to it is not physical adaptation.</li>
+<li>Cut night noise with soundproof windows, heavy curtains, a bed moved off the street-facing wall, or foam earplugs plus white noise to mask sudden sounds.</li>
+<li>Melanopsin-containing ipRGCs in the retina are most sensitive to blue light around 480 nm, and light at night suppresses melatonin via the SCN.</li>
+<li>Ordinary living-room light of about 100 lux suppresses melatonin by roughly half; in the 2–3 hours before bed, go warm and below 10 lux.</li>
+<li>Ten minutes of outdoor morning light is the strongest anchor for the body clock, advancing sleep timing and offsetting some of the effect of light at night.</li>
+<li>The kitchen is the biggest indoor PM2.5 source; running the range hood throughout cooking and for a few minutes after is the best-value step.</li>
+<li>Harvard's COGfx study found decision-making scores dropped markedly as indoor CO₂ rose from about 550 to 1,400 ppm; keep it below 1,000 ppm.</li>
+<li>Microplastics have been found in blood, placenta and arterial plaque, but the 2024 Marfella cardiovascular finding is an association and the dose-harm link is unsettled.</li>
+<li>Judge environmental risk by lifetime cumulative dose: do the strong-evidence, low-cost things first, then the weak-evidence but nearly free ones.</li>
+</ol></div>
 
 <div class="card think">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">Deeper Questions</div>

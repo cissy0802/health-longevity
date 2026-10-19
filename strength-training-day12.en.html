@@ -44,6 +44,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -171,6 +184,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Do the 30-second sit-to-stand test: arms crossed, count full stand-ups in 30 seconds, log your baseline. Train squats 2×/week, retest in 4 weeks.<br>Reflect: which movements do you want to still do independently at 80? Is today's training paving the way?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Psychology · Deliberate practice (Ericsson, 1993)</b>: Studying violin students, Ericsson found the gap came not from hours logged but from deliberately working at the edge of what you can't quite do yet, with feedback; double progression plus a training log has the same structure. The difference: deliberate practice is bottlenecked by attention, strength training by physical recovery.</li>
+<li><b>Neuroscience · The synaptic homeostasis hypothesis of sleep (Tononi and Cirelli, 2003)</b>: Waking learning strengthens synapses across the board; sleep scales them back down, keeping signal and dropping noise, so learning lands offline. Muscle likewise grows in the recovery after training. Unlike synapses, which consolidate by trimming, muscle gets stronger by adding.</li>
+<li><b>Distributed systems · TCP congestion control (Van Jacobson, 1988)</b>: After the internet's congestion collapse of 1986, Jacobson's fix was additive increase, multiplicative decrease (AIMD): with no packet loss, nudge the sending rate up; at the first loss, cut it in half. Adding training volume should work the same way: add sets in small steps, and back off clearly when progress stalls or recovery worsens. The difference: a network hears about packet loss within milliseconds, while the body's "packet loss" takes weeks to show and arrives mixed with noise from sleep and stress.</li>
+<li><b>Western philosophy · Aristotle's hexis</b>: Book II of the Nicomachean Ethics says we become just by doing just acts; virtue is a stable state built through repeated action, and strength is a disposition accumulated one set at a time. The difference: a virtue, once formed, is fairly durable, whereas muscle is a lifelong subscription that starts lapsing when you stop.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Muscle adapts only to a stimulus harder than last time, so progressive overload is the one non-negotiable principle of strength training.</li>
+<li>Double progression means taking one load from 8 reps up to 12, then adding weight and dropping back to 8.</li>
+<li>As long as total volume keeps rising, adding weight and adding reps build muscle equally well; continued overload is what counts.</li>
+<li>Logging weight × reps × RIR (reps in reserve) for every set is a prerequisite, because you cannot progress reliably from memory.</li>
+<li>Prioritize multi-joint compound lifts and cover all six patterns weekly: squat, hinge, horizontal push and pull, vertical push and pull.</li>
+<li>Schoenfeld's 2017 meta-analysis found about 10 weekly sets per muscle works, and 12–20 is optimal for most people.</li>
+<li>Sets taken to within 1–3 reps of failure build muscle across a wide 6–30 rep range, but maximal strength still needs heavy loads.</li>
+<li>In the PURE cohort, every 5 kg drop in grip strength raised all-cause mortality risk by about 16%, making strength a modifiable longevity marker.</li>
+<li>In Fiatarone's 1994 trial, nursing-home residents averaging 87 gained 113% leg strength after 10 weeks of high-intensity resistance training.</li>
+<li>Volume beyond your recovery capacity yields diminishing returns, so add it the way TCP handles congestion: small increases, quick retreats.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>🏋️ Reflections</h2>

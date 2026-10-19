@@ -42,6 +42,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 34</div>
@@ -201,6 +214,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">进阶与安全</div>
 <div class="content"><div class="myth">• <b>进阶</b>：次数到上限就加重量/阻力，或循环从 2 轮升到 3 轮。<br/>• <b>酸痛 vs 警讯</b>：训练后肌肉酸胀正常；但<strong>沿手臂放射的麻木/无力、越练越痛、或伴头晕心慌</strong>，先停下并就医评估，别硬练。<br/>• <b>频率</b>：强度温和，可天天做；累了就只做 ①③。</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>佛学 · 「应无所住」</b>：《金刚经》说「应无所住而生其心」，相传慧能听到这句而开悟；「最好的姿势是下一个姿势」是同一个结构：好的不是某个定点，而是不在任何定点上停太久。不像在于，佛学讲的是心不执著，体态讲的只是组织别被同一份负荷压太久，是力学，不涉解脱。</li>
+<li><b>分布式系统 · 热点与负载均衡</b>：请求总打到同一个分片，那台机器先垮，解法是轮转分摊，而不是换更贵的机器；久坐不动就是让同一组肌肉、同一节椎间盘当热点。不像的是，服务器歇着不会变强，肌肉在负荷的间歇里还会适应、变强。</li>
+<li><b>心理学 · 助推与默认选项（Thaler 与 Sunstein，2008）</b>：人多半照默认选项走，改默认值比劝人下决心更管用；升降桌、走动会议、定时提醒就是给身体换默认值。不同在于，助推通常是别人替你设计选择架构，这里设计者和被助推的是同一个人。</li>
+<li><b>哲学 · 福柯的「驯顺的身体」</b>：福柯在《规训与惩罚》（1975）里写到学校如何规定写字时躯干和手肘的位置，挺直的身体既是纪律的产物，也是纪律的标志；「坐直」被读成品格，正是这一传统。不像的是，福柯追问权力如何塑造身体，本篇的证据则说，那个被规训出来的姿势本身并不护脊。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>上交叉综合征是胸肌、上斜方肌紧而短，深层颈屈肌、中下斜方肌弱而长的肌力失衡模式，可以逆转。</li>
+<li>「头前倾 60° 颈椎承重 27kg」出自 Hansraj 2014 年的静力学模型推算，并非实测，数字常被夸大。</li>
+<li>纠正上交叉的协议是松开紧的、练强弱的、活动胸椎，再加每天靠墙做下巴回收激活深层颈屈肌。</li>
+<li>系统综述显示头前倾角度与颈痛关联很弱，久坐、压力、睡眠差和缺乏锻炼才是更强的预测因素。</li>
+<li>颈椎影像上的退变常与疼痛不对应；矫姿带只适合短期提醒，长期依赖反而弱化自身肌肉。</li>
+<li>不存在能预防腰痛的唯一正确坐姿，腰痛的关键是坐得太久、太静，以及整体缺乏运动与力量。</li>
+<li>椎间盘靠运动的泵效应交换营养；腰痛指南把保持活动和运动疗法列为一线，而不是卧床或买贵椅子。</li>
+<li>频繁微休息缓解颈肩不适的效果常超过单纯换设备；升降桌要坐站轮换，整天站着同样伤身。</li>
+<li>缓解久坐肩背颈的 20 分钟练习分三段：松开坐紧的、练强坐弱的、用呼吸把交感神经降下来。</li>
+<li>改造环境和默认值，让「动」成为阻力最小的选项，比靠意志提醒自己坐直更可靠，这正是助推的思路。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="016683b3890ae254">🔬 深入思考 — Reflections</h2>
 <details><summary>① 既然"完美姿势"的证据这么薄弱，为什么"坐直一点""别驼背"的劝告如此根深蒂固？</summary>

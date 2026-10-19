@@ -46,6 +46,19 @@ details .think{font-size:0.9rem;color:#94b1b1;padding:4px 0 12px}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 63</div>
@@ -158,6 +171,26 @@ Typical: retrosternal squeezing/tightness &gt;5–10 min, not relieved by rest, 
 <div class="section"><div class="label">This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Find one in-person or video "hands-only CPR + AED" lesson (Red Cross/AHA) and have the family spend 20 minutes on it; audit the medicine cabinet, discard expired drugs, and tape the emergency number and allergy list to it.<br/>Reflection: if a relative collapsed unresponsive right now, would you dare to act in the 8 minutes before the ambulance arrives?</div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Psychology · The bystander effect (Darley &amp; Latan&eacute;, 1968)</b>: in their experiments, people who believed others could also hear a cry for help acted less often and more slowly; responsibility got diffused. Rehearsing "who calls the ambulance, who notes the onset time" is the known fix: pin responsibility on a named person. Where it differs: a household is small, so hesitation there is usually fear of doing it wrong, not diffusion.</li>
+<li><b>Distributed systems · Cascading failure and retry storms</b>: when a service slows, clients retry harder, and the defense itself brings the system down; in sepsis the immune system's runaway response to infection likewise damages its own vessels and organs. The difference: engineers can pre-install a circuit breaker; the body has none, so outside treatment has to buy the time.</li>
+<li><b>Evolutionary biology · The smoke-detector principle (Randolph Nesse)</b>: when a miss costs far more than a false alarm, selection tunes defenses to fire too often; fever and vomiting are built this way. Anaphylaxis is the same alarm misfiring at a harmless allergen. Where it differs: a smoke detector's false alarm is merely loud; here the alarm itself becomes the fire.</li>
+<li><b>Chinese philosophy · Bian Que and Duke Huan of Cai (<i>Han Feizi</i>, "Illustrating Laozi")</b>: the duke insists "I am not ill" while the disease sits in the skin, and by the time it reaches the marrow nothing can be done; that is the price of "let's wait and see." Where it differs: the duke's illness deepened over weeks, while stroke and heart-attack windows are counted in minutes, and the symptoms may vanish on their own, which lowers our guard further.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Sudden facial droop, limb weakness or slurred speech needs an ambulance even if it clears in minutes; a TIA is the strongest warning of a major stroke.</li>
+<li>Every minute of delay in ischemic stroke costs about 1.9 million neurons, so record the onset time or the last time the person was seen normal.</li>
+<li>While waiting, lay a suspected stroke patient down with the head turned to one side, give no food, drink or pills; pinching the philtrum or bloodletting does nothing.</li>
+<li>Crushing chest pain lasting minutes with cold sweat or breathlessness should be treated as a heart attack: call an ambulance, chew 300 mg aspirin if safe, never drive yourself.</li>
+<li>Heart attacks in women, diabetics and older adults are often atypical, showing up as extreme fatigue, breathlessness, nausea, or upper-abdominal or back pain.</li>
+<li>Sepsis means infection plus organ dysfunction; infection with confusion, rapid breathing or mottled skin warrants the emergency room.</li>
+<li>Intramuscular epinephrine into the outer thigh is the only first-line drug for anaphylaxis; antihistamines and steroids are not rescue drugs, and pregnancy is no reason to hold back.</li>
+<li>Survival from cardiac arrest depends on bystanders starting compressions at once and using an AED early; each minute of delayed defibrillation cuts survival by 7–10%.</li>
+<li>For adult cardiac arrest, hands-only CPR is enough: 100–120 compressions a minute, 5–6 cm deep, full recoil, minimal pauses.</li>
+<li>The biggest home-medicine risk is duplication and interactions: stacking combination cold remedies can push acetaminophen into liver-damaging overdose.</li>
+</ol></div>
 
 <div class="deep-title">Going Deeper</div>
 <details><summary>Why does first aid insist on "call an ambulance" over "drive there yourself"?</summary>

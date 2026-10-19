@@ -53,6 +53,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -195,6 +208,27 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Measure morning HRV for 7 days to establish your personal baseline (don't rush to interpret single-day numbers).<br><br>Reflect: can you distinguish the fatigue that says "push a bit more" from the fatigue that says "step back"?</div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Complexity science · Critical slowing down (Scheffer 2009)</b>: Marten Scheffer and colleagues showed in <i>Nature</i> in 2009 that systems nearing a tipping point recover from perturbations ever more slowly, an observable early-warning signal. Allostatic load says the same thing: the danger is not how high each peak goes but how each return gets slower until baseline is never reached. The difference: an ecosystem drifts toward the edge passively, while a body can pull itself back through sleep and recovery.</li>
+<li><b>Evolution · Sapolsky's zebra</b>: in <i>Why Zebras Don't Get Ulcers</i> (1994), Robert Sapolsky notes that a zebra's stress response exists to escape a predator and is over within minutes, while humans leave the same system running for mortgages and imagined futures. Unlike the zebra, we can also use that imagination to reframe the threat as a challenge.</li>
+<li><b>Buddhism · Anapanasati (mindfulness of breathing)</b>: the <i>Anapanasati Sutta</i> teaches "breathing in long, one knows one breathes in long," with the breath as an anchor for awareness. The difference: the contemplative only observes the breath, whereas the cyclic sigh deliberately lengthens the exhale to pull the vagal lever.</li>
+<li><b>Western philosophy · Epictetus's dichotomy of control</b>: the Stoics split the world into what is up to us and what is not, and spend effort only on the former. Controllability is likewise a key variable separating good stress from bad. Where they part: Stoicism asks you to change your judgment, while physiology warns that a truly uncontrollable chronic load may not let the body reach baseline however you reframe it.</li>
+<li><b>Business · Goodhart's law</b>: economist Charles Goodhart observed in 1975 that a measure loses its reliability once it becomes a control target. Turning HRV into a daily exam is the same trap: living for the score distorts the signal and adds anxiety. The difference is that HRV cannot be cooked; what gets distorted is how you read it.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Stress itself is not the harm; chronic stress that never returns to baseline, called allostatic load, is.</li>
+<li>Chronic stress flattens the daily cortisol rhythm and drives visceral fat, insulin resistance, hippocampal shrinkage and faster telomere shortening.</li>
+<li>In INTERHEART, psychosocial stress carried about 30% population attributable risk for a first heart attack, on par with hypertension.</li>
+<li>Build at least one truly task-free parasympathetic window into each day, and sleep 7–9 hours to repair the cortisol rhythm.</li>
+<li>Exhaling activates the vagus nerve and slows the heart, making a longer exhale the fastest, free down-regulation tool.</li>
+<li>The physiological sigh is two consecutive inhales plus one slow exhale; in Balban's 2023 RCT it cut anxiety more than mindfulness meditation.</li>
+<li>Sauna is classic hormesis: in the Finnish KIHD cohort, 4–7 sessions a week meant about 50% lower cardiovascular death than one.</li>
+<li>Evidence for cold exposure is mostly mechanistic and small-sample, and a cold plunge right after strength training blunts muscle growth.</li>
+<li>HRV reflects vagal tone and can be trained with resonance breathing at about 6 breaths per minute; judge morning HRV by its 7-day rolling mean.</li>
+<li>HRV commonly dips in the luteal phase as normal physiology, so compare it against a cycle-aligned personal baseline.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>🧠 Reflections</h2>

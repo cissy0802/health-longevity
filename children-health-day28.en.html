@@ -41,6 +41,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -162,6 +175,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Swap household sugary drinks/juice for water and milk, and drop "clean your plate" at the table in favor of letting the child decide how much. Reflection: your anxiety over "one more bite"—how much is for the child's need, and how much for your own reassurance?</div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Neuroscience · Critical periods (Hubel &amp; Wiesel)</b>: In the 1960s they sewed one eye of young kittens shut for a few months, and the visual cortex was permanently rewired toward the other eye; the same deprivation in adult cats did almost nothing, work that earned the 1981 Nobel. Childhood "locking in set points" is the same structure: input during the window shapes the long-term build. The difference: bone mass and taste can still be partly caught up later, far less unforgiving than a kitten's visual cortex.</li>
+<li><b>Psychology · Overjustification effect</b>: In 1973 Lepper and colleagues had preschoolers draw; the group promised a certificate later drew less in free time, because the external reward rewrote intrinsic interest. "Finish your greens, then dessert" has the same shape: the reward makes the task look like a chore. Unlike drawing, a food reward also inflates the value of the prize itself, the sweets.</li>
+<li><b>Distributed systems · Control plane vs data plane</b>: The control plane sets policy while the data plane forwards each packet locally, because local nodes hold real-time information. "Parents decide what and when, the child decides how much" is the same split; forcing a clean plate is the center overriding a local decision. Unlike a router, a child's hunger signals can be trained wrong by repeated overrides.</li>
+<li><b>Eastern philosophy · Laozi, "the best ruler is barely known"</b>: Chapter 17 of the <i>Tao Te Ching</i> says under the best rule people only know it exists, and when the work is done they say "we did it naturally." Moving screens out of the bedroom and making the after-dinner walk a family default is that kind of unnoticed design. Not quite non-action, though: the environment is built on purpose, just without daily commands.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Children aged 5–17 need at least 60 minutes of moderate-to-vigorous activity a day, and it can be accumulated in chunks.</li>
+<li>Childhood through adolescence is the window for building peak bone mass, and impact sports like jump rope and basketball stimulate bone best.</li>
+<li>Regular exercise improves children's executive function and hippocampal volume, so it boosts learning rather than competing with it.</li>
+<li>Children aged 6–12 need 9–12 hours of sleep and teens aged 13–18 need 8–10, with fixed bed and wake times.</li>
+<li>Sleep-deprived children often look hyperactive, irritable and distractible, which is easily misread as high energy or even misdiagnosed as ADHD.</li>
+<li>Teen melatonin release shifts later, so late bedtimes are partly biological, but weekend sleep-ins should stay within 1–2 hours.</li>
+<li>In He's 2015 Guangzhou school trial, an extra 40 minutes outdoors a day cut three-year myopia incidence in first-graders.</li>
+<li>Bright outdoor light triggers retinal dopamine that curbs eyeball elongation, while blue-light glasses show no clear effect on myopia.</li>
+<li>Everyday drinks for children should be water and milk only; 100% juice is still liquid sugar and the AAP caps it by age.</li>
+<li>Satter's division of responsibility has parents decide what and when to serve and children decide how much, with no forced clean plates or food rewards.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>🔬 Reflections</h2>

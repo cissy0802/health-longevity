@@ -42,6 +42,19 @@ details .think{font-size:0.9rem;color:#9cbcbc;padding:0 0 12px}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -177,6 +190,26 @@ details .think{font-size:0.9rem;color:#9cbcbc;padding:0 0 12px}
 <div class="section"><div class="label">This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Reallocate your "anti-aging budget": this week research no new supplement, and instead <strong>schedule 2 resistance sessions</strong> and hit your protein target. It's the highest-yield "reversal" move available now. <strong>Reflection</strong>: is the ratio of attention you spend on frontier concepts vs proven basics actually reasonable?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Distributed systems · Tail latency (Jeffrey Dean and Luiz Barroso, 2013)</b>: when a request fans out to many servers, the slowest one decides how long the user waits, however good the average looks; a single averaged biological age hides the lagging organ the same way. The difference: a system can send the request to replicas and take whichever answers first, while your heart and brain have no backups.</li>
+<li><b>Evolutionary biology · Disposable soma theory (Thomas Kirkwood, 1977)</b>: repair is expensive, so natural selection funds only enough maintenance to last through reproduction, and aging is the result of that budget; organs differing in repair capacity look like the budget being split unevenly. The difference: Kirkwood's trade-off is between soma and reproduction, and says nothing about how organs divide the money.</li>
+<li><b>Complexity science · Critical slowing down (Marten Scheffer et al., 2009)</b>: ecosystems and climate often give the same warning before they flip: recovery from each disturbance gets slower, resilience drains quietly, and then one small push tips the whole system; frailty, where depleted reserve lets a minor blow cause a major collapse, has the same shape, and slower gait and chair rises are the body's version of slower recovery. The difference: many ecological flips show hysteresis and are hard to undo, while pre-frailty can be pushed back to robust with resistance training.</li>
+<li><b>Business · Theory of constraints (Eliyahu Goldratt, <i>The Goal</i>, 1984)</b>: a factory's output is set by its bottleneck, and effort spread over non-bottleneck steps just piles up inventory; aiming interventions at the fastest-aging organ follows the same logic, and since fixing one bottleneck exposes the next, you retest every year. The difference: a factory has one binding constraint at a time, while risks from several weak organs add up.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Wyss-Coray's Stanford team built plasma-proteomic aging clocks for 11 organs, and one person's organs can differ in aging pace by several years.</li>
+<li>About 18.4% of people have at least one organ aging faster than expected, and an older-looking heart clock carries roughly 2.5 times the risk of future heart failure.</li>
+<li>Proteomic organ clocks are still research tools, but ApoB, HbA1c, eGFR, grip strength and bone density already sketch a personal organ map.</li>
+<li>The estrogen drop of perimenopause speeds aging of bone, blood vessels and metabolism, and after menopause women's cardiovascular events match or exceed men's.</li>
+<li>Fried's frailty phenotype has five criteria: unintentional weight loss, exhaustion, weak grip, slow gait and low activity; three or more means frailty.</li>
+<li>Each 5 kg drop in grip strength raises all-cause mortality by about 16%; gait under 0.8 m/s or five chair rises over 12 seconds are frailty warning lines.</li>
+<li>The first-line prescription for reversing frailty is progressive resistance training 2–3 times a week, plus at least 1.2 g/kg of protein daily and adequate vitamin D.</li>
+<li>Comprehensive geriatric assessment treats a person as a multidimensional system; in midlife, baseline VO₂max, grip, gait speed and balance and track the yearly trend.</li>
+<li>Epigenetic reprogramming and senolytics such as dasatinib plus quercetin work only in animals and small early trials, and are not yet personal interventions.</li>
+<li>In 1994 Fiatarone had frail adults averaging 87 years old do 10 weeks of high-intensity resistance training, and their strength rose about 113%.</li>
+</ol></div>
 
 <div class="deep-title">Deeper Questions</div>
 <details><summary>Is "one biological-age number" science, or a new anxiety business?</summary><div class="think">The scientific value of organ clocks lies in their <strong>resolution</strong>: they tell you which weak link will fail first, enabling precise intervention. But compressed into a consumer "your body is 32," that resolution is lost—leaving only a number that reassures or alarms. Worse, many tests lack hard-endpoint validation. The rational use: watch actionable organ proxies (ApoB, eGFR, grip) and their trends, not a marketing-wrapped composite age score.</div></details>

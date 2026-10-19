@@ -40,6 +40,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 1</div>
@@ -164,6 +177,27 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">本周一试</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>测试：闭眼单腿站立，记录左右两侧坚持秒数。若任一侧 &lt; 10 秒，连续 7 天每天练习 3×30 秒（睁眼起步）；再测，看进步。</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>佛学 · 弹琴之喻</b>：佛陀劝苦修过度的二十亿耳：琴弦太紧会断，太松不响，修行要不紧不松。Zone 2「能说话不能唱歌」也是在调弦，找一个刚好的张力。不像在：佛陀讲的是一以贯之的中道，而正文的 Polarized 训练恰恰反对一直停在中间强度，要两头各自做足、少碰中段。</li>
+<li><b>神经科学 · 突触修剪</b>：大脑在发育期大量剪掉不常用的突触，维持连接有代价，不用就拆。肌肉 30 岁后每十年流失 3–8% 是同一套省成本的逻辑。不像在：修剪让神经回路更精准，肌量流失只是丢掉储备，什么也没换来。</li>
+<li><b>分布式系统 · 容量余量</b>：工程师按峰值流量规划集群，平时只跑一部分负载，余量决定突发时会不会宕机。VO2max 就是身体的峰值容量，日常用不满，关键时刻才见分晓。不像在：集群可以临时扩容，心肺余量只能靠几个月训练慢慢攒。</li>
+<li><b>投资 · 塔勒布的杠铃策略</b>：Taleb 主张资产大部分放在极安全处、小部分押高风险，回避不上不下的中间地带。80/20 的 Polarized 训练是同一个形状：大量低强度加少量高强度。不像在：杠铃是为了对冲未知的尾部风险，训练分布是为了让两种适应各自做足。</li>
+<li><b>控制论 · 负反馈</b>：Wiener 在 1948 年的《控制论》里把稳定描述为持续测量偏差、反向修正。单腿站立就是这样一个回路：脚踝不断感知晃动、不断纠偏，没有一刻真正静止。不像在：恒温器的回路出厂即定，人的平衡回路不练就会变钝。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>Zone 2 是「能说话不能唱歌」的低强度有氧，建议每周 3–4 次、每次 45–60 分钟。</li>
+<li>Zone 2 主要提升 I 型肌纤维的线粒体密度和脂肪氧化能力，是 VO2max 的底座。</li>
+<li>Mandsager 2018 的 12 万人队列中，心肺功能最高组全因死亡率约为最低组的五分之一。</li>
+<li>月经黄体期核心体温升高，Zone 2 心率会高 5–10 bpm，此时按 RPE 而非心率控制强度。</li>
+<li>骨骼肌是最大的葡萄糖处置器官，30 岁后每十年自然流失 3–8% 的肌量。</li>
+<li>抗阻训练每周 2–3 次、以复合动作为主，每肌群每周 10–20 组，最后 1–2 次接近力竭。</li>
+<li>女性应优先大重量抗阻训练而非小重量高次数，对围绝经期骨密度和代谢更有效。</li>
+<li>挪威 4×4 间歇是提升 VO2max 证据最强的协议，每周做 1–2 次、不超过 2 次。</li>
+<li>HIIT 不能替代 Zone 2，约 80% 低强度加 20% 高强度的 Polarized 分布最优，形同投资里的杠铃策略。</li>
+<li>做不到 10 秒单腿站立的人 7 年死亡率翻倍，每天 5 分钟单腿平衡练习是防跌倒的保险。</li>
+</ol></div>
+
 <div class="nav"><a href="index.html">← 返回首页</a></div>
 </div><script defer="" src="https://hub.cissychen.com/comments.js"></script>
 <script defer="" src="https://hub.cissychen.com/search.js"></script>

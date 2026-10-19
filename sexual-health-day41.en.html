@@ -42,6 +42,19 @@ details .think{font-size:0.9rem;color:#9cbcbc;padding:0 0 12px}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -162,6 +175,27 @@ details .think{font-size:0.9rem;color:#9cbcbc;padding:0 0 12px}
 <div class="section"><div class="label">This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Schedule one <strong>phone-free, unhurried</strong> high-quality connection (a deep talk, a shared walk, or just holding each other) and treat it as a health habit equal to exercise. <strong>Reflect</strong>: on your longevity checklist, which gets taken less seriously — "relationships" or "cholesterol"?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Evolutionary biology · The grandmother hypothesis (Kristen Hawkes, 1998)</b>: Working with the Hadza of Tanzania, Hawkes argued that women's fertility falls off a cliff early, followed by decades of life, because helping daughters raise children pays better than having more of your own. The parallel: the cliff looks like a selected design, not a malfunction. The difference: evolution only counts offspring and ignores post-menopausal bones and vessels, so "natural" does not mean "leave it alone."</li>
+<li><b>Economics · Crowding out</b>: Heavy government borrowing pushes up interest rates and squeezes out private investment; exogenous testosterone tells the hypothalamus and pituitary "we have enough," LH drops, and the testes make less, which is why men with normal levels who supplement get atrophy and infertility. The difference: economic crowding out is usually partial, while hormonal negative feedback can drive endogenous output close to zero.</li>
+<li><b>Buddhism · The simile of the lute (Aṅguttara Nikāya 6.55)</b>: The Buddha told the overstriving monk Soṇa that strings too tight or too slack both fail to play in tune, so effort has to be tuned to the middle. The pelvic floor is the same: too weak leaks, too tight hurts, and the goal is to contract and release at will. The difference: you can hear a slack string, but telling weak from tight in the pelvic floor often takes a physical therapist.</li>
+<li><b>Distributed systems · Canary releases</b>: A new version first gets a sliver of traffic, the most sensitive spot fails first, and a system-wide outage is caught early; at 1–2 mm, the penile artery is where the same endothelial disease shows up first. The difference: engineers choose their canary, the body's is chosen by anatomy, and there is no one-click rollback.</li>
+<li><b>Psychology · Social baseline theory (James Coan)</b>: In 2006 Coan had wives facing the threat of electric shock hold their husband's hand; neural threat responses dropped, more so in happier marriages. He went on to argue that the brain assumes others will share the load, and being alone is the extra cost. The difference: this is a minutes-long neural response, many causal steps away from living years longer.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Male testosterone falls about 1% a year after 30, a gentle slope; female estrogen drops off a cliff around menopause.</li>
+<li>Diagnosing male hypogonadism requires two morning total testosterone readings below 264 ng/dL plus symptoms.</li>
+<li>The TRAVERSE trial (2023) found that proper testosterone therapy did not raise major cardiovascular events in men with confirmed hypogonadism.</li>
+<li>Menopausal hormone therapy started before 60 or within 10 years of menopause usually has benefits that outweigh its risks.</li>
+<li>In men with normal testosterone, supplementing does not slow aging; it suppresses the body's own hormone axis and can cause testicular atrophy and infertility.</li>
+<li>Pelvic floor muscle training is first-line therapy for stress urinary incontinence: three sets a day, for at least 12 weeks.</li>
+<li>A hypertonic pelvic floor needs relaxation and breathing work; piling on Kegels makes pain and urgency worse.</li>
+<li>Penile arteries are only 1–2 mm wide, so endothelial disease shows up there first, and erectile dysfunction often precedes cardiac events by 3–5 years.</li>
+<li>New, persistent erectile dysfunction should trigger a blood pressure, lipid and glucose workup; PDE5 inhibitors must never be combined with nitrates.</li>
+<li>Holt-Lunstad's 2010 meta-analysis found strong social ties raise survival odds by about 50%, an effect comparable to quitting smoking.</li>
+</ol></div>
 
 <div class="deep-title">Going Deeper</div>
 <details><summary>Treating testosterone/estrogen as an "anti-aging switch" — where's the boundary?</summary><div class="think">Hormone therapy is replacement for <strong>confirmed deficiency</strong>; restoring levels to normal range recovers the corresponding functions. But in people who are already normal, exogenous hormones don't "extend life" and instead suppress the endogenous axis, risking erythrocytosis and clots. The key distinction is "correcting a deficiency" versus "supra-physiologic enhancement." For women, MHT's benefit–risk depends heavily on <strong>timing and personal history</strong> and should be individualized, not one-size-fits-all.</div></details>

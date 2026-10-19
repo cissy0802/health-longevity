@@ -41,6 +41,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -196,6 +209,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div>Often <strong>no</strong>. If the stay is very short, rather than shifting to destination time and then shifting back (two bouts of jet lag), it's usually better to <strong>keep your origin schedule</strong>: put key meetings in your "subjective daytime" and use light and caffeine tactically to stay alert. Also worth watching: chronic circadian disruption (years of timezone flying, long-term shift work) is epidemiologically linked to metabolic syndrome and mood disorders, so treating <strong>regular light, meals and sleep</strong> as portable "rhythm hygiene" is the right move from a longevity lens.</div></details>
 </div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Complexity science · coupled oscillators</b>: In 1665 Huygens noticed that two pendulum clocks hung from the same beam drift into lockstep; Kuramoto's 1975 model showed that a crowd of oscillators running at their own rates will lock to one frequency once coupling is strong enough. The SCN plus the liver and gut clocks are exactly such a crowd, and jet lag's "internal desynchrony" is the transient where each re-locks at its own speed after a jolt. Where it differs: the body has a master clock driven directly by light, not a crowd of equals.</li>
+<li><b>Distributed systems · clock discipline</b>: When NTP finds a machine's clock slightly off, it doesn't jump the time; it slews, running the clock a little fast or slow until it catches up, so timestamps never go out of order. A circadian clock that moves about an hour a day can only slew. Where it differs: a server far enough off can step in one go; the body can't, so the only shortcut is pre-shifting before you leave.</li>
+<li><b>Eastern philosophy · Zhuangzi's butcher</b>: Cook Ding cut along the ox's natural seams, and his blade stayed sharp for nineteen years. A free-running period slightly over 24 hours means stretching the day westward goes with the grain and compressing it eastward goes against it. Where it differs: you rarely get to choose your direction, so against the grain the only move is timing light and melatonin more precisely.</li>
+<li><b>Neuroscience · predictive processing</b>: Predictive processing casts the brain as a machine that forecasts the world from an internal model and corrects the model with error signals. The circadian clock forecasts too, raising body temperature and shifting hormones ahead of the expected day; jet lag is the stretch when model and reality disagree, and light is the strongest error signal. Where it differs: the brain can rewrite a model at once, while the clock updates only a little each day.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Jet lag is your internal clock out of step with destination time, and the clock naturally shifts only about one hour per day.</li>
+<li>Flying east needs a phase advance against a free-running period slightly over 24 hours, so it is harder than flying west.</li>
+<li>The SCN master clock is set by light through the retina, while liver and gut clocks re-align more slowly, causing internal desynchrony.</li>
+<li>The light phase-response curve sets direction: light late in biological night advances the clock, light just after dusk delays it.</li>
+<li>Melatonin is a timing signal, not a sleeping pill; 0.5–3 mg before destination bedtime is enough, and more is not better.</li>
+<li>The main long-haul risk is venous clotting from sitting, mild hypoxia and dehydration, roughly doubling after flights over four hours.</li>
+<li>Prevent flight clots by walking every 1–2 hours, doing ankle pumps and drinking water; high-risk travelers add compression stockings, not aspirin.</li>
+<li>Meal timing is the second timing cue for liver and gut clocks, so eat on destination time from the day you land.</li>
+<li>Traveler's diarrhea is prevented by "boil it, peel it, bottle it" food hygiene; evidence for probiotic prevention is weak.</li>
+<li>During jet lag, take one daytime nap of 30 minutes or less, and drink caffeine only in the destination morning, stopping 8–10 hours before bed.</li>
+</ol></div>
 
 <div class="nav"><a href="index.en.html">← Home</a></div>
 

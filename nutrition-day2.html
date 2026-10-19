@@ -40,6 +40,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 2</div>
@@ -165,6 +178,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">本周一试</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>三个实验：(1) 戒掉所有含糖饮料 7 天；(2) 每餐先吃蔬菜与蛋白，再吃主食；(3) 晚餐后散步 15 分钟。记录第 7 天的能量水平与饥饿感差异。</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>心理学 · 艾宾浩斯的间隔效应</b>：Ebbinghaus 1885 年用无意义音节自测发现，分散复习比集中死记更牢；蛋白质分 3–4 餐吃、避开肌肉合成的"麻木期"，是同一种"刺激要隔开"的结构。不像在哪：记忆的复习间隔越往后拉越好，肌肉合成的间隔大致固定在几小时，拉得太长只是白白错过窗口。</li>
+<li><b>复杂性科学 · 多样性与稳定性</b>：Tilman 在明尼苏达草地的长期实验发现，物种越多的样地遇大旱后越稳，"每周 30 种植物"押的是同一种冗余。不像在哪：Robert May 1972 年证明随机拼凑的复杂系统反而更不稳，菌群多样性有用，是因为成员经过了共同演化的筛选。</li>
+<li><b>分布式系统 · 告警疲劳</b>：监控告警一直响，值班工程师就学会忽略；胰岛素长期高位，细胞同样调低回应，这就是胰岛素抵抗的结构。不像在哪：运维可以直接删掉噪音告警，身体只能靠减少刺激源，让敏感性慢慢恢复。</li>
+<li><b>生物进化 · GULO 基因失活</b>：类人猿亚目的祖先丢掉了合成维生素 C 的 GULO 基因，饮食里一直不缺，坏了也没被淘汰；人体把 ALA 转成 EPA/DHA 效率极低，也是靠食物直接供给的格局。不像在哪：GULO 彻底失活，ALA 转化通路还在，只是开得很小。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>蛋白质 RDA 的 0.8 g/kg/天只是防缺乏的下限，健康成年人宜吃到 1.6–2.2 g/kg/天。</li>
+<li>每餐约 30 g 优质蛋白（约 2.5 g 亮氨酸）才能触发肌肉蛋白合成，分 3–4 餐优于一次吃完。</li>
+<li>围绝经期雌激素下降加重合成阻抗，女性早餐蛋白应从典型的 10–15 g 提到至少 30 g。</li>
+<li>每日 30–50 g 膳食纤维加每周 30 种植物性食物，是提升肠道菌群多样性最简洁的两个指标。</li>
+<li>肠道菌群发酵膳食纤维产生丁酸等短链脂肪酸，为结肠细胞供能、维持肠屏障并抑制全身炎症。</li>
+<li>买鱼油要看 EPA+DHA 的实际含量而非鱼油总量，目标是 Omega-3 Index 达到 8% 以上。</li>
+<li>REDUCE-IT 试验中，每天 4 g 高剂量 EPA 在他汀基础上再把主要心血管事件降低 25%。</li>
+<li>代谢问题的核心是慢性高胰岛素血症，关键在控制精制碳水和餐后血糖曲线，而不是彻底戒糖。</li>
+<li>先吃蔬菜和蛋白、最后吃主食，再加餐后散步 15 分钟，都能明显压低餐后血糖峰值。</li>
+<li>胰岛素长期高位就像告警响个不停，细胞会像值班工程师一样调低回应，形成胰岛素抵抗。</li>
+</ol></div>
+
 <div class="nav"><a href="index.html">← 返回首页</a></div>
 </div><script defer="" src="https://hub.cissychen.com/comments.js"></script>
 <script defer="" src="https://hub.cissychen.com/search.js"></script>

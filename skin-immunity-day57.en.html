@@ -41,6 +41,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 
 <header>
@@ -175,6 +188,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Cut daily cleansing to a gentle cleanser 1–2×, drop scrubs and soap-based/antibacterial washes, and over 2 weeks watch whether redness, flaking, and oiliness actually improve.<br><span style="color:#a8e0d0">Reflection: from "kill the germs" to "nurture the ecosystem"—what underlying logic does this share with the gut microbiome, or even with governing complex systems?</span></div></div>
 </div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Distributed systems · Retry storms and circuit breakers</b>: a service times out, clients retry, the retries add load and cause more timeouts; eczema's itch–scratch–broken-barrier cycle is the same positive feedback loop. Engineers answer with exponential backoff plus a circuit breaker, cutting the loop before fixing upstream, just as the skin needs inflammation control plus barrier repair. The difference: a breaker is an external switch, while skin ultimately has to regrow its own wall.</li>
+<li><b>Ecology · Gause's competitive exclusion principle (1934)</b>: Gause's Paramecium experiments showed that two species competing for one niche cannot coexist indefinitely; resident microbes that occupy the skin first leave S. aureus less room. Unlike the flask, skin hosts hundreds of strains side by side, by slicing niches finely rather than letting one winner take all.</li>
+<li><b>Psychology · Action bias (Bar-Eli, 2007)</b>: an analysis of top-league penalty kicks found goalkeepers dive to a side over 90% of the time, though staying in the center does no worse, because missing after a dive feels better than missing while standing still. Scrubbing until the face feels tight, or pouring peroxide into a scrape, is the same urge to do more. The difference: an extra dive is merely wasted effort, while extra action on skin tears the wall down.</li>
+<li><b>Buddhism · Thich Nhat Hanh's interbeing</b>: a sheet of paper contains the cloud, the rain and the logger, and nothing exists on its own; the skin, the boundary of the self, is itself full of non-self microbes. The contrast: Buddhism uses this to see through the boundary, while immunity must maintain it daily, by hosting good tenants rather than eliminating everything that is not self.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>The stratum corneum is a brick wall whose lipid mortar is ceramides, cholesterol and free fatty acids at roughly 3:1:1.</li>
+<li>Barrier defects are often the starting point of skin inflammation, and filaggrin (FLG) loss-of-function mutations are the strongest single-gene risk factor for atopic dermatitis.</li>
+<li>Barrier repair means a mildly acidic cleanser plus humectant, ceramides and occlusive, applied to damp skin within 3 minutes of washing.</li>
+<li>Eczema is a barrier defect plus Th2 immunity, psoriasis is IL-23/Th17 autoimmunity; neither is contagious or caused by poor hygiene.</li>
+<li>Psoriasis is a systemic inflammatory disease linked to cardiovascular disease, metabolic syndrome and arthritis, so check blood pressure, lipids and glucose.</li>
+<li>Daily emollients are the shared foundation for eczema and psoriasis, and short, potency-graded courses of topical steroids are safe and effective.</li>
+<li>Wounds heal through hemostasis, inflammation, proliferation and remodeling, and Winter's 1962 study showed moist wounds re-epithelialize about twice as fast.</li>
+<li>Minor wounds need only a water rinse plus petrolatum and a dressing; repeated hydrogen peroxide kills fibroblasts and delays healing.</li>
+<li>Resident microbes such as Staphylococcus epidermidis suppress S. aureus and train T cells, so over-cleansing opens the door to pathogens.</li>
+<li>Evidence-based acne care pairs adapalene with benzoyl peroxide, and topical antibiotics must be combined with benzoyl peroxide and kept short to prevent resistance.</li>
+</ol></div>
 
 <div class="card">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">Deeper Reflection</div>

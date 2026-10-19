@@ -47,6 +47,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -187,6 +200,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="section"><div class="label">THIS WEEK + REFLECTION</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>If you have a stone history: quantify intake with a marked bottle for 3 days, aiming to keep urine output steadily &gt;2.5 L (color back to 1–2); add a glass of lemon water daily. Reflect: why is eating spinach in the same meal as yogurt/tofu smarter than simply "avoiding high-oxalate foods"?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Cybernetics · Wiener's negative feedback</b>: Thirst plus antidiuretic hormone is a closed-loop thermostat that corrects plasma osmolality once it drifts 1&ndash;2%, exactly the negative feedback Norbert Wiener described in <i>Cybernetics</i> (1948). "Eight glasses a day" rips out the sensor and installs an open-loop timer. The difference: in older adults the sensor itself dulls, and then a scheduled reminder is the right patch.</li>
+<li><b>Evolution · Homer Smith's <i>From Fish to Philosopher</i></b>: In this 1953 book Smith argued that vertebrates could leave the water only because the kidney gradually learned to hoard it. The loop of Henle, which concentrates urine well above plasma, exists only in mammals and birds. Our wide tolerance for intake was bought by hundreds of millions of years of water scarcity.</li>
+<li><b>Buddhism · The Middle Way</b>: Sodium's J-shaped curve is dangerous at both ends, like the Buddha's path between asceticism and indulgence. Unlike the Middle Way, which is found by inward attention, the bottom of the J moves from person to person with blood pressure, sweat loss and dietary potassium.</li>
+<li><b>Distributed systems · SRE golden signals</b>: Google's <i>Site Reliability Engineering</i> (2016) warns against watching throughput alone; error rate matters too. eGFR is throughput, urine ACR is the packet-loss rate, and it often alarms years before throughput drops. The difference: a failing service can roll back in seconds, while established glomerular leakage can mostly only be slowed.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>"Eight glasses a day" has no original source; judge hydration by thirst and morning urine color, where pale straw (shades 1&ndash;3) is enough.</li>
+<li>The IOM adequate intake for total water is 2.7 L for women and 3.7 L for men, about 20% of it from food.</li>
+<li>Kidneys can set urine anywhere from 50 to 1200 mOsm/kg, so healthy people tolerate a wide intake range, and overdrinking can cause hyponatremia.</li>
+<li>Thirst and antidiuretic hormone form a negative-feedback loop; fixed glass counts are open-loop control, needed only by older adults whose thirst has dulled.</li>
+<li>Drinking only plain water after heavy sweating dilutes blood sodium; exercise beyond 60 minutes calls for 300&ndash;600 mg of sodium per hour.</li>
+<li>Sodium intake and mortality follow a J-shaped curve, and most people get too much sodium and too little potassium; 3.5 g/day or more of potassium lowers blood pressure.</li>
+<li>Serum creatinine tracks muscle mass, so older adults and women with little muscle can have "normal" creatinine despite kidney damage.</li>
+<li>Kidney health needs two measures: eGFR for filtration and the urine albumin-to-creatinine ratio (ACR), which often flags trouble years earlier; high-risk people should add cystatin C.</li>
+<li>Dietary calcium binds oxalate in the gut, so cutting calcium raises calcium-oxalate stone risk; get calcium from food, with meals.</li>
+<li>The four pillars of stone prevention are urine output above 2.5 L/day, citrate, less sodium and normal dietary calcium.</li>
+</ol></div>
 
 <div class="section think" style="background:#050f0f;border-radius:14px;padding:24px 26px;box-shadow:0 2px 14px rgba(0,0,0,0.08)">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">GO DEEPER</div>

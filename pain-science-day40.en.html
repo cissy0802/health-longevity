@@ -46,6 +46,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -190,6 +203,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">Try This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Set a "movement quota" for one chronic discomfort: pick an amount you can do easily (e.g. walk 15 min daily), do it whether or not it hurts and without exceeding it, for 7 days straight.<br><b>Reflection:</b> when action is no longer dictated by pain, how does your sense of control over your body change?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Evolutionary biology · The smoke-detector principle (Randolph Nesse, 2001)</b>: when a defense is cheap to trigger and a miss is costly, selection favors an oversensitive alarm that fires many false positives. Pain as protective inference is exactly such an alarm. The difference: a smoke detector's threshold is fixed at the factory, while the brain's pain threshold drops with repeated activation, which is what central sensitization is.</li>
+<li><b>Buddhism · The parable of the two arrows (Sallatha Sutta, SN 36.6)</b>: the Buddha says the untrained person, struck by a bodily arrow, adds a second arrow of mental distress; catastrophizing and fear-avoidance are that second arrow. Where it diverges: the sutta takes the first arrow as given, whereas pain science says even the first arrow is built by the brain, and it cannot simply be willed away either.</li>
+<li><b>Distributed systems · Alert-threshold drift</b>: lower a monitoring threshold again and again and ordinary jitter starts paging the on-call engineer, the same structure as central sensitization reporting light touch as pain. The difference: ops can reset the config in one line, while the nervous system's gain only comes back down through new evidence of safety, such as graded exposure.</li>
+<li><b>Business · Goodhart's law (Charles Goodhart, 1975)</b>: when a measure becomes a target, it stops being a good measure. Treating pain as the "fifth vital sign" and aiming to push pain scores down ended up driving opioid prescribing. The difference: an organization can swap the metric, while for the body the fix is to log "what I can do" instead of "how much it hurts."</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Nociception is a threat signal picked up by nerve endings; pain is the brain's weighed experience, and the two can come apart.</li>
+<li>Chronic pain (lasting over 3 months) is a malfunction of the alarm system itself, and ICD-11 lists chronic pain as a disease in its own right.</li>
+<li>Central sensitization turns up the gain in the spinal cord and brain, so light touch hurts, pain spreads, and pain sustains itself apart from tissue damage.</li>
+<li>Brinjikji's 2015 systematic review found disc degeneration and bulges are very common in people without back pain, with degeneration in 88% at age 60.</li>
+<li>Nonspecific back pain without red flags does not need repeated imaging, which changes nothing in management and reinforces the belief "I'm broken."</li>
+<li>Phantom limb pain and the placebo effect show that pain is a protective conclusion the brain outputs after weighing signals, memory, emotion and expectation.</li>
+<li>The fear-avoidance cycle turns acute pain chronic: catastrophizing stops people moving, and disuse plus sensitization make the pain worse.</li>
+<li>In the SPACE trial (Krebs 2018), 12 months of opioids for chronic back pain or osteoarthritis gave no better pain or function than non-opioid drugs.</li>
+<li>Long-term opioid use brings tolerance, dependence and opioid-induced hyperalgesia; long-term users should taper slowly, never stop abruptly.</li>
+<li>First-line care for chronic pain is exercise, CBT or mindfulness, and pain education, with activity advanced by a daily quota rather than by how it feels.</li>
+</ol></div>
 
 <h2>Going Deeper</h2>
 <details><summary>If pain is the brain's "output," does that mean you can will it away?</summary><div>No — a common misreading. Pain is generated unconsciously by the brain and isn't under direct voluntary control, just as you can't will away fear. What you can change is the "input": update beliefs through education, provide safety evidence through graded exposure, and lower the threat backdrop by managing sleep and stress — thereby indirectly turning down pain gain. It's a system you can influence, not a switch you can command.</div></details>

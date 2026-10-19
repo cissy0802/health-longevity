@@ -41,6 +41,19 @@ table tr:nth-child(even) td{background:#0b201f}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -173,6 +186,26 @@ table tr:nth-child(even) td{background:#0b201f}
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Before your next appointment, use AI to <strong>organize your symptoms and questions into a list</strong> to bring in — let AI assist and the doctor diagnose, and feel how the "human-AI collaboration" division of labor should work.<br><span style="color:#a8e0d0">Reflection: as an AI practitioner, how would you design a medical-AI interface that keeps humans skeptical rather than captured by automation bias?</span></div></div>
 </div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Business · Goodhart's law (Charles Goodhart, 1975)</b>: once a measure becomes a target, it stops being a good measure. Flattening your glucose curve or gaming your sleep score is exactly that: the proxy replaces the goal. The difference: Goodhart meant markets that game the metric; your body doesn't game anything, it's the anxiety of watching the score that wrecks the sleep.</li>
+<li><b>Neuroscience · Interoceptive inference (Anil Seth, 2013)</b>: Seth argues that "do I feel tired?" is itself the brain's prior-driven guess about the body's inner state. A recovery score is a second, external model reading the same body; when they disagree, neither is simply wrong, each is missing different signals.</li>
+<li><b>Buddhism · The finger pointing at the moon (Śūraṅgama Sūtra)</b>: the sutra warns that whoever takes the pointing finger for the moon loses not only the moon but the finger too. Sleep scores and glucose peaks are the finger; health is the moon. The difference: in the sutra the finger is eventually let go, while in diabetes care this finger genuinely saves lives.</li>
+<li><b>Machine learning theory · No free lunch theorem (Wolpert &amp; Macready, 1997)</b>: averaged over all possible problems, every optimization algorithm performs the same, so excelling at one class costs you elsewhere; medical AI being superhuman on retinal images yet shaky in open-ended consultation is the same structure. The difference: the theorem averages over all problems, and real-world problems aren't uniformly distributed, so general systems aren't doomed.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Consumer wearables are trend trackers: resting heart rate is fairly accurate, while sleep staging, HRV and SpO2 are only relative references.</li>
+<li>Log morning resting heart rate and HRV under fixed conditions and read your own 7–14 day trend, not absolute numbers against other people.</li>
+<li>The Apple Heart Study showed a watch can flag atrial fibrillation, but false positives run high in low-risk people, so an alert is a reason to get an ECG.</li>
+<li>A higher resting heart rate and lower HRV in the luteal phase are normal physiology, not poor recovery or overtraining.</li>
+<li>In diabetes care, continuous glucose monitoring lowers HbA1c and cuts hypoglycemia, with time in range above 70% as the core metric.</li>
+<li>In healthy people a post-meal glucose rise and fall is insulin working normally, and evidence that CGM-guided eating improves hard outcomes is lacking.</li>
+<li>A 10–15 minute walk after meals markedly blunts glucose peaks, no device required.</li>
+<li>Most health apps have no clinical evidence, but digital cognitive behavioral therapy for insomnia (CBT-I) is backed by RCTs and works as a first-line option.</li>
+<li>Medical AI reaches expert level on narrow tasks like retinal and mammography screening, while symptom checkers put the right diagnosis in their top three only about half the time.</li>
+<li>Once a measure becomes a target it stops being a good measure, and chasing a perfect sleep score can make sleep worse (orthosomnia).</li>
+</ol></div>
 
 <div class="card">
 <div class="label" style="font-size:0.9rem;margin-bottom:10px">Deeper Questions</div>

@@ -49,6 +49,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#7a5fb8}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#5b4396}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #e2dcf0;font-size:0.92rem;line-height:1.75;color:#2c4646}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#7a5fb8;font-size:0.85rem}
+.crossx li b{color:#5b4396}
+.card.tk{border-top-color:#0d6e6e}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(13,110,110,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(13,110,110,0.12);font-size:0.92rem;line-height:1.75;color:#2c4646}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#0d6e6e}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 7</div>
@@ -181,6 +194,27 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>进入黄体期时，把空调/风扇调低 1–2°C，睡前 90 分钟洗个温水澡。对比经前几晚的入睡速度与夜醒次数（手机睡眠 APP 可粗测）。<br/><br/>思考题：若睡眠、情绪、食欲、训练表现都随同一组激素起伏，那「自律」在多大程度上其实是「与生理节律合作」而非「对抗」？</div></div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>复杂性科学 · 正反馈与临界点</b>：雌激素平时对下丘脑-垂体是负反馈，浓度够高、持续够久就翻转成正反馈，触发 LH 激增和排卵。这像雪崩或挤兑：缓慢积累，越过阈值后系统自我放大，一次切换状态。不像的是，雪崩不会自己复位，周期却每个月把开关拨回原位重来。</li>
+<li><b>心理学 · 遍历性问题（Peter Molenaar，2004）</b>：Molenaar 指出，只有每个人都像「平均人」时，群体平均才能拿来推断个人，而心理学数据多半不满足。周期研究正是这样：平均效应很小，个体差异很大。不像的是，月经周期每月重复，个人数据攒得起来。</li>
+<li><b>佛学 · 第二支箭（《箭经》）</b>：佛陀说凡夫中了身体之苦这第一支箭，又因抗拒和自责给自己补上第二支。激素波动是第一支，把经前烦躁骂成「矫情」是第二支。不像的是，PMDD 的敏感性在受体层面，觉察拔得掉第二支，拔不掉第一支。</li>
+<li><b>进化生物学 · 生活史理论的能量分配</b>：生物把有限能量分给生存、生长和繁殖，能量吃紧时先砍最贵、最能推迟的繁殖，运动性闭经就是这道算术。商业上像现金流紧张的公司先砍研发：短期保命，骨密度是日后要还的账。</li>
+<li><b>分布式系统 · 时钟同步</b>：每台机器的本地时钟都会漂移，要定期拿权威时间源校准；固定起床加晨光，就是每天给体内时钟对一次时。不像的是，人体还有一群外周时钟各被进食、体温牵着走，校准更像协商而非广播。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>月经周期确实调节激素、体温和底物利用，但个体差异远大于各阶段之间的平均差异。</li>
+<li>McNulty 2020 的 meta 分析发现，月经期运动表现可能只有微小下降，且证据确定性低。</li>
+<li>黄体期孕酮主导，核心体温升高 0.3–0.5°C，主观用力感偏高，热耐受和恢复变差。</li>
+<li>服复方口服避孕药者没有自然激素起伏，周期同步训练基本不适用；运动性闭经是 RED-S 的红旗。</li>
+<li>经前焦虑障碍（PMDD）源于大脑对孕酮代谢物别孕烷醇酮的敏感性，而非激素水平异常。</li>
+<li>每天 1000–1200 mg 钙是证据最强的经前症状营养干预，重度 PMDD 的一线药物是 SSRI。</li>
+<li>黄体期基础代谢率升高约 2–10%，多吃 100–200 kcal 是生理需求，不宜强行热量赤字。</li>
+<li>经血是女性缺铁的隐形通道，补铁前先测血清铁蛋白，低于 30 ng/mL 提示铁储备不足。</li>
+<li>入睡依赖核心体温下行，黄体期体温基线抬高，所以经前一周常睡得浅、易夜醒。</li>
+<li>黄体期调低卧室温度 1–2°C、睡前洗温水澡、固定起床时间加晨光，能帮睡眠回到正轨。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="147bf6c50aa02cc6">📚 深入资源 — Resources</h2>
 <ul>

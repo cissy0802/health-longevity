@@ -45,6 +45,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 16</div>
@@ -147,6 +160,27 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>若你怀疑某种食物，先记 7 天<strong>症状日记</strong>（吃了什么、多久后、什么症状），而不是急着下单 IgG 检测。把"我觉得不耐受"变成"我有客观记录"。<br/>思考：你现在长期回避的某些食物，是基于<strong>明确反应</strong>，还是基于一次不靠谱的检测或道听途说？</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>投资 · 马科维茨的分散化（1952）</b>：组合里放进彼此不同步涨跌的资产，整体波动就会下降，这是「别把鸡蛋放进一个篮子」的数学版；每周 30 种植物喂出的高多样性菌群，也是用多样换韧性。不像在于：股票之间不会互相喂养，菌群却靠交叉喂养连成网，一种菌的代谢产物常是另一种菌的口粮。</li>
+<li><b>分布式系统 · 从自家快照恢复</b>：服务崩溃后，最稳的是从自己的备份快照回滚，而不是装一套别家的组件来顶；抗生素后自体粪菌移植恢复最快、外来益生菌反而拖慢，是同一个道理。不像的是，快照能精确还原，菌群只能大致长回原样。</li>
+<li><b>神经科学 · 内感受与「野兽机器」（Anil Seth）</b>：Seth 认为情绪和自我感首先来自大脑对身体内部状态的预测，迷走神经从肠道往上送的信号正是这类预测的原料。不像在于：内感受理论讲的是大脑如何解读身体，不等于某种菌能直接制造心情。</li>
+<li><b>心理学 · 认知闭合需要（Arie Kruglanski）</b>：人在不确定时会急着抓住一个明确答案，哪怕它不可靠；一张「你对 30 种食物不耐受」的 IgG 报告，就是花钱买来的闭合感。不像的是，心理学测的是个人倾向的高低，而 IgG 检测的流行背后还有商家在供应这份确定。</li>
+<li><b>佛学 · 五蕴无我</b>：佛学说「我」只是色、受、想、行、识五蕴的暂时聚合，找不到独立的核心；身上约 38 万亿微生物与自身细胞一起运转，也让「我」的边界变得模糊。不像在于：无我是要在修行中亲证的洞见，菌群只是生物学上的提醒。</li>
+</ul></div>
+
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>肠道健康的目标是养出高多样性、稳定的菌群生态，而不是补某一种「明星好菌」。</li>
+<li>每周吃够 30 种不同植物是提升菌群多样性最可执行的指标，依据来自 American Gut Project。</li>
+<li>可发酵纤维被菌群发酵成短链脂肪酸，其中丁酸是结肠细胞的首选燃料，并维持肠屏障。</li>
+<li>斯坦福 Wastyk 2021 年的 RCT 中，10 周高发酵食物饮食提升了多样性，并降低 19 种炎症标志物。</li>
+<li>益生菌的效果是菌株特异的，选补剂要认具体菌株编号和对应适应症，而不是菌种数和 CFU。</li>
+<li>Suez 2018 年发现抗生素后吃益生菌反而延迟原生菌群恢复，自体粪菌移植恢复最快。</li>
+<li>肠脑轴经迷走神经、免疫和代谢物三条通路双向沟通，但「精神益生菌」的人体证据仍小而不一致。</li>
+<li>食物过敏由 IgE 介导、微量即发、可能致命；食物不耐受是非免疫的消化问题，剂量相关、不致命。</li>
+<li>IgG 食物不耐受检测只反映正常的进食暴露，AAAAI 与 EAACI 都不推荐，据此忌口反伤菌群多样性。</li>
+<li>低 FODMAP 饮食要分限制、再引入、个体化三阶段进行，不是永久忌口。</li>
+</ol></div>
+
 <div class="footer-section">
 <h2 data-tts="873ed17c14ec5032">🔬 深入思考 — Reflections</h2>
 <details><summary>① 为什么"养生态"胜过"补单菌"？</summary>

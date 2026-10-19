@@ -42,6 +42,19 @@ details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;o
 details[open] summary{margin-bottom:10px}
 details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 23</div>
@@ -146,6 +159,24 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">本周一试 + 思考题</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>拿出你最贵的一瓶护肤品，把成分表前五位查一遍（INCI 名 + 证据），看宣传的「核心成分」实际排第几。思考题：作为习惯用证据决策的技术人，你在护肤上是否也该建立一套「看 RCT 不看广告」的过滤器？这套思维还能迁移到哪些消费决策？</div></div>
 </div>
+<div class="card crossx"><div class="name">越界 · 跨学科的联想</div><ul>
+<li><b>复杂性科学 · 双稳态与临界转换</b>：屏障受损、失水、炎症、再受损，是一个自我强化的回路。Scheffer 等 2001 年在 Nature 上描述的浅湖也是这样：清水和浑水是两个稳态，推过临界点就自己滑向另一边，拉回来要比推过去费力得多。像在于「暂停活性物 2–4 周」就是先撤掉推力；不像在于角质层一直在更新，皮肤的回滞远没有湖泊顽固。</li>
+<li><b>心理学 · 努力合理化</b>：Aronson 与 Mills 1959 年发现，入会考验越难堪的人，越觉得那个无聊的讨论组有价值。「刺痛 = 有效」是同一种心理：吃了苦，就想让苦有意义。不同的是，那里付出的只是尴尬，这里付出的是屏障本身。</li>
+<li><b>进化生物学 · 扎哈维的不利条件原理</b>：Zahavi 1975 年提出，孔雀尾巴之所以可信，正因为它昂贵、弱者付不起。护肤品的高价和繁复包装也想扮演这种昂贵信号。不像在于：自然界的代价和个体质量绑在一起，护肤品的价格和活性物浓度之间没有这根绳。</li>
+<li><b>佛学 · 琴弦之喻</b>：比丘二十亿耳精进过猛而受挫，佛陀问他弦太紧、太松能否成音，劝他取中道。活性物也一样：太少无效，叠太多就击穿屏障。不像在于：琴弦松紧凭手感就知道，皮肤的「中」要一次只改一个变量慢慢试出来。</li>
+</ul></div>
+<div class="card tk"><div class="name">十条要点</div><ol class="takeaways">
+<li>多数自认的「敏感肌」其实是过度清洁、过度去角质和叠加活性物造成的屏障受损，可以逆转。</li>
+<li>角质层像一堵砖墙：角质细胞是砖，神经酰胺、胆固醇和游离脂肪酸是灰浆。</li>
+<li>「干性」是缺油、需要补脂质，「缺水」是缺水、需要吸湿剂加封闭剂，两者处理不同。</li>
+<li>屏障受损时暂停维 A 酸、酸类和高浓 VC，只留温和洁面、神经酰胺保湿和防晒，修复 2–4 周。</li>
+<li>维 A 酸是除防晒外抗光老化证据最强的外用成分，Kligman 的早期 RCT 证实它能逆转光老化。</li>
+<li>视黄醇从 0.2–0.3%、每周 2 次起步，用保湿—维 A—保湿的三明治法，一次只引入一种新活性物。</li>
+<li>孕期和哺乳期应避开维 A 酸类和高浓水杨酸，可改用壬二酸、维 C 和烟酰胺。</li>
+<li>Nambour 试验显示每日规律防晒的人皮肤老化少于按需防晒者，防晒是护肤的地基。</li>
+<li>全脸防晒约需 1.2 克，多数人只涂四分之一；足量加补涂比把 SPF 30 换成 50 重要得多。</li>
+<li>成分表按含量降序排列，宣称的明星成分若排在防腐剂之后，含量往往低到无效。</li>
+</ol></div>
 <div class="footer-section">
 <h2 data-tts="d2c7895fcdf9d857">🔬 深入思考 — Reflections</h2>
 <details><summary>① 如果防晒、维 A 酸、保湿就是 80% 的有效护肤，为什么市场如此繁荣？</summary>

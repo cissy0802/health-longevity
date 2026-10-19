@@ -48,6 +48,19 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#8e78c3}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#917bc5;font-size:0.85rem}
+.crossx li b{color:#8e78c3}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -208,6 +221,26 @@ details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
 <div class="section"><div class="label">Try This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Start something "hard and novel" for 20 minutes a day (not a domain you already excel at).<br><br>Reflection: as a lifelong-learning technologist your reserve may already be high — but if "decline is faster once reserve is spent," what does that mean? Can reserve become an excuse to neglect the first three pillars?</div></div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Distributed systems · Redundancy and graceful degradation</b>: Neural reserve is like keeping extra replicas; neural compensation is like rerouting around a dead node. Even the downside matches: redundancy hides faults until the last replica is gone, so decline is steeper once reserve runs out. The difference: a cluster can add new nodes, while a brain mostly cannot replace lost neurons.</li>
+<li><b>Complexity science · Critical transitions (Marten Scheffer, 2009)</b>: Lakes and climate systems absorb slowly rising stress, then flip abruptly; pathology piling up for years before symptoms appear suddenly has the same shape. The difference: ecosystems often show measurable "critical slowing down" before a flip, while the brain's warning signal is not yet pinned down.</li>
+<li><b>Evolution · The expensive-tissue hypothesis (Aiello and Wheeler, 1995)</b>: The brain is so costly that evolution may have paid for it by shrinking the gut. "2% of body weight, 20% of the oxygen" is the same ledger: a costly organ lives on other systems' supply, so the brain suffers first when blood vessels fail. Unlike it, the hypothesis spans millions of years, and its gut half has since been questioned.</li>
+<li><b>Investing · Graham's margin of safety</b>: A margin of safety does not stop you being wrong; it keeps a mistake from wiping you out. Reserve likewise does not stop pathology, it keeps function standing. The difference: a margin of safety is set once at purchase, while reserve must be topped up by lifelong learning.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>There is no brain pill; protecting the brain rests on four mutually reinforcing pillars: sleep, aerobic exercise, nutrition, and cognitive and social engagement.</li>
+<li>The FINGER trial combined diet, exercise, cognitive training and vascular-risk control, and after 2 years high-risk older adults scored 25% higher on overall cognition than controls.</li>
+<li>Brain-training apps improve only the trained task and barely transfer to everyday cognition; novel, progressively harder real-world learning is what works.</li>
+<li>The 2024 Lancet Commission on dementia lists 14 modifiable risk factors that together account for about 45% of dementia.</li>
+<li>Hearing loss and high midlife LDL cholesterol each account for about 7%, the two largest modifiable risks, and midlife is the highest-leverage window for dementia prevention.</li>
+<li>Midlife hypertension predicts late-life dementia, and in SPRINT MIND lowering systolic pressure below 120 cut mild cognitive impairment by 19%.</li>
+<li>The brain is 2% of body weight but uses 20% of the oxygen, so blood pressure, ApoB and blood glucose are brain markers as well as heart and metabolic markers.</li>
+<li>Cognitive reserve comes in two forms, neural reserve and neural compensation, and the Nun Study found people with brains full of Alzheimer's pathology who had no symptoms in life.</li>
+<li>Cognitive reserve delays symptoms without stopping pathology, and decline is steeper once it runs out, so it is no excuse to neglect blood pressure, sleep or lipids.</li>
+<li>Cognitive reserve hides damage the way redundancy does in a distributed system: faults stay invisible until the redundancy is exhausted and the system suddenly fails.</li>
+</ol></div>
 
 <div class="footer-section">
 <h2>📚 Resources</h2>

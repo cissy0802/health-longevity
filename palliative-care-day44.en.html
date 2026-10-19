@@ -41,6 +41,19 @@ details .think{margin-top:8px;font-size:0.9rem;color:#9cbcbc}
 .nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
 .nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
+.card.crossx{border-top-color:#694ea7}
+.card.crossx .name,.card.tk .name{margin-bottom:12px}
+.card.crossx .name{color:#826abd}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{position:relative;padding:9px 0 9px 20px;border-top:1px dashed #251f33;font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.crossx li:first-child{border-top:none}
+.crossx li::before{content:"↗";position:absolute;left:0;top:9px;color:#866dbe;font-size:0.85rem}
+.crossx li b{color:#826abd}
+.card.tk{border-top-color:#87e8e8}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(135,232,232,0.22);border-radius:10px;background:rgba(13,110,110,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:10px 16px 10px 48px;border-top:1px solid rgba(135,232,232,0.12);font-size:0.92rem;line-height:1.75;color:#aec8c8}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:16px;top:11px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;font-weight:700;color:#87e8e8}
 </style></head><body><div class="container">
 
 <header>
@@ -168,6 +181,27 @@ details .think{margin-top:8px;font-size:0.9rem;color:#9cbcbc}
 <div class="section"><div class="label">This Week + Reflection</div>
 <div class="content"><div class="tryit"><div class="label">THIS WEEK</div>Ask yourself a Gawande-style question: "If time were limited, what matters most to me?" Write down three things you'd want to still have at the end (e.g., no pain, lucidity, someone present). Reflect: treating "a good death" as a plannable health goal rather than a taboo — which of today's decisions would it change?</div></div>
 </div>
+
+<div class="card crossx"><div class="name">Crossovers</div><ul>
+<li><b>Complexity science · Braess's paradox (Dietrich Braess, 1968)</b>: add a road to a network and everyone's travel time can get longer; in the Temel trial, less futile treatment meant longer survival, the same "more is not better." The difference: Braess's paradox comes from an equilibrium of many drivers each picking the best route for themselves, while late-stage overtreatment backfires through toxic burden on a single body.</li>
+<li><b>Neuroscience · Allostasis (Sterling and Eyer, 1988)</b>: the brain does not wait for an error to correct; it anticipates need and adjusts ahead of time. Dosing by the clock keeps blood levels above the threshold in advance, while dosing "when it hurts" is lagging feedback. Unlike the brain, a clock cannot predict, so a breakthrough dose still has to patch the gaps.</li>
+<li><b>Philosophy · The Ulysses contract (Jon Elster, <i>Ulysses and the Sirens</i>, 1979)</b>: Ulysses has his crew bind him to the mast, his clear-headed self deciding for his future self; an advance directive is the same kind of precommitment. The difference: Ulysses guards against a future self who will be irrational, while a directive speaks for a future self who cannot speak at all.</li>
+<li><b>Psychology · The peak-end rule (Redelmeier and Kahneman, 1996)</b>: a colonoscopy study showed that memory of a painful experience is driven by its worst moment and its ending, not its total length; whether the last days are spent in the ICU or at home weighs far more than the time they take up. The difference: the one who remembers this ending is not the person who died but the bereaved.</li>
+<li><b>Buddhism · Mindfulness of death (maranasati)</b>: the Buddha taught his disciples to recollect death with every breath, letting its certainty reorder what matters now; "if time were limited, what matters most?" asks the same question. The difference: mindfulness of death aims to loosen attachment, while advance care planning aims to state "what I want" more clearly.</li>
+</ul></div>
+
+<div class="card tk"><div class="name">Ten takeaways</div><ol class="takeaways">
+<li>Palliative care serves any serious illness at any stage and can run alongside curative treatment; hospice is only its final phase.</li>
+<li>In the Temel 2010 RCT, metastatic lung cancer patients given palliative care from diagnosis had median survival of 11.6 vs 8.9 months.</li>
+<li>The survival benefit of early palliative care comes from fewer futile invasive treatments and earlier control of pain, delirium and depression, not from treating more.</li>
+<li>Cancer pain should be dosed by the clock to keep blood levels above the analgesic threshold, plus a fast breakthrough dose of about 10–15% of the daily total.</li>
+<li>The WHO analgesic ladder escalates drugs for mild, moderate and severe pain and brings about 70–90% of cancer pain under satisfactory control.</li>
+<li>True addiction is extremely rare in end-of-life pain relief; physical dependence on and tolerance to opioids are expected pharmacology, not addiction.</li>
+<li>Advance care planning has two parts: a living will stating your lines on CPR, intubation and artificial nutrition, and a named healthcare proxy.</li>
+<li>The Detering 2010 RCT found advance care planning made end-of-life wishes more often honored and lowered anxiety, depression and PTSD in bereaved relatives.</li>
+<li>Patients who discussed end-of-life preferences with their doctor received less aggressive care; hospice needs at least several weeks to deliver its benefits.</li>
+<li>An advance directive is a Ulysses contract: your clear-headed self decides in advance for a future self who cannot speak.</li>
+</ol></div>
 
 <div class="card" style="border-top-color:#87e8e8">
 <div class="name">Deeper Reflection</div>
